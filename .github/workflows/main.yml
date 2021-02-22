@@ -32,7 +32,3 @@ jobs:
             # Check code standart
             - name: Run a code check
               run: yarn code:check
-
-            # Check tests
-            - name: Run a test
-              run: yarn test
