@@ -9,5 +9,7 @@ export const GlobalStyles = createGlobalStyle`
         font-weight: 300;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
+		color: ${({ theme }) => theme.text.primary};
+		background-color: ${({ theme }) => theme.bg.primary};
 	}
 `

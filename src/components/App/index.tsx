@@ -1,5 +1,6 @@
 import React from 'react'
 import { Route, Switch } from 'react-router-dom'
+import ThemeProvider from '../../features/Theme'
 import { GlobalStyles } from './styled'
 
 // Pages
@@ -12,10 +13,10 @@ const Routes: React.FC = () => (
 )
 
 const App: React.FC = () => (
-	<>
+	<ThemeProvider>
 		<GlobalStyles />
 		<Routes />
-	</>
+	</ThemeProvider>
 )
 
 export default App
