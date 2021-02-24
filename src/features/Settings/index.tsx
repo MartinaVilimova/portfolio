@@ -9,15 +9,28 @@ import {
 	HiddenBox,
 	IconBox,
 	SettingsIcon,
+	Title,
+	Line,
+	Colors,
 } from './styled'
+import ColorSwitch from '../../components/ColorSwitch'
 
 const SettingsBox: React.FC = () => {
 	const [theme, setTheme] = useThemeControl()
-	const [open, setOpen] = useState(false)
+	const [open, setOpen] = useState(true)
 
 	return (
 		<Wrapper click={open}>
 			<Content>
+				<Title>Nastavení</Title>
+				<Title>Barevný přepínač</Title>
+				<Colors>
+					<ColorSwitch />
+					<ColorSwitch />
+					<ColorSwitch />
+				</Colors>
+				<Line />
+				<Title>Světlá &#38; Tmavá verze</Title>
 				<Toggle
 					isChecked={theme === Theme.Dark}
 					onChange={(checked) =>
