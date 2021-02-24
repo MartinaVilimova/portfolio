@@ -4,7 +4,6 @@ import NavBar from '../features/NavBar'
 import SettingsBox from '../features/Settings'
 
 const Home: React.FC = () => {
-
 	return (
 		<>
 			<NavBar />
