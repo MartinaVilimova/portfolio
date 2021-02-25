@@ -1,6 +1,6 @@
 import React from 'react'
 import { Route, Switch } from 'react-router-dom'
-import ThemeProvider from '../../features/Theme'
+import ThemeProvider from '../Theme'
 import { GlobalStyles } from './styled'
 
 // Pages

@@ -1,4 +1,5 @@
 import React from 'react'
+import NavBar from '../features/NavBar'
 import Toggle from '../components/Toggle'
 import { Theme, useThemeControl } from '../features/Theme'
 
@@ -7,7 +8,7 @@ const Home: React.FC = () => {
 
 	return (
 		<>
-			<h1>START</h1>
+			<NavBar />
 			<Toggle
 				isChecked={theme === Theme.Dark}
 				onChange={(checked) =>

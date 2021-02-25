@@ -9,7 +9,7 @@ export const LightTheme: DefaultTheme = {
 	text: {
 		primary: '#212529',
 		grey: '#8b9299',
-		green: '#2fb99e',
+		colorful: '#2fb99e',
 	},
 }
 
@@ -22,6 +22,6 @@ export const DarkTheme: DefaultTheme = {
 	text: {
 		primary: '#fafafa',
 		grey: '#d7e2d2',
-		green: '#2fb99e',
+		colorful: '#2fb99e',
 	},
 }
