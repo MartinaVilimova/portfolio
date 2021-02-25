@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import Burger from '../Burger'
 import { linksData } from './data'
 import { NavContent, Wrapper, NavItem } from './styled'
 
@@ -13,6 +14,7 @@ const Nav: React.FC = () => {
 					</NavItem>
 				))}
 			</NavContent>
+			<Burger />
 		</Wrapper>
 	)
 }
