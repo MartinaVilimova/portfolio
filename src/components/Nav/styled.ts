@@ -21,9 +21,45 @@ export const NavContent = styled.ul`
 	list-style: none;
 
 	@media (max-width: 50em) {
-		display: none;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: flex-end;
+		position: absolute;
+		padding-right: 1.5em;
+		background-color: ${({ theme }) => theme.bg.shadowBlack}B3;
+		height: 93vh;
+		top: 4em;
+		right: 0;
+		z-index: 998;
 	}
 `
+const animationItem = (item: number) => {
+    
+    return `
+    &:nth-child(${item+1}) {
+      animation: movedY 1s ease forwards;
+      animation-delay: ${item * 0.3}s;
+      @keyframes movedY {
+				0% {
+					opacity: 0;
+					transform: translateY(0);
+				}
+				100% {
+					opacity: 1;
+					transform: translateY(1em);
+				}
+			}
+    }
+    `
+}
+
+const getAnimation = () => {
+  let str = ''
+  for ( let i = 0; i < 5; i += 1) {
+	  str += animationItem(i)
+	}
+    return str
+}
 
 export const NavItem = styled.li`
 	padding: 0 0.7em;
@@ -38,5 +74,11 @@ export const NavItem = styled.li`
 		&:hover {
 			color: ${({ theme }) => theme.text.colorful};
 		}
+	}
+
+	@media (max-width: 50em) {
+		padding: 0.5em 0.7em;
+		opacity: 0;
+		${getAnimation()};
 	}
 `
