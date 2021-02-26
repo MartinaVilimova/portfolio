@@ -6,6 +6,7 @@ declare module 'styled-components' {
 			readonly primary: string
 			readonly shadowWhite: string
 			readonly shadowBlack: string
+			readonly black: string
 		}
 		readonly text: {
 			readonly primary: string

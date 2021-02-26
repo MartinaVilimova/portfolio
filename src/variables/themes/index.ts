@@ -5,6 +5,7 @@ export const LightTheme: DefaultTheme = {
 		primary: '#f1f3f6',
 		shadowWhite: '#fafafa',
 		shadowBlack: '#dadada',
+		black: '#212225',
 	},
 	text: {
 		primary: '#212529',
@@ -18,6 +19,7 @@ export const DarkTheme: DefaultTheme = {
 		primary: '#2c2d30',
 		shadowWhite: '#3d3d3d',
 		shadowBlack: '#212225',
+		black: '#212225',
 	},
 	text: {
 		primary: '#fafafa',
