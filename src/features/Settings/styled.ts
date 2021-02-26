@@ -1,5 +1,6 @@
 import styled, { css } from 'styled-components'
 import { Settings } from '@styled-icons/feather'
+import { Color } from '../Theme'
 
 export const Wrapper = styled.section<{ click: boolean }>`
 	width: 14em;
@@ -40,29 +41,34 @@ export const Colors = styled.div`
 	width: 7em;
 	height: 2.5em;
 
+	& div {
+		${SameShadow};
+		cursor: pointer;
+		height: 1.5em;
+		width: 1.5em;
+		border-radius: 50%;
+	}
+
 	& div:nth-child(1) {
-		background-color: ${({ theme }) => theme.text.colorful};
 		background: radial-gradient(
 			circle at 10px 10px,
-			${({ theme }) => theme.text.colorful},
-			${({ theme }) => theme.bg.primary}
+			${Color.Green},
+			${({ theme }) => theme.bg.shadowBlack}
 		);
 	}
 
 	& div:nth-child(2) {
-		background-color: #fe668e;
 		background: radial-gradient(
 			circle at 10px 10px,
-			#fe668e,
+			${Color.Pink},
 			${({ theme }) => theme.bg.shadowBlack}
 		);
 	}
 
 	& div:nth-child(3) {
-		background-color: #0fcae8;
 		background: radial-gradient(
 			circle at 10px 10px,
-			#0fcae8,
+			${Color.Blue},
 			${({ theme }) => theme.bg.shadowBlack}
 		);
 	}

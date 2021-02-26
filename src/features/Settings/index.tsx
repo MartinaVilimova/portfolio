@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Theme, useThemeControl } from '../Theme'
+import { Color, Theme, useThemeControl } from '../Theme'
 import Toggle from '../../components/Toggle'
 import { ArrowLeft } from '@styled-icons/feather'
 import {
@@ -13,11 +13,13 @@ import {
 	Line,
 	Colors,
 } from './styled'
-import ColorSwitch from '../../components/ColorSwitch'
 
 const SettingsBox: React.FC = () => {
-	const [theme, setTheme] = useThemeControl()
-	const [open, setOpen] = useState(true)
+	const { theme, setColor } = useThemeControl()
+
+	const [selectedTheme, setTheme] = theme
+
+	const [open, setOpen] = useState(false)
 
 	return (
 		<Wrapper click={open}>
@@ -25,14 +27,14 @@ const SettingsBox: React.FC = () => {
 				<Title>Nastavení</Title>
 				<Title>Barevný přepínač</Title>
 				<Colors>
-					<ColorSwitch />
-					<ColorSwitch />
-					<ColorSwitch />
+					<div onClick={() => setColor(Color.Green)} />
+					<div onClick={() => setColor(Color.Pink)} />
+					<div onClick={() => setColor(Color.Blue)} />
 				</Colors>
 				<Line />
 				<Title>Světlá &#38; Tmavá verze</Title>
 				<Toggle
-					isChecked={theme === Theme.Dark}
+					isChecked={selectedTheme !== Theme.Light}
 					onChange={(checked) =>
 						setTheme(checked ? Theme.Dark : Theme.Light)
 					}

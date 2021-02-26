@@ -7,7 +7,6 @@ const Home: React.FC = () => {
 	return (
 		<>
 			<NavBar />
-			<h1>START</h1>
 			<Photo />
 			<SettingsBox />
 		</>

@@ -1,14 +1,5 @@
 import { DefaultTheme } from 'styled-components'
 
-// const changeColors = [
-// 		green
-// 	{color: '#2fb99e'},
-// 		pink
-// 	{color: '#fe668e'},
-// 		blue
-// 	{color: '#0fcae8'},
-// ]
-
 export const LightTheme: DefaultTheme = {
 	bg: {
 		primary: '#f1f3f6',
