@@ -1,12 +1,13 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
-import Burger from '../Burger'
-import { NavContent, Wrapper, NavItem } from './styled'
+import { NavContent, Wrapper, NavItem, Burger } from './styled'
 
 const Nav: React.FC = () => {
+	const [open, setOpen] = useState<boolean>(false)
+
 	return (
 		<Wrapper>
-			<NavContent>
+			<NavContent open={open}>
 				<NavItem>
 					<Link to="/">O mně</Link>
 				</NavItem>
@@ -23,7 +24,11 @@ const Nav: React.FC = () => {
 					<Link to="/">Kontakt</Link>
 				</NavItem>
 			</NavContent>
-			<Burger />
+			<Burger open={open} onClick={() => setOpen(!open)}>
+				<div></div>
+				<div></div>
+				<div></div>
+			</Burger>
 		</Wrapper>
 	)
 }

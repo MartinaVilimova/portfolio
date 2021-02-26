@@ -1,4 +1,5 @@
 import styled, { css } from 'styled-components'
+import { getAnimationOpen } from './function'
 
 const sizeNav = css`
 	width: 100%;
@@ -11,7 +12,7 @@ export const Wrapper = styled.nav`
 	padding: 0 1.5em 0 0;
 `
 
-export const NavContent = styled.ul`
+export const NavContent = styled.ul<{ open: boolean }>`
 	${sizeNav};
 	display: flex;
 	justify-content: flex-end;
@@ -21,45 +22,23 @@ export const NavContent = styled.ul`
 	list-style: none;
 
 	@media (max-width: 50em) {
+		display: ${({ open }) => (open ? 'flex' : 'none')};
+		height: 93vh;
 		flex-direction: column;
 		justify-content: flex-start;
 		align-items: flex-end;
 		position: absolute;
 		padding-right: 1.5em;
-		background-color: ${({ theme }) => theme.bg.shadowBlack}B3;
-		height: 93vh;
+		background-color: ${({ theme }) => `${theme.bg.shadowBlack}B3`};
 		top: 4em;
 		right: 0;
 		z-index: 998;
+
+		& > li {
+			${({ open }) => open && getAnimationOpen()};
+		}
 	}
 `
-const animationItem = (item: number) => {
-    
-    return `
-    &:nth-child(${item+1}) {
-      animation: movedY 1s ease forwards;
-      animation-delay: ${item * 0.3}s;
-      @keyframes movedY {
-				0% {
-					opacity: 0;
-					transform: translateY(0);
-				}
-				100% {
-					opacity: 1;
-					transform: translateY(1em);
-				}
-			}
-    }
-    `
-}
-
-const getAnimation = () => {
-  let str = ''
-  for ( let i = 0; i < 5; i += 1) {
-	  str += animationItem(i)
-	}
-    return str
-}
 
 export const NavItem = styled.li`
 	padding: 0 0.7em;
@@ -79,6 +58,49 @@ export const NavItem = styled.li`
 	@media (max-width: 50em) {
 		padding: 0.5em 0.7em;
 		opacity: 0;
-		${getAnimation()};
+	}
+`
+
+export const Burger = styled.section<{ open: boolean }>`
+	display: none;
+
+	@media (max-width: 50em) {
+		display: flex;
+		height: 4em;
+		flex-direction: column;
+		justify-content: center;
+		align-items: flex-end;
+
+		& > div {
+			width: 1.8em;
+			height: 0.15em;
+			margin: 0.2em;
+			background-color: ${({ theme }) => theme.text.primary};
+			border-radius: 1em;
+			transform-origin: 1px;
+			transition: all 0.4s ease;
+
+			&:nth-child(1) {
+				transform: ${({ open }) =>
+					open ? 'rotate(41deg)' : 'rotate(0)'};
+				background-color: ${({ open }) =>
+					open
+						? ({ theme }) => theme.text.colorful
+						: ({ theme }) => theme.text.primary};
+			}
+
+			&:nth-child(2) {
+				opacity: ${({ open }) => (open ? '0' : '1')};
+			}
+
+			&:nth-child(3) {
+				transform: ${({ open }) =>
+					open ? 'rotate(-41deg)' : 'rotate(0)'};
+				background-color: ${({ open }) =>
+					open
+						? ({ theme }) => theme.text.colorful
+						: ({ theme }) => theme.text.primary};
+			}
+		}
 	}
 `
