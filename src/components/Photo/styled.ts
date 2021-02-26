@@ -12,7 +12,7 @@ export const Wrapper = styled.div`
 `
 
 export const ColorShape = styled.div`
-	background-color: ${({ theme }) => theme.text.green};
+	background-color: ${({ theme }) => theme.text.colorful};
 	border-radius: 26% 74% 66% 34% / 47% 34% 66% 53%;
 	box-shadow: 0.5em 0.5em 0.5em ${({ theme }) => theme.bg.shadowBlack},
 		-0.5em -0.5em 0.5em ${({ theme }) => theme.bg.shadowWhite};
