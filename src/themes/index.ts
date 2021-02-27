@@ -1,5 +1,10 @@
 import { DefaultTheme } from 'styled-components'
 
+export enum MediaQueries {
+	Desktop = '80em',
+	Ipad = '50em',
+}
+
 export const LightTheme: DefaultTheme = {
 	bg: {
 		primary: '#f1f3f6',

@@ -1,4 +1,5 @@
 import styled, { css } from 'styled-components'
+import { MediaQueries } from '../../themes'
 import { getAnimationOpen } from './function'
 
 const sizeNav = css`
@@ -21,7 +22,7 @@ export const NavContent = styled.ul<{ open: boolean }>`
 	padding: 0;
 	list-style: none;
 
-	@media (max-width: 50em) {
+	@media (max-width: ${MediaQueries.Ipad}) {
 		display: ${({ open }) => (open ? 'flex' : 'none')};
 		height: 93vh;
 		flex-direction: column;
@@ -55,7 +56,7 @@ export const NavItem = styled.li`
 		}
 	}
 
-	@media (max-width: 50em) {
+	@media (max-width: ${MediaQueries.Ipad}) {
 		padding: 0.5em 0.7em;
 		opacity: 0;
 	}
@@ -64,7 +65,7 @@ export const NavItem = styled.li`
 export const Burger = styled.section<{ open: boolean }>`
 	display: none;
 
-	@media (max-width: 50em) {
+	@media (max-width: ${MediaQueries.Ipad}) {
 		display: flex;
 		height: 4em;
 		flex-direction: column;

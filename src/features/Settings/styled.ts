@@ -4,8 +4,10 @@ import { Color } from '../Theme'
 
 export const Wrapper = styled.section<{ click: boolean }>`
 	width: 14em;
-	height: 15em;
-	position: relative;
+	height: 16em;
+	position: absolute;
+	z-index: 998;
+	top: 5em;
 	left: -11.7em;
 	transform: ${({ click }) =>
 		click ? 'translateX(0)' : 'translateX(11.7em)'};
@@ -24,13 +26,14 @@ export const Content = styled.article`
 	justify-content: center;
 	align-items: center;
 	width: 11em;
-	height: 15em;
+	height: 16em;
 	border-top-right-radius: 1em;
 	border-bottom-right-radius: 1em;
+	background-color: ${({ theme }) => theme.bg.primary};
 `
 
 export const Title = styled.span`
-	font-size: 0.7em;
+	font-size: 0.9em;
 	padding: 0.6em 0;
 `
 
@@ -125,7 +128,7 @@ export const SettingsIcon = styled(Settings)<{ click: boolean }>`
 	cursor: pointer;
 	color: ${({ click }) =>
 		click
-			? ({ theme }) => theme.text.grey
+			? ({ theme }) => theme.text.primary
 			: ({ theme }) => theme.text.colorful};
 
 	&:hover {

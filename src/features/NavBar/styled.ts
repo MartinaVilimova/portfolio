@@ -1,4 +1,5 @@
 import styled, { css } from 'styled-components'
+import { MediaQueries } from '../../themes'
 
 const sizeNav = css`
 	width: 100%;
@@ -24,7 +25,7 @@ export const FixedNavBar = styled.div<{ shadow: boolean }>`
 			: 'none'};
 	transition: box-shadow 0.5s ease;
 
-	@media (max-width: 50em) {
+	@media (max-width: ${MediaQueries.Ipad}) {
 		grid-template-columns: 1fr 1fr;
 	}
 `
