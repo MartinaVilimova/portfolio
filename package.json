@@ -26,6 +26,7 @@
 		"code:fix": "npm-run-all -l -p lint:fix prettier:fix"
 	},
 	"dependencies": {
+		"@styled-icons/boxicons-logos": "^10.23.0",
 		"@styled-icons/feather": "^10.18.0",
 		"react": "^17.0.1",
 		"react-dom": "^17.0.1",
