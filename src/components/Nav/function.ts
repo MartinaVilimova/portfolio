@@ -1,7 +1,7 @@
 const animationItemOpen = (item: number) => `
     &:nth-child(${item + 1}) {
 		animation: movedY 1s ease forwards;
-		animation-delay: ${item * 0.3}s;
+		animation-delay: ${item * 0.2}s;
 		@keyframes movedY {
 				0% {
 					opacity: 0;
@@ -42,7 +42,7 @@ const animationItemClose = (item: number, delay: number) => `
 
 export const getAnimationClose = (): string => {
 	let str = ''
-	const delays = [1.8, 1.5, 1.2, 0.9, 0.6, 0.3, 0]
+	const delays = [1.2, 1, 0.8, 0.6, 0.4, 0.2, 0]
 	for (let i = 6; i > 0; i -= 1) {
 		str += animationItemClose(i, delays[i])
 	}

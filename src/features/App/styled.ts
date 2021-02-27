@@ -16,15 +16,30 @@ export const GlobalStyles = createGlobalStyle`
 	h1 {
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
+    font-size: 2.5rem;
   }
 
   h2 {
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
+    font-size: 2rem;
   }
 
   h3 {
     font-family: 'Poppins', sans-serif;
     font-weight: 300;
+    font-size: 2rem;
+  }
+
+  h4 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 1.5rem;
+  }
+
+  h5 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 1.25rem;
   }
 `

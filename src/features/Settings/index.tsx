@@ -19,7 +19,7 @@ const SettingsBox: React.FC = () => {
 
 	const [selectedTheme, setTheme] = theme
 
-	const [open, setOpen] = useState(false)
+	const [open, setOpen] = useState(true)
 
 	return (
 		<Wrapper click={open}>
