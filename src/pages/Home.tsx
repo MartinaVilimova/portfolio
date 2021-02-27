@@ -2,6 +2,7 @@ import React from 'react'
 import Photo from '../components/Photo'
 import NavBar from '../features/NavBar'
 import SettingsBox from '../features/Settings'
+import SocialIcons from '../features/SocialIcons'
 
 const Home: React.FC = () => {
 	return (
@@ -9,6 +10,7 @@ const Home: React.FC = () => {
 			<NavBar />
 			<Photo />
 			<SettingsBox />
+			<SocialIcons />
 		</>
 	)
 }
