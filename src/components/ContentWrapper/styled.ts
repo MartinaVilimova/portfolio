@@ -1,3 +1,21 @@
 import styled from 'styled-components'
+import { MediaQueries } from '../../themes'
 
-export const Wrapper = styled.main``
+export const Wrapper = styled.main`
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    max-width: 60%;
+    height: 90vh;
+
+    @media (max-width: ${MediaQueries.Desktop}) {
+        max-width: 80%;
+        height: 50em;
+	}
+
+    @media (max-width: ${MediaQueries.Ipad}) {
+        max-width: 90%;
+        height: 50em;
+	}
+`

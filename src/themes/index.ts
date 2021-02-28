@@ -1,8 +1,10 @@
 import { DefaultTheme } from 'styled-components'
 
 export enum MediaQueries {
-	Desktop = '80em',
-	Ipad = '50em',
+	LargeDesktop = '97em',
+	Desktop = '90em',
+	LargeIpad = '72em',
+	Ipad = '63em',
 }
 
 export const LightTheme: DefaultTheme = {

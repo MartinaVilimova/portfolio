@@ -1,4 +1,5 @@
 import React from 'react'
+import Content2Columns from '../components/Content2Columns'
 import ContentWrapper from '../components/ContentWrapper'
 import Photo from '../components/Photo'
 import NavBar from '../features/NavBar'
@@ -10,7 +11,9 @@ const Home: React.FC = () => {
 		<>
 			<NavBar />
 			<ContentWrapper>
-				<Photo />
+				<Content2Columns>
+					<Photo />
+				</Content2Columns>
 			</ContentWrapper>
 			<SettingsBox />
 			<SocialIcons />
