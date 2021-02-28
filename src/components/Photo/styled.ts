@@ -1,12 +1,21 @@
 import styled from 'styled-components'
+import { MediaQueries } from '../../themes'
 
 export const Wrapper = styled.div`
+	background-color: blue;
+	width: 100%;
+	height: 100%;
+`
+
+export const Container = styled.div`
 	margin: auto;
-	max-width: 33em;
+	width: 100%;
+	height: 100%;
 	height: 31.312em;
 	position: relative;
+	background-color: blue;
 
-	@media (max-width: 50em) {
+	@media (max-width: ${MediaQueries.Ipad}) {
 		max-width: 29em;
 	}
 `
@@ -16,19 +25,19 @@ export const ColorShape = styled.div`
 	border-radius: 26% 74% 66% 34% / 47% 34% 66% 53%;
 	box-shadow: 0.5em 0.5em 0.5em ${({ theme }) => theme.bg.shadowBlack},
 		-0.5em -0.5em 0.5em ${({ theme }) => theme.bg.shadowWhite};
-	width: 33em;
-	height: 28.8em;
+	width: 28.7em;
+	height: 25.8em;
 	position: absolute;
 	bottom: 0;
 
-	@media (max-width: 50em) {
+	@media (max-width: ${MediaQueries.Ipad}) {
 		max-width: 29em;
 		height: 26em;
 	}
 `
 
 export const Picture = styled.img`
-	max-width: 29.1em;
+	max-width: 25em;
 	position: absolute;
 	bottom: 0;
 	left: 1.1em;
@@ -37,7 +46,7 @@ export const Picture = styled.img`
 			-0.3em -0.3em 0.3em ${({ theme }) => theme.bg.shadowWhite}80
 		);
 
-	@media (max-width: 50em) {
-		max-width: 25.1em;
+	@media (max-width: ${MediaQueries.Ipad}) {
+		max-width: 25em;
 	}
 `
