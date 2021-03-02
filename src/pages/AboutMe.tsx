@@ -1,22 +1,22 @@
 import React from 'react'
-import ContentColumns, { NumberColumns } from '../components/ContentColumns'
+import Content2Columns from '../components/Content2Columns'
 import ContentWrapper from '../components/ContentWrapper'
-import ProfilePhoto from '../components/ProfilePhoto'
-import IntroText from '../features/IntroText'
+import Picture from '../components/Picture'
+import Title from '../components/Title'
 import Languages from '../features/Languages'
 import NavBar from '../features/NavBar'
 import SettingsBox from '../features/Settings'
 import SocialIcons from '../features/SocialIcons'
 
-const Home: React.FC = () => {
+const AboutMe: React.FC = () => {
 	return (
 		<>
 			<NavBar />
 			<ContentWrapper>
-				<ContentColumns columns={NumberColumns.Columns2}>
-					<IntroText />
-					<ProfilePhoto />
-				</ContentColumns>
+				<Title bigTitle='About Me' smallTitle='About Me' />
+				<Content2Columns>
+					<Picture />
+				</Content2Columns>
 			</ContentWrapper>
 			<SettingsBox />
 			<SocialIcons />
@@ -25,4 +25,4 @@ const Home: React.FC = () => {
 	)
 }
 
-export default Home
+export default AboutMe

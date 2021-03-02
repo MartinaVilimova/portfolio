@@ -1,17 +1,18 @@
 import React from 'react'
 import { ColorfulText } from '../../styled/ColorfulText/styled'
-import { Wrapper, Title, Profession, Subtitle } from './styled'
+import { Wrapper,  Subtitle } from './styled'
 import Typed from 'react-typed'
 import { Button } from '../../components/Button/styled'
 import { StyledLink } from '../../styled/StyledLink/styled'
+import { StyledH1, StyledH4 } from '../../styled/StyledTitle/styled'
 
 const IntroText: React.FC = () => {
 	return (
 		<Wrapper>
-			<Title>
+			<StyledH1>
 				Martina <ColorfulText>Vilímová</ColorfulText>
-			</Title>
-			<Profession>
+			</StyledH1>
+			<StyledH4>
 				<ColorfulText>Pracuji s</ColorfulText>{' '}
 				<Typed
 					strings={[
@@ -27,7 +28,7 @@ const IntroText: React.FC = () => {
 					backDelay={3000}
 					loop
 				></Typed>
-			</Profession>
+			</StyledH4>
 			<Subtitle>
 				Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Mauris
 				dolor felis, sagittis at, luctus sed, aliquam non, tellus. Etiam

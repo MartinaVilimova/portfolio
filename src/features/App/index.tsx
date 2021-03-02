@@ -5,9 +5,11 @@ import { GlobalStyles } from './styled'
 
 // Pages
 import Home from '../../pages/Home'
+import AboutMe from '../../pages/AboutMe'
 
 const Routes: React.FC = () => (
 	<Switch>
+		<Route path="/about-me" component={AboutMe} />
 		<Route path="/" component={Home} />
 	</Switch>
 )

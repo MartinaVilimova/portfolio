@@ -17,15 +17,6 @@ export const Wrapper = styled.article`
 	}
 `
 
-export const Title = styled.h1`
-	letter-spacing: 0.5px;
-	padding-bottom: 0.7em;
-`
-
-export const Profession = styled.h4`
-	padding-bottom: 0.5em;
-`
-
 export const Subtitle = styled.p`
 	color: #8b9299;
 	padding-bottom: 0.7em;
