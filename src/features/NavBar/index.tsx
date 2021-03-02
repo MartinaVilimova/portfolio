@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
-import { Link } from 'react-router-dom'
 import Nav from '../../components/Nav'
-import { ColorfulText } from '../../variables/styled'
+import { ColorfulText } from '../../styled/ColorfulText/styled'
+import { StyledLink } from '../../styled/StyledLink/styled'
 import { Wrapper, FixedNavBar, LogoBox, Logo } from './styled'
 
 const NavBar: React.FC = () => {
@@ -21,11 +21,11 @@ const NavBar: React.FC = () => {
 		<Wrapper>
 			<FixedNavBar shadow={show}>
 				<LogoBox>
-					<Logo>
-						<Link to="/">
+					<StyledLink to="/">
+						<Logo>
 							M<ColorfulText>V</ColorfulText>
-						</Link>
-					</Logo>
+						</Logo>
+					</StyledLink>
 				</LogoBox>
 				<Nav />
 			</FixedNavBar>
