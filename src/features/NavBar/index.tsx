@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import Nav from '../../components/Nav'
+import Nav from './Nav'
 import { ColorfulText } from '../../styled/ColorfulText/styled'
 import { StyledLink } from '../../styled/StyledLink/styled'
 import { Wrapper, FixedNavBar, LogoBox, Logo } from './styled'

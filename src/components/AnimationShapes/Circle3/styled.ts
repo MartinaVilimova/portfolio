@@ -6,6 +6,7 @@ export const Circle3 = styled.div`
 	left: 4em;
 	display: block;
 	background-color: ${({ theme }) => theme.text.colorful};
+	filter: brightness(80%);
 	width: 2em;
 	height: 2em;
 	border-radius: 50%;
