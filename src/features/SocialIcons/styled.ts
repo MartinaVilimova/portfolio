@@ -11,7 +11,7 @@ export const Wrapper = styled.section`
 	z-index: 997;
 
 	@media (max-width: ${MediaQueries.Ipad}) {
-        display: none;
+		display: none;
 	}
 `
 

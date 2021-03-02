@@ -43,9 +43,5 @@ export const Logo = styled.span`
 	font-size: 1.5em;
 	font-weight: 400;
 	letter-spacing: 1px;
-
-	& a {
-		text-decoration: none;
-		color: ${({ theme }) => theme.text.primary};
-	}
+	color: ${({ theme }) => theme.text.primary};
 `
