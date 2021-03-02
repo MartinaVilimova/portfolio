@@ -1,21 +1,32 @@
 import styled from 'styled-components'
 import { MediaQueries } from '../../themes'
 
-export const Wrapper = styled.div`
-	background-color: blue;
+export const Wrapper = styled.article`
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	width: 100%;
 	height: 100%;
-`
-
-export const Container = styled.div`
-	margin: auto;
-	width: 100%;
-	height: 100%;
-	height: 31.312em;
-	position: relative;
-	background-color: blue;
+	grid-column: 2;
 
 	@media (max-width: ${MediaQueries.Ipad}) {
+		grid-column: 1;
+	}
+`
+
+export const ContentProfilePhoto = styled.div`
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	height: 33em;
+	position: relative;
+
+	@media (max-width: ${MediaQueries.Desktop}) {
+		height: 32em;
+	}
+
+	@media (max-width: ${MediaQueries.Ipad}) {
+		height: 33em;
 		max-width: 29em;
 	}
 `
@@ -28,11 +39,16 @@ export const ColorShape = styled.div`
 	width: 28.7em;
 	height: 25.8em;
 	position: absolute;
-	bottom: 0;
+	bottom: 2em;
+
+	@media (max-width: ${MediaQueries.Desktop}) {
+		max-width: 27.7em;
+		height: 24.8em;
+	}
 
 	@media (max-width: ${MediaQueries.Ipad}) {
-		max-width: 29em;
-		height: 26em;
+		max-width: 28.7em;
+		height: 25.8em;
 	}
 `
 
@@ -46,7 +62,13 @@ export const Picture = styled.img`
 			-0.3em -0.3em 0.3em ${({ theme }) => theme.bg.shadowWhite}80
 		);
 
+	@media (max-width: ${MediaQueries.Desktop}) {
+		max-width: 24em;
+		left: 1.05em;
+	}
+
 	@media (max-width: ${MediaQueries.Ipad}) {
 		max-width: 25em;
+		left: 1.1em;
 	}
 `
