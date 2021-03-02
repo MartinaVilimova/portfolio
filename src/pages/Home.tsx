@@ -3,6 +3,7 @@ import Content2Columns from '../components/Content2Columns'
 import ContentWrapper from '../components/ContentWrapper'
 import Photo from '../components/Photo'
 import IntroText from '../features/IntroText'
+import Languages from '../features/Languages'
 import NavBar from '../features/NavBar'
 import SettingsBox from '../features/Settings'
 import SocialIcons from '../features/SocialIcons'
@@ -19,6 +20,7 @@ const Home: React.FC = () => {
 			</ContentWrapper>
 			<SettingsBox />
 			<SocialIcons />
+			<Languages />
 		</>
 	)
 }
