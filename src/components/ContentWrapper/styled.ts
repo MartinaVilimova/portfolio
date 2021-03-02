@@ -3,6 +3,7 @@ import { MediaQueries } from '../../themes'
 
 export const Wrapper = styled.main`
 	display: flex;
+	flex-direction: column;
 	margin: auto;
 	justify-content: center;
 	align-items: center;

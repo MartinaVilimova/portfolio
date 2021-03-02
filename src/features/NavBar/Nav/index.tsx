@@ -9,7 +9,7 @@ const Nav: React.FC = () => {
 		<Wrapper>
 			<NavContent open={open}>
 				<NavItem>
-					<Link to="/">O mně</Link>
+					<Link to="/about-me">O mně</Link>
 				</NavItem>
 				<NavItem>
 					<Link to="/">Životopis</Link>

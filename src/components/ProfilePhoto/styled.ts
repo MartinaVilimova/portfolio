@@ -52,7 +52,7 @@ export const ColorShape = styled.div`
 	}
 `
 
-export const Picture = styled.img`
+export const Photo = styled.img`
 	max-width: 25em;
 	position: absolute;
 	bottom: 0;
