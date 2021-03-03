@@ -1,10 +1,15 @@
 import styled from 'styled-components'
+import { MediaQueries } from '../../themes'
 
 export const StyledH1 = styled.h1`
 	font-weight: 500;
 	font-size: 2.5rem;
 	letter-spacing: 0.5px;
 	padding-bottom: 0.7em;
+
+	@media (max-width: ${MediaQueries.SmallerIpad}) {
+		font-size: 2rem;
+	}
 `
 
 export const StyledH2 = styled.h2`

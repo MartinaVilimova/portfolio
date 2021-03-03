@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { MediaQueries } from '../../../themes'
 
 export const BallCircle = styled.div`
 	position: absolute;
@@ -14,11 +15,17 @@ export const BallCircle = styled.div`
 	transform-origin: center 500%;
 	animation: ball3 16s infinite linear;
 
+	@media (max-width: ${MediaQueries.SmallerIpad}) {
+		top: 12em;
+		transform-origin: center 300%;
+	}
+
 	@keyframes ball3 {
 		to {
 			transform: rotate(1turn);
 		}
 	}
+
 	@keyframes circle {
 		to {
 			transform: rotateY(2em);

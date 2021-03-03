@@ -16,7 +16,7 @@ const AboutMe: React.FC = () => {
 		<>
 			<NavBar />
 			<ContentWrapper>
-				<Title bigTitle="Něco o mně" smallTitle="Něco o mně" />
+				<Title bigTitle="O mně" smallTitle="O mně" />
 				<ContentColumns
 					columns={NumberColumns.Columns2}
 					columnsIpad={NumberColumnsIpad.Columus1}
