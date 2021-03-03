@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const Circle3 = styled.div`
+export const BallCircle = styled.div`
 	position: absolute;
 	top: 14em;
 	left: 4em;
@@ -12,9 +12,9 @@ export const Circle3 = styled.div`
 	border-radius: 50%;
 	opacity: 0.6;
 	transform-origin: center 500%;
-	animation: circle3 16s infinite linear;
+	animation: ball3 16s infinite linear;
 
-	@keyframes circle3 {
+	@keyframes ball3 {
 		to {
 			transform: rotate(1turn);
 		}
