@@ -26,8 +26,13 @@ export const ContentProfilePhoto = styled.div`
 	}
 
 	@media (max-width: ${MediaQueries.Ipad}) {
-		height: 33em;
+		height: 34em;
 		max-width: 29em;
+	}
+
+	@media (max-width: ${MediaQueries.SmallerIpad}) {
+		height: 24em;
+		max-width: 19.7em;
 	}
 `
 
@@ -50,6 +55,11 @@ export const ColorShape = styled.div`
 		max-width: 28.7em;
 		height: 25.8em;
 	}
+
+	@media (max-width: ${MediaQueries.SmallerIpad}) {
+		max-width: 19.7em;
+		height: 17.5em;
+	}
 `
 
 export const Photo = styled.img`
@@ -70,5 +80,10 @@ export const Photo = styled.img`
 	@media (max-width: ${MediaQueries.Ipad}) {
 		max-width: 25em;
 		left: 1.1em;
+	}
+
+	@media (max-width: ${MediaQueries.SmallerIpad}) {
+		max-width: 17em;
+		left: 0.8em;
 	}
 `
