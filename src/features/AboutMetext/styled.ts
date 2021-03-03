@@ -10,8 +10,8 @@ export const Wrapper = styled.article`
 	padding-bottom: 1em;
 
 	& ul:nth-child(1) {
-	margin-left: 1.5em;
-	width: 90%;
+		margin-left: 1.5em;
+		width: 90%;
 	}
 `
 

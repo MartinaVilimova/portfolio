@@ -20,7 +20,7 @@ export const Button = styled.button`
 	}
 
 	&:hover {
-		color: ${({ theme }) => theme.text.primary};
+		text-shadow: 0 0 1em ${({ theme }) => theme.text.colorful};
 	}
 
 	&:active {
@@ -28,6 +28,6 @@ export const Button = styled.button`
 			-0.3em -0.3em 0.3em ${({ theme }) => theme.bg.shadowWhite},
 			0.3em 0.3em 0.3em ${({ theme }) => theme.bg.shadowBlack} inset,
 			-0.3em -0.3em 0.3em ${({ theme }) => theme.bg.shadowWhite} inset;
-		color: ${({ theme }) => theme.text.colorful};
+		text-shadow: none;
 	}
 `

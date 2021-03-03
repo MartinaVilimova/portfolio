@@ -1,9 +1,10 @@
 import styled from 'styled-components'
+import { NumberColumns } from '.'
 import { MediaQueries } from '../../themes'
 
 export const Wrapper = styled.section<{
-	quantity: string
-	quantityIpad: string
+	quantity: NumberColumns
+	quantityIpad: NumberColumns
 }>`
 	display: grid;
 	width: 100%;
