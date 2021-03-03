@@ -3,6 +3,7 @@ import { DefaultTheme } from 'styled-components'
 export enum MediaQueries {
 	Desktop = '90em',
 	Ipad = '65em',
+	SmallerIpad = '31em',
 }
 
 export enum Theme {

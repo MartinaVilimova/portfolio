@@ -23,6 +23,7 @@ export const getAnimationOpen = (): string => {
 	return str
 }
 
+//@TODO: later to solve the retroactive effect of the navbar
 const animationItemClose = (item: number, delay: number) => `
 	&:nth-child(${item - 1}) {
 	  animation: movedY 1s ease forwards;

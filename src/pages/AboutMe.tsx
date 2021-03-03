@@ -1,8 +1,11 @@
 import React from 'react'
-import Content2Columns from '../components/Content2Columns'
+import ContentColumns, {
+	NumberColumns,
+	NumberColumnsIpad,
+} from '../components/ContentColumns'
 import ContentWrapper from '../components/ContentWrapper'
-import Picture from '../components/Picture'
 import Title from '../components/Title'
+import AboutMeText from '../features/AboutMetext'
 import Languages from '../features/Languages'
 import NavBar from '../features/NavBar'
 import SettingsBox from '../features/Settings'
@@ -13,10 +16,13 @@ const AboutMe: React.FC = () => {
 		<>
 			<NavBar />
 			<ContentWrapper>
-				<Title bigTitle='About Me' smallTitle='About Me' />
-				<Content2Columns>
-					<Picture />
-				</Content2Columns>
+				<Title bigTitle="Něco o mně" smallTitle="Něco o mně" />
+				<ContentColumns
+					columns={NumberColumns.Columns2}
+					columnsIpad={NumberColumnsIpad.Columus1}
+				>
+					<AboutMeText />
+				</ContentColumns>
 			</ContentWrapper>
 			<SettingsBox />
 			<SocialIcons />

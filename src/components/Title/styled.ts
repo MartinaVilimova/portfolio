@@ -17,4 +17,8 @@ export const BigTitle = styled.div`
 			: theme.bg.shadowBlack};
 	position: relative;
 	top: 0.3em;
+
+	@media (max-width: ${MediaQueries.SmallerIpad}) {
+		font-size: 3em;
+	}
 `
