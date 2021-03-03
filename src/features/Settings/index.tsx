@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
-import { Color, Theme, useThemeControl } from '../Theme'
+import { Color, useThemeControl } from '../Theme'
+import { Theme } from '../../themes'
 import Toggle from '../../components/Toggle'
 import { ArrowLeft } from '@styled-icons/feather'
 import {

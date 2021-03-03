@@ -5,7 +5,13 @@ export enum MediaQueries {
 	Ipad = '65em',
 }
 
+export enum Theme {
+	Dark = 'Dark',
+	Light = 'Light',
+}
+
 export const LightTheme: DefaultTheme = {
+	selectedTheme: Theme.Light,
 	bg: {
 		primary: '#f1f3f6',
 		shadowWhite: '#fafafa',
@@ -20,6 +26,7 @@ export const LightTheme: DefaultTheme = {
 }
 
 export const DarkTheme: DefaultTheme = {
+	selectedTheme: Theme.Dark,
 	bg: {
 		primary: '#2c2d30',
 		shadowWhite: '#3d3d3d',
