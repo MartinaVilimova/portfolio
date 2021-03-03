@@ -11,10 +11,11 @@ export const Button = styled.button`
 	border: 1px solid ${({ theme }) => theme.bg.primary};
 	box-shadow: 0.3em 0.3em 0.3em ${({ theme }) => theme.bg.shadowBlack},
 		-0.3em -0.3em 0.3em ${({ theme }) => theme.bg.shadowWhite};
+	cursor: pointer;
 	outline: none;
 
 	&:hover {
-		color: ${({ theme }) => theme.text.grey};
+		color: ${({ theme }) => theme.text.primary};
 	}
 
 	&:active {

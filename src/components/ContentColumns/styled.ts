@@ -1,12 +1,11 @@
 import styled from 'styled-components'
 import { MediaQueries } from '../../themes'
 
-export const Wrapper = styled.section`
+export const Wrapper = styled.section<{ quantity: string }>`
 	display: grid;
-	background-color: pink;
 	width: 100%;
 	height: 100%;
-	grid-template-columns: 1fr 1fr;
+	grid-template-columns: ${({ quantity }) => quantity};
 
 	@media (max-width: ${MediaQueries.Desktop}) {
 		grid-template-columns: 1fr 1fr;

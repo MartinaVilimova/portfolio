@@ -71,6 +71,7 @@ export const Burger = styled.section<{ open: boolean }>`
 		flex-direction: column;
 		justify-content: center;
 		align-items: flex-end;
+		cursor: pointer;
 
 		& > div {
 			width: 1.8em;

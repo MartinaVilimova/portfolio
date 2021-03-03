@@ -9,7 +9,11 @@ export const Wrapper = styled.section`
 	right: 0;
 
 	@media (max-width: ${MediaQueries.Ipad}) {
-		display: none;
+		position: fixed;
+		top: 1em;
+		right: 4em;
+		z-index: 999;
+		height: 2.5em;
 	}
 `
 
@@ -19,6 +23,12 @@ export const Language = styled.span`
 	color: ${({ theme }) => theme.text.primary};
 	position: relative;
 	cursor: pointer;
+
+	@media (max-width: ${MediaQueries.Ipad}) {
+		&:active {
+			color: ${({ theme }) => theme.text.colorful};
+		}
+	}
 
 	&:before {
 		content: '';
@@ -35,5 +45,9 @@ export const Language = styled.span`
 	&:hover:before {
 		visibility: visible;
 		width: 100%;
+
+		@media (max-width: ${MediaQueries.Ipad}) {
+			width: 0;
+		}
 	}
 `
