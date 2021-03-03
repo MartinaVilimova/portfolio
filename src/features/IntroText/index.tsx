@@ -14,7 +14,7 @@ const IntroText: React.FC = () => {
 				Martina <ColorfulText>Vilímová</ColorfulText>
 			</StyledH1>
 			<StyledH4>
-				<ColorfulText>Pracuji s</ColorfulText>{' '}
+				<ColorfulText>Pracuji s </ColorfulText>
 				<Typed
 					strings={[
 						'HMTL',

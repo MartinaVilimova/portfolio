@@ -3,7 +3,7 @@ import { MediaQueries } from '../../themes'
 
 export const Wrapper = styled.section`
 	display: flex;
-	position: absolute;
+	position: fixed;
 	padding: 0 1em 0.5em 0;
 	bottom: 0;
 	right: 0;

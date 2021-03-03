@@ -2,18 +2,14 @@ import React from 'react'
 import { Wrapper } from './styled'
 
 export enum NumberColumns {
+	Columns1 = '1fr',
 	Columns2 = '1fr 1fr',
-	Columus3 = '1fr 1fr 1fr',
-}
-
-export enum NumberColumnsIpad {
-	Columns2 = '1fr 1fr',
-	Columus1 = '1fr',
+	Columns3 = '1fr 1fr 1fr',
 }
 
 type Props = {
 	columns: NumberColumns
-	columnsIpad: NumberColumnsIpad
+	columnsIpad: NumberColumns
 }
 
 const ContentColumns: React.FC<Props> = ({

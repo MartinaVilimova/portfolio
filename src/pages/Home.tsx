@@ -1,8 +1,5 @@
 import React from 'react'
-import ContentColumns, {
-	NumberColumns,
-	NumberColumnsIpad,
-} from '../components/ContentColumns'
+import ContentColumns, { NumberColumns } from '../components/ContentColumns'
 import ContentWrapper from '../components/ContentWrapper'
 import ProfilePhoto from '../components/ProfilePhoto'
 import IntroText from '../features/IntroText'
@@ -18,7 +15,7 @@ const Home: React.FC = () => {
 			<ContentWrapper>
 				<ContentColumns
 					columns={NumberColumns.Columns2}
-					columnsIpad={NumberColumnsIpad.Columus1}
+					columnsIpad={NumberColumns.Columns1}
 				>
 					<IntroText />
 					<ProfilePhoto />

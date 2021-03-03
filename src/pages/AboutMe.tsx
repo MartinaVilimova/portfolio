@@ -1,9 +1,7 @@
 import React from 'react'
-import ContentColumns, {
-	NumberColumns,
-	NumberColumnsIpad,
-} from '../components/ContentColumns'
+import ContentColumns, { NumberColumns } from '../components/ContentColumns'
 import ContentWrapper from '../components/ContentWrapper'
+import Picture from '../components/Picture'
 import Title from '../components/Title'
 import AboutMeText from '../features/AboutMetext'
 import Languages from '../features/Languages'
@@ -19,8 +17,9 @@ const AboutMe: React.FC = () => {
 				<Title bigTitle="O mně" smallTitle="O mně" />
 				<ContentColumns
 					columns={NumberColumns.Columns2}
-					columnsIpad={NumberColumnsIpad.Columus1}
+					columnsIpad={NumberColumns.Columns1}
 				>
+					<Picture />
 					<AboutMeText />
 				</ContentColumns>
 			</ContentWrapper>
