@@ -2,6 +2,7 @@ import 'styled-components'
 
 declare module 'styled-components' {
 	export interface DefaultTheme {
+		readonly selectedTheme: Theme
 		readonly bg: {
 			readonly primary: string
 			readonly shadowWhite: string
