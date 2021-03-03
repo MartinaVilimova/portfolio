@@ -1,5 +1,8 @@
 import React from 'react'
-import ContentColumns, { NumberColumns } from '../components/ContentColumns'
+import ContentColumns, {
+	NumberColumns,
+	NumberColumnsIpad,
+} from '../components/ContentColumns'
 import ContentWrapper from '../components/ContentWrapper'
 import ProfilePhoto from '../components/ProfilePhoto'
 import IntroText from '../features/IntroText'
@@ -13,7 +16,10 @@ const Home: React.FC = () => {
 		<>
 			<NavBar />
 			<ContentWrapper>
-				<ContentColumns columns={NumberColumns.Columns2}>
+				<ContentColumns
+					columns={NumberColumns.Columns2}
+					columnsIpad={NumberColumnsIpad.Columus1}
+				>
 					<IntroText />
 					<ProfilePhoto />
 				</ContentColumns>

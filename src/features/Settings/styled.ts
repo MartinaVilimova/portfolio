@@ -105,6 +105,8 @@ export const HiddenBox = styled.article`
 	height: 3em;
 	float: right;
 	background-color: ${({ theme }) => theme.bg.primary};
+	border-top-right-radius: 1em;
+	border-bottom-right-radius: 1em;
 `
 
 export const IconBox = styled.article`

@@ -6,12 +6,24 @@ export enum NumberColumns {
 	Columus3 = '1fr 1fr 1fr',
 }
 
-type Props = {
-	columns: NumberColumns
+export enum NumberColumnsIpad {
+	Columns2 = '1fr 1fr',
+	Columus1 = '1fr',
 }
 
-const ContentColumns: React.FC<Props> = ({ columns, children }) => (
-	<Wrapper quantity={columns}>{children}</Wrapper>
+type Props = {
+	columns: NumberColumns
+	columnsIpad: NumberColumnsIpad
+}
+
+const ContentColumns: React.FC<Props> = ({
+	columns,
+	columnsIpad,
+	children,
+}) => (
+	<Wrapper quantity={columns} quantityIpad={columnsIpad}>
+		{children}
+	</Wrapper>
 )
 
 export default ContentColumns

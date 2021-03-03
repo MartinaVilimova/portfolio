@@ -1,10 +1,12 @@
 import styled from 'styled-components'
 import { MediaQueries } from '../../themes'
 
-export const Wrapper = styled.section<{ quantity: string }>`
+export const Wrapper = styled.section<{
+	quantity: string
+	quantityIpad: string
+}>`
 	display: grid;
 	width: 100%;
-	height: 100%;
 	grid-template-columns: ${({ quantity }) => quantity};
 
 	@media (max-width: ${MediaQueries.Desktop}) {
@@ -12,6 +14,6 @@ export const Wrapper = styled.section<{ quantity: string }>`
 	}
 
 	@media (max-width: ${MediaQueries.Ipad}) {
-		grid-template-columns: 1fr;
+		grid-template-columns: ${({ quantityIpad }) => quantityIpad};
 	}
 `

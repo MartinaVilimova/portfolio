@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { MediaQueries } from '../../themes'
 
 export const Button = styled.button`
 	display: inline;
@@ -13,6 +14,10 @@ export const Button = styled.button`
 		-0.3em -0.3em 0.3em ${({ theme }) => theme.bg.shadowWhite};
 	cursor: pointer;
 	outline: none;
+
+	@media (max-width: ${MediaQueries.SmallerIpad}) {
+		padding: 0.7em 1em;
+	}
 
 	&:hover {
 		color: ${({ theme }) => theme.text.primary};
