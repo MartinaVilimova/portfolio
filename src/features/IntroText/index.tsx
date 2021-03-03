@@ -1,10 +1,11 @@
 import React from 'react'
-import { ColorfulText } from '../../styled/ColorfulText/styled'
-import { Wrapper,  Subtitle } from './styled'
 import Typed from 'react-typed'
+import { ColorfulText } from '../../styled/ColorfulText/styled'
+import { Wrapper } from './styled'
 import { Button } from '../../components/Button/styled'
 import { StyledLink } from '../../styled/StyledLink/styled'
 import { StyledH1, StyledH4 } from '../../styled/StyledTitle/styled'
+import { Paragraph } from '../../styled/StyledParagraph/styled'
 
 const IntroText: React.FC = () => {
 	return (
@@ -29,11 +30,11 @@ const IntroText: React.FC = () => {
 					loop
 				></Typed>
 			</StyledH4>
-			<Subtitle>
+			<Paragraph>
 				Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Mauris
 				dolor felis, sagittis at, luctus sed, aliquam non, tellus. Etiam
 				egestas wisi a erat. Mauris metus. Quisque porta.
-			</Subtitle>
+			</Paragraph>
 			<StyledLink to="/">
 				<Button>Stáhnout životopis</Button>
 			</StyledLink>
