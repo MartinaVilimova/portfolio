@@ -34,3 +34,8 @@ export const StyledH4 = styled.h4`
 	font-size: 1.5rem;
 	padding-bottom: 0.5em;
 `
+
+export const StyledH6 = styled.h6`
+	font-weight: 500;
+	font-size: 1rem;
+`

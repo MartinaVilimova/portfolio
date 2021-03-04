@@ -7,6 +7,16 @@ import { Article, WrapperItems } from './styled'
 const ResumeContent: React.FC = () => {
     return (
         <>
+                    <Article>
+                        <StyledH3>Vzdělání</StyledH3>
+                        <WrapperItems>
+                        </WrapperItems>
+                    </Article>
+                    <Article>
+                        <StyledH3>Pracovní zkušenosti</StyledH3>
+                        <WrapperItems>
+                        </WrapperItems>
+                    </Article>
 		</>
     )
 }
