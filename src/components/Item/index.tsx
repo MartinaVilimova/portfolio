@@ -1,24 +1,30 @@
 import React from 'react'
 import { Paragraph, ResumeTime } from '../../styled/StyledParagraph/styled'
 import { StyledH6 } from '../../styled/StyledTitle/styled'
+import { BallScale } from '../AnimationShapes/BallScale/styled'
+import { LineY } from '../AnimationShapes/LineY/styled'
 import { DataItems } from './data'
-import { Wrapper, Animation} from './styled'
+import { Wrapper, Animation } from './styled'
 
 type Props = {
-    data: DataItems[]
+	data: DataItems[]
 }
 
-const Item: React.FC<Props> = ({data}) => (
-    <>
-        {data.map((text, index) => (
-            <Wrapper key={index}>
-                <Animation></Animation>
-                <StyledH6>{text.title}</StyledH6>
-                <ResumeTime>{text.time}</ResumeTime>
-                <Paragraph>{text.paragraph}</Paragraph>
-            </Wrapper>
-        ))}
-    </>
+//@TODO: later add an animation to slowly display each item
+const Item: React.FC<Props> = ({ data }) => (
+	<>
+		{data.map((text, index) => (
+			<Wrapper key={index}>
+				<Animation>
+					<BallScale />
+					<LineY />
+				</Animation>
+				<StyledH6>{text.title}</StyledH6>
+				<ResumeTime>{text.time}</ResumeTime>
+				<Paragraph>{text.paragraph}</Paragraph>
+			</Wrapper>
+		))}
+	</>
 )
 
 export default Item

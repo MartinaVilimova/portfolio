@@ -38,5 +38,5 @@ export const StyledH4 = styled.h4`
 
 export const StyledH6 = styled.h6`
 	font-weight: 500;
-	font-size: 1rem;
+	font-size: 1.1rem;
 `
