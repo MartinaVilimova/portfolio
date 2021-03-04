@@ -13,7 +13,7 @@ export const GlobalStyles = createGlobalStyle`
 		background-color: ${({ theme }) => theme.bg.primary};
 	}
 
-	h1, h2, h3, h4, h6 {
+	h1, h2, h3, h4, h6, p {
     margin: 0;
   }
 

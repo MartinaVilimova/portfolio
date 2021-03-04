@@ -5,6 +5,7 @@ export const Wrapper = styled.section`
 	display: flex;
 	flex-direction: column;
 	width: 100%;
+	position: relative;
 `
 
 export const BigTitle = styled.div`
@@ -16,7 +17,7 @@ export const BigTitle = styled.div`
 			? theme.bg.shadowWhite
 			: theme.bg.shadowBlack};
 	position: relative;
-	top: 0.3em;
+	top: -0.4em;
 
 	@media (max-width: ${MediaQueries.SmallerIpad}) {
 		font-size: 3em;

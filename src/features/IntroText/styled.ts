@@ -4,7 +4,6 @@ import { MediaQueries } from '../../themes'
 export const Wrapper = styled.article`
 	display: flex;
 	justify-content: center;
-	align-items: center;
 	flex-direction: column;
 	width: 100%;
 	height: 100%;
