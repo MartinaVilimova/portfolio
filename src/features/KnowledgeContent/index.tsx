@@ -15,13 +15,13 @@ const KnowledgeContent: React.FC = () => (
 			šanci. Začala jsem základy a postupně na to nabalovala další
 			znalosti. Učila jsem se z informací získaných na internetu, zašla na
 			pár <a href="https://www.czechitas.cz/cs/">kurzů</a>, dělala
-			projekty s přáteli nebo jsem si hrála{' '}
+			projekty s přáteli nebo jsem si hrála&nbsp;
 			<a href="https://codecombat.com/play">CodeCombat</a>.
 		</Paragraph>
 		<BlockAnchors>
 			<StyledH6>Co jsem se naučila</StyledH6>
-			{dataKnowledge.map((text) => (
-				<Link key={text.id} to={text.id} smooth={true} offset={-85}>
+			{dataKnowledge.map((text, index) => (
+				<Link key={index} to={text.title} smooth={true} offset={-85}>
 					{text.title}
 				</Link>
 			))}
