@@ -1,19 +1,20 @@
 import styled from 'styled-components'
+import { UnitsData } from '.'
 import { MediaQueries } from '../../themes'
 
-export const Wrapper = styled.main`
+export const Wrapper = styled.main<{ value: UnitsData }>`
 	display: flex;
 	flex-direction: column;
 	margin: auto;
 	justify-content: center;
 	align-items: center;
 	max-width: 60%;
-	height: 90vh;
+	height: ${({ value }) => value};
 	padding-left: 3em;
 
 	@media (max-width: ${MediaQueries.Desktop}) {
 		max-width: 80%;
-		height: 90vh;
+		height: ${({ value }) => value};
 	}
 
 	@media (max-width: ${MediaQueries.Ipad}) {

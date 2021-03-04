@@ -7,9 +7,11 @@ import { GlobalStyles } from './styled'
 import Home from '../../pages/Home'
 import AboutMe from '../../pages/AboutMe'
 import Resume from '../../pages/Resume'
+import Knowledge from '../../pages/Knowledge'
 
 const Routes: React.FC = () => (
 	<Switch>
+		<Route path="/knowledge" component={Knowledge} />
 		<Route path="/resume" component={Resume} />
 		<Route path="/about-me" component={AboutMe} />
 		<Route path="/" component={Home} />
