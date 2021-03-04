@@ -13,14 +13,7 @@ export const GlobalStyles = createGlobalStyle`
 		background-color: ${({ theme }) => theme.bg.primary};
 	}
 
-	h1, h2, h4 {
-    margin: 0;
-  }
-
-  h3 {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 300;
-    font-size: 1.75rem;
+	h1, h2, h3, h4, h6 {
     margin: 0;
   }
 
