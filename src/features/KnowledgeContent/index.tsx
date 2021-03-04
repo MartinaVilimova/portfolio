@@ -1,9 +1,10 @@
 import React from 'react'
+import { Link } from 'react-scroll'
 import Item from '../../components/Item'
 import { dataKnowledge } from '../../components/Item/data'
 import { Paragraph } from '../../styled/StyledParagraph/styled'
 import { StyledH3 } from '../../styled/StyledTitle/styled'
-import { TextAnchor } from './styled'
+import { BlockAnchors } from './styled'
 
 const KnowledgeContent: React.FC = () => (
 	<>
@@ -15,7 +16,11 @@ const KnowledgeContent: React.FC = () => (
 			znalosti. Učila jsem se z informací získaných na internetu, zašla na
 			pár kurzů, dělala projekty s přáteli nebo jsem si hrála CodeCombat.
 		</Paragraph>
-		<TextAnchor></TextAnchor>
+		{dataKnowledge.map((text) => (
+			<BlockAnchors key={text.id}>
+				<Link to={text.id} smooth={true} offset={-85} >{text.title}</Link>
+			</BlockAnchors>
+		))}
 		<Item data={dataKnowledge} />
 	</>
 )
