@@ -1,6 +1,6 @@
 import React from 'react'
 import ContentColumns, { NumberColumns } from '../components/ContentColumns'
-import ContentWrapper from '../components/ContentWrapper'
+import ContentWrapper, { UnitsData } from '../components/ContentWrapper'
 import Title from '../components/Title'
 import Languages from '../features/Languages'
 import NavBar from '../features/NavBar'
@@ -11,7 +11,7 @@ import SocialIcons from '../features/SocialIcons'
 const Resume: React.FC = () => (
 	<>
 		<NavBar />
-		<ContentWrapper>
+		<ContentWrapper units={UnitsData.SmallPage}>
 			<Title bigTitle="Životopis" smallTitle="Životopis" />
 			<ContentColumns
 				columns={NumberColumns.Columns2}

@@ -1,6 +1,6 @@
 import React from 'react'
 import ContentColumns, { NumberColumns } from '../components/ContentColumns'
-import ContentWrapper from '../components/ContentWrapper'
+import ContentWrapper, { UnitsData } from '../components/ContentWrapper'
 import ProfilePhoto from '../components/ProfilePhoto'
 import IntroText from '../features/IntroText'
 import Languages from '../features/Languages'
@@ -11,7 +11,7 @@ import SocialIcons from '../features/SocialIcons'
 const Home: React.FC = () => (
 	<>
 		<NavBar />
-		<ContentWrapper>
+		<ContentWrapper units={UnitsData.SmallPage}>
 			<ContentColumns
 				columns={NumberColumns.Columns2}
 				columnsIpad={NumberColumns.Columns1}

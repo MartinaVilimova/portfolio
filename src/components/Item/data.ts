@@ -27,3 +27,60 @@ export const dataExperience: DataItems[] = [
 			'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio nisi molestias officiis alias recusandae rem quos similique. Esse, pariatur. Architecto soluta perferendis eum? Accusantium similique laudantium quidem delectus non? Iusto.',
 	},
 ]
+
+export const dataKnowledge: DataItems[] = [
+	{
+		title: 'React Form',
+		time: '/nor 2021',
+		paragraph:
+			'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio nisi molestias officiis alias recusandae rem quos similique. Esse, pariatur. Architecto soluta perferendis eum? Accusantium similique laudantium quidem delectus non? Iusto.',
+	},
+	{
+		title: 'React',
+		time: 'Leden 2021',
+		paragraph:
+			'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio nisi molestias officiis alias recusandae rem quos similique. Esse, pariatur. Architecto soluta perferendis eum? Accusantium similique laudantium quidem delectus non? Iusto.',
+	},
+	{
+		title: 'React Router Dom',
+		time: 'Leden 2021',
+		paragraph:
+			'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio nisi molestias officiis alias recusandae rem quos similique. Esse, pariatur. Architecto soluta perferendis eum? Accusantium similique laudantium quidem delectus non? Iusto.',
+	},
+	{
+		title: 'WordPress',
+		time: 'Říjen 2020',
+		paragraph:
+			'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio nisi molestias officiis alias recusandae rem quos similique. Esse, pariatur. Architecto soluta perferendis eum? Accusantium similique laudantium quidem delectus non? Iusto.',
+	},
+	{
+		title: 'Boostrap',
+		time: 'Září 2020',
+		paragraph:
+			'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio nisi molestias officiis alias recusandae rem quos similique. Esse, pariatur. Architecto soluta perferendis eum? Accusantium similique laudantium quidem delectus non? Iusto.',
+	},
+	{
+		title: 'Czechitas Web od A do Z 2',
+		time: 'Srpen 2020',
+		paragraph:
+			'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio nisi molestias officiis alias recusandae rem quos similique. Esse, pariatur. Architecto soluta perferendis eum? Accusantium similique laudantium quidem delectus non? Iusto.',
+	},
+	{
+		title: 'Vidia Design',
+		time: 'Listopad 2019',
+		paragraph:
+			'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio nisi molestias officiis alias recusandae rem quos similique. Esse, pariatur. Architecto soluta perferendis eum? Accusantium similique laudantium quidem delectus non? Iusto.',
+	},
+	{
+		title: 'CSS',
+		time: 'Červenec 2019',
+		paragraph:
+			'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio nisi molestias officiis alias recusandae rem quos similique. Esse, pariatur. Architecto soluta perferendis eum? Accusantium similique laudantium quidem delectus non? Iusto.',
+	},
+	{
+		title: 'Html',
+		time: 'Červenec 2019',
+		paragraph:
+			'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio nisi molestias officiis alias recusandae rem quos similique. Esse, pariatur. Architecto soluta perferendis eum? Accusantium similique laudantium quidem delectus non? Iusto.',
+	},
+]

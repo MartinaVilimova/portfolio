@@ -1,6 +1,6 @@
 import React from 'react'
 import ContentColumns, { NumberColumns } from '../components/ContentColumns'
-import ContentWrapper from '../components/ContentWrapper'
+import ContentWrapper, { UnitsData } from '../components/ContentWrapper'
 import Picture from '../components/Picture'
 import Title from '../components/Title'
 import AboutMeText from '../features/AboutMeText'
@@ -12,7 +12,7 @@ import SocialIcons from '../features/SocialIcons'
 const AboutMe: React.FC = () => (
 	<>
 		<NavBar />
-		<ContentWrapper>
+		<ContentWrapper units={UnitsData.SmallPage}>
 			<Title bigTitle="O mně" smallTitle="O mně" />
 			<ContentColumns
 				columns={NumberColumns.Columns2}
