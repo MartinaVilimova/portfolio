@@ -11,3 +11,10 @@ export const Paragraph = styled.p`
 		width: 95%;
 	}
 `
+
+export const ResumeTime = styled.p`
+	font-size: 1em;
+	margin: 0;
+	color: ${({ theme }) => theme.text.colorful};
+	background-color: blue;
+`
