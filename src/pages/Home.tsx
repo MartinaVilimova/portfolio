@@ -8,24 +8,22 @@ import NavBar from '../features/NavBar'
 import SettingsBox from '../features/Settings'
 import SocialIcons from '../features/SocialIcons'
 
-const Home: React.FC = () => {
-	return (
-		<>
-			<NavBar />
-			<ContentWrapper>
-				<ContentColumns
-					columns={NumberColumns.Columns2}
-					columnsIpad={NumberColumns.Columns1}
-				>
-					<IntroText />
-					<ProfilePhoto />
-				</ContentColumns>
-			</ContentWrapper>
-			<SettingsBox />
-			<SocialIcons />
-			<Languages />
-		</>
-	)
-}
+const Home: React.FC = () => (
+	<>
+		<NavBar />
+		<ContentWrapper>
+			<ContentColumns
+				columns={NumberColumns.Columns2}
+				columnsIpad={NumberColumns.Columns1}
+			>
+				<IntroText />
+				<ProfilePhoto />
+			</ContentColumns>
+		</ContentWrapper>
+		<SettingsBox />
+		<SocialIcons />
+		<Languages />
+	</>
+)
 
 export default Home

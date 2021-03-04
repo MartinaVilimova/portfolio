@@ -8,24 +8,22 @@ import ResumeContent from '../features/ResumeContent'
 import SettingsBox from '../features/Settings'
 import SocialIcons from '../features/SocialIcons'
 
-const Resume: React.FC = () => {
-	return (
-		<>
-			<NavBar />
-			<ContentWrapper>
-				<Title bigTitle="Životopis" smallTitle="Životopis" />
-				<ContentColumns
-					columns={NumberColumns.Columns2}
-					columnsIpad={NumberColumns.Columns1}
-				>
-					<ResumeContent />
-				</ContentColumns>
-			</ContentWrapper>
-			<SettingsBox />
-			<SocialIcons />
-			<Languages />
-		</>
-	)
-}
+const Resume: React.FC = () => (
+	<>
+		<NavBar />
+		<ContentWrapper>
+			<Title bigTitle="Životopis" smallTitle="Životopis" />
+			<ContentColumns
+				columns={NumberColumns.Columns2}
+				columnsIpad={NumberColumns.Columns1}
+			>
+				<ResumeContent />
+			</ContentColumns>
+		</ContentWrapper>
+		<SettingsBox />
+		<SocialIcons />
+		<Languages />
+	</>
+)
 
 export default Resume
