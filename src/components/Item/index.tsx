@@ -14,13 +14,13 @@ type Props = {
 //@TODO: later add an animation to slowly display each item
 const Item: React.FC<Props> = ({ data }) => (
 	<>
-		{data.map((text) => (
-			<Wrapper key={text.id}>
+		{data.map((text, index) => (
+			<Wrapper key={index}>
 				<Animation>
 					<BallScale />
 					<LineY />
 				</Animation>
-				<Element name={text.id}>
+				<Element name={text.title}>
 					<StyledH6>{text.title}</StyledH6>
 				</Element>
 				<ResumeTime>{text.time}</ResumeTime>
