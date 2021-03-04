@@ -1,6 +1,7 @@
 import React from 'react'
 import ContentWrapper, { UnitsData } from '../components/ContentWrapper'
 import Title from '../components/Title'
+import ButtonScrollTop from '../features/ButtonScrollTop'
 import KnowledgeContent from '../features/KnowledgeContent'
 import Languages from '../features/Languages'
 import NavBar from '../features/NavBar'
@@ -16,6 +17,7 @@ const Knowledge: React.FC = () => (
 		</ContentWrapper>
 		<SettingsBox />
 		<SocialIcons />
+		<ButtonScrollTop />
 		<Languages />
 	</>
 )

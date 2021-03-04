@@ -1,4 +1,5 @@
 import React from 'react'
+import {Element} from 'react-scroll'
 import { Paragraph, ResumeTime } from '../../styled/StyledParagraph/styled'
 import { StyledH6 } from '../../styled/StyledTitle/styled'
 import { BallScale } from '../AnimationShapes/BallScale/styled'
@@ -13,13 +14,14 @@ type Props = {
 //@TODO: later add an animation to slowly display each item
 const Item: React.FC<Props> = ({ data }) => (
 	<>
-		{data.map((text, index) => (
-			<Wrapper key={index}>
+		{data.map((text) => (
+			<Wrapper key={text.id}>
 				<Animation>
 					<BallScale />
 					<LineY />
 				</Animation>
-				<StyledH6>{text.title}</StyledH6>
+				<Element name={text.id}><StyledH6>{text.title}</StyledH6></Element>
+				
 				<ResumeTime>{text.time}</ResumeTime>
 				<Paragraph>{text.paragraph}</Paragraph>
 			</Wrapper>
