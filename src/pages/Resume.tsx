@@ -1,26 +1,24 @@
 import React from 'react'
 import ContentColumns, { NumberColumns } from '../components/ContentColumns'
 import ContentWrapper from '../components/ContentWrapper'
-import Picture from '../components/Picture'
 import Title from '../components/Title'
-import AboutMeText from '../features/AboutMeText'
 import Languages from '../features/Languages'
 import NavBar from '../features/NavBar'
+import ResumeContent from '../features/ResumeContent'
 import SettingsBox from '../features/Settings'
 import SocialIcons from '../features/SocialIcons'
 
-const AboutMe: React.FC = () => {
+const Resume: React.FC = () => {
 	return (
 		<>
 			<NavBar />
 			<ContentWrapper>
-				<Title bigTitle="O mně" smallTitle="O mně" />
+				<Title bigTitle="Životopis" smallTitle="Životopis" />
 				<ContentColumns
 					columns={NumberColumns.Columns2}
 					columnsIpad={NumberColumns.Columns1}
 				>
-					<Picture />
-					<AboutMeText />
+					<ResumeContent />
 				</ContentColumns>
 			</ContentWrapper>
 			<SettingsBox />
@@ -30,4 +28,4 @@ const AboutMe: React.FC = () => {
 	)
 }
 
-export default AboutMe
+export default Resume

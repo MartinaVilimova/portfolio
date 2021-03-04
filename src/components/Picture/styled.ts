@@ -22,7 +22,7 @@ export const Photo = styled.img`
 	width: auto;
 	height: 90%;
 	object-fit: cover;
-	border-radius: 1em;
+	border-radius: 1.5em;
 	box-shadow: 0.5em 0.5em 0.5em ${({ theme }) => theme.bg.shadowBlack},
 		-0.5em -0.5em 0.5em ${({ theme }) => theme.bg.shadowWhite};
 
