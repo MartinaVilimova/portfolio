@@ -13,13 +13,14 @@ export const StyledH1 = styled.h1`
 `
 
 export const StyledH2 = styled.h2`
+	width: 100%;
+	position: absolute;
+	top: 0.4em;
 	font-weight: 900;
 	font-size: 2rem;
 	color: ${({ theme }) => theme.text.colorful};
 	text-align: center;
 	margin: 0;
-	position: relative;
-	top: -0.9em;
 `
 
 export const StyledH3 = styled.h3`
@@ -32,7 +33,7 @@ export const StyledH3 = styled.h3`
 export const StyledH4 = styled.h4`
 	font-weight: 300;
 	font-size: 1.5rem;
-	padding-bottom: 0.5em;
+	padding-bottom: 1em;
 `
 
 export const StyledH6 = styled.h6`

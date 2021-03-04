@@ -10,11 +10,13 @@ const ResumeContent: React.FC = () => {
                     <Article>
                         <StyledH3>Vzdělání</StyledH3>
                         <WrapperItems>
+                            <Item data={dataEducation} />
                         </WrapperItems>
                     </Article>
                     <Article>
                         <StyledH3>Pracovní zkušenosti</StyledH3>
                         <WrapperItems>
+                            <Item data={dataExperience} />
                         </WrapperItems>
                     </Article>
 		</>
