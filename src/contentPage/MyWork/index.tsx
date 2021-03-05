@@ -19,6 +19,9 @@ const ContentMyWork: React.FC = () => {
                 <ItemMyWork />
                 <ItemMyWork />
                 <ItemMyWork />
+                <ItemMyWork />
+                <ItemMyWork />
+                <ItemMyWork />
             </Columns>
         </>
     )
