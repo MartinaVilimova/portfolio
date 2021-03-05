@@ -3,7 +3,7 @@ import { Link } from 'react-scroll'
 import Item from '../../components/Item'
 import { dataKnowledge } from '../../components/Item/data'
 import { Paragraph } from '../../styled/StyledParagraph/styled'
-import { StyledH3 } from '../../styled/StyledTitle/styled'
+import { StyledH3, StyledH6 } from '../../styled/StyledTitle/styled'
 import { BlockAnchors } from './styled'
 
 const KnowledgeContent: React.FC = () => (
@@ -14,13 +14,18 @@ const KnowledgeContent: React.FC = () => (
 			Přesto mě tento obor natolik nadchl, že jsem se rozhodla tomu dát
 			šanci. Začala jsem základy a postupně na to nabalovala další
 			znalosti. Učila jsem se z informací získaných na internetu, zašla na
-			pár kurzů, dělala projekty s přáteli nebo jsem si hrála CodeCombat.
+			pár <a href="https://www.czechitas.cz/cs/">kurzů</a>, dělala
+			projekty s přáteli nebo jsem si hrála{' '}
+			<a href="https://codecombat.com/play">CodeCombat</a>.
 		</Paragraph>
-		{dataKnowledge.map((text) => (
-			<BlockAnchors key={text.id}>
-				<Link to={text.id} smooth={true} offset={-85} >{text.title}</Link>
-			</BlockAnchors>
-		))}
+		<BlockAnchors>
+			<StyledH6>Co jsem se naučila</StyledH6>
+			{dataKnowledge.map((text) => (
+				<Link key={text.id} to={text.id} smooth={true} offset={-85}>
+					{text.title}
+				</Link>
+			))}
+		</BlockAnchors>
 		<Item data={dataKnowledge} />
 	</>
 )

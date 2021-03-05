@@ -1,5 +1,5 @@
 import React from 'react'
-import {Element} from 'react-scroll'
+import { Element } from 'react-scroll'
 import { Paragraph, ResumeTime } from '../../styled/StyledParagraph/styled'
 import { StyledH6 } from '../../styled/StyledTitle/styled'
 import { BallScale } from '../AnimationShapes/BallScale/styled'
@@ -20,8 +20,9 @@ const Item: React.FC<Props> = ({ data }) => (
 					<BallScale />
 					<LineY />
 				</Animation>
-				<Element name={text.id}><StyledH6>{text.title}</StyledH6></Element>
-				
+				<Element name={text.id}>
+					<StyledH6>{text.title}</StyledH6>
+				</Element>
 				<ResumeTime>{text.time}</ResumeTime>
 				<Paragraph>{text.paragraph}</Paragraph>
 			</Wrapper>

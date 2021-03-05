@@ -8,13 +8,9 @@ const NavBar: React.FC = () => {
 	const [show, handleShow] = useState(false)
 
 	useEffect(() => {
-		window.addEventListener('scroll', () => {
-			if (window.scrollY > 1) {
-				handleShow(true)
-			} else {
-				handleShow(false)
-			}
-		})
+		window.addEventListener('scroll', () =>
+			window.scrollY > 1 ? handleShow(true) : handleShow(false)
+		)
 	}, [])
 
 	return (
