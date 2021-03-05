@@ -5,26 +5,21 @@ import ItemMyWork from '../../components/ItemMyWork'
 import { WrapperButtons } from './styled'
 
 const ContentMyWork: React.FC = () => {
-    return (
-        <>
-            <WrapperButtons>
-                <SmallButton>Všechno</SmallButton>
-                <SmallButton>Jen má práce</SmallButton>
-                <SmallButton>Spolupráce</SmallButton>
-            </WrapperButtons>
-            <Columns
+	return (
+		<>
+			<WrapperButtons>
+				<SmallButton>Všechno</SmallButton>
+				<SmallButton>Jen má práce</SmallButton>
+				<SmallButton>Spolupráce</SmallButton>
+			</WrapperButtons>
+			<Columns
 				columns={NumberColumns.Columns3}
 				columnsIpad={NumberColumns.Columns1}
 			>
-                <ItemMyWork />
-                <ItemMyWork />
-                <ItemMyWork />
-                <ItemMyWork />
-                <ItemMyWork />
-                <ItemMyWork />
-            </Columns>
-        </>
-    )
+				<ItemMyWork />
+			</Columns>
+		</>
+	)
 }
 
 export default ContentMyWork
