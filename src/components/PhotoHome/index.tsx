@@ -9,7 +9,7 @@ enum WayOfAnimation {
 	Ball2 = 'ball2',
 }
 
-const ProfilePhoto: React.FC = () => (
+const PhotoHome: React.FC = () => (
 	<Wrapper>
 		<ContentProfilePhoto>
 			<BallY ballAnimation={WayOfAnimation.Ball1} />
@@ -22,4 +22,4 @@ const ProfilePhoto: React.FC = () => (
 	</Wrapper>
 )
 
-export default ProfilePhoto
+export default PhotoHome
