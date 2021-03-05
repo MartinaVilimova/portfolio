@@ -5,7 +5,7 @@ import { Color } from '../Theme'
 export const Wrapper = styled.section<{ click: boolean }>`
 	width: 14em;
 	height: 16em;
-	position: absolute;
+	position: fixed;
 	z-index: 998;
 	top: 5em;
 	left: -11.7em;
