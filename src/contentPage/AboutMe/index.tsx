@@ -11,7 +11,7 @@ import {
 import { Button } from '../../components/Button/styled'
 import { StyledLink } from '../../styled/StyledLink/styled'
 import { StyledH3 } from '../../styled/StyledTitle/styled'
-import ContentColumns, { NumberColumns } from '../../components/ContentColumns'
+import Columns, { NumberColumns } from '../../components/Columns'
 import { Paragraph } from '../../styled/StyledParagraph/styled'
 
 const AboutMeText: React.FC = () => (
@@ -19,7 +19,7 @@ const AboutMeText: React.FC = () => (
 		<StyledH3>
 			<SmallText>Junior</SmallText> <ColorfulText>Front-end</ColorfulText>
 		</StyledH3>
-		<ContentColumns
+		<Columns
 			columns={NumberColumns.Columns2}
 			columnsIpad={NumberColumns.Columns2}
 		>
@@ -45,7 +45,7 @@ const AboutMeText: React.FC = () => (
 					Zaměstnaná:<Text> freelancer</Text>
 				</Name>
 			</PersonalInfo1>
-		</ContentColumns>
+		</Columns>
 		<Paragraph>
 			Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas,
 			aliquid eius repellat fugit sunt assumenda deleniti blanditiis!

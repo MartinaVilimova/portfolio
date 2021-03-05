@@ -18,7 +18,7 @@ const Nav: React.FC = () => {
 					<Link to="/knowledge">Znalosti</Link>
 				</NavItem>
 				<NavItem>
-					<Link to="/">Má práce</Link>
+					<Link to="/my-work">Má práce</Link>
 				</NavItem>
 				<NavItem>
 					<Link to="/">Kontakt</Link>

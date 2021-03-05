@@ -12,14 +12,10 @@ type Props = {
 	columnsIpad: NumberColumns
 }
 
-const ContentColumns: React.FC<Props> = ({
-	columns,
-	columnsIpad,
-	children,
-}) => (
+const Columns: React.FC<Props> = ({ columns, columnsIpad, children }) => (
 	<Wrapper quantity={columns} quantityIpad={columnsIpad}>
 		{children}
 	</Wrapper>
 )
 
-export default ContentColumns
+export default Columns

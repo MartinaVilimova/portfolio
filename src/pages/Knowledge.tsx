@@ -1,8 +1,8 @@
 import React from 'react'
-import ContentWrapper, { UnitsData } from '../components/ContentWrapper'
+import PageWrapper, { UnitsData } from '../components/PageWrapper'
 import Title from '../components/Title'
 import ButtonScrollTop from '../features/ButtonScrollTop'
-import KnowledgeContent from '../features/KnowledgeContent'
+import KnowledgeContent from '../contentPage/Knowledge'
 import Languages from '../features/Languages'
 import NavBar from '../features/NavBar'
 import SettingsBox from '../features/Settings'
@@ -11,10 +11,10 @@ import SocialIcons from '../features/SocialIcons'
 const Knowledge: React.FC = () => (
 	<>
 		<NavBar />
-		<ContentWrapper units={UnitsData.LargePage}>
+		<PageWrapper units={UnitsData.LargePage}>
 			<Title bigTitle="Znalosti" smallTitle="Znalosti" />
 			<KnowledgeContent />
-		</ContentWrapper>
+		</PageWrapper>
 		<SettingsBox />
 		<SocialIcons />
 		<ButtonScrollTop />
