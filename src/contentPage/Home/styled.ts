@@ -12,5 +12,6 @@ export const Wrapper = styled.article`
 	@media (max-width: ${MediaQueries.Ipad}) {
 		order: 2;
 		text-align: center;
+		align-items: center;
 	}
 `

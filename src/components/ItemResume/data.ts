@@ -1,10 +1,10 @@
-export type DataItems = {
+export type DataItemsResume = {
 	title: string
 	time: string
 	paragraph: string
 }
 
-export const dataEducation: DataItems[] = [
+export const dataEducation: DataItemsResume[] = [
 	{
 		title: 'Technická univerzita Liberec',
 		time: '2015 - 2018',
@@ -19,7 +19,7 @@ export const dataEducation: DataItems[] = [
 	},
 ]
 
-export const dataExperience: DataItems[] = [
+export const dataExperience: DataItemsResume[] = [
 	{
 		title: 'Vidia Design',
 		time: '2019',
@@ -28,7 +28,7 @@ export const dataExperience: DataItems[] = [
 	},
 ]
 
-export const dataKnowledge: DataItems[] = [
+export const dataKnowledge: DataItemsResume[] = [
 	{
 		title: 'React Form',
 		time: 'Únor 2021',

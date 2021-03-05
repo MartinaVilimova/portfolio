@@ -4,11 +4,11 @@ import { Paragraph, ResumeTime } from '../../styled/StyledParagraph/styled'
 import { StyledH6 } from '../../styled/StyledTitle/styled'
 import { BallScale } from '../AnimationShapes/BallScale/styled'
 import { LineY } from '../AnimationShapes/LineY/styled'
-import { DataItems } from './data'
+import { DataItemsResume } from './data'
 import { Wrapper, Animation } from './styled'
 
 type Props = {
-	data: DataItems[]
+	data: DataItemsResume[]
 }
 
 //@TODO: later add an animation to slowly display each item

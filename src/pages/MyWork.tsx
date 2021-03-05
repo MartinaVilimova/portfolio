@@ -10,7 +10,7 @@ import SocialIcons from '../features/SocialIcons'
 const MyWork: React.FC = () => (
 	<>
 		<NavBar />
-		<WrapperPages units={UnitsData.SmallPage}>
+		<WrapperPages units={UnitsData.LargePage}>
 			<Title bigTitle="Má práce" smallTitle="Má práce" />
 			<ContentMyWork />
 		</WrapperPages>
