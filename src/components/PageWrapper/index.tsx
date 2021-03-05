@@ -10,8 +10,8 @@ type Props = {
 	units: UnitsData
 }
 
-const ContentWrapper: React.FC<Props> = ({ units, children }) => (
+const PageWrapper: React.FC<Props> = ({ units, children }) => (
 	<Wrapper value={units}>{children}</Wrapper>
 )
 
-export default ContentWrapper
+export default PageWrapper

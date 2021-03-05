@@ -1,8 +1,8 @@
 import React from 'react'
-import ContentColumns, { NumberColumns } from '../components/ContentColumns'
-import ContentWrapper, { UnitsData } from '../components/ContentWrapper'
+import Columns, { NumberColumns } from '../components/Columns'
+import PageWrapper, { UnitsData } from '../components/PageWrapper'
 import ProfilePhoto from '../components/ProfilePhoto'
-import IntroText from '../features/IntroText'
+import IntroText from '../contentPage/Home'
 import Languages from '../features/Languages'
 import NavBar from '../features/NavBar'
 import SettingsBox from '../features/Settings'
@@ -11,15 +11,15 @@ import SocialIcons from '../features/SocialIcons'
 const Home: React.FC = () => (
 	<>
 		<NavBar />
-		<ContentWrapper units={UnitsData.SmallPage}>
-			<ContentColumns
+		<PageWrapper units={UnitsData.SmallPage}>
+			<Columns
 				columns={NumberColumns.Columns2}
 				columnsIpad={NumberColumns.Columns1}
 			>
 				<IntroText />
 				<ProfilePhoto />
-			</ContentColumns>
-		</ContentWrapper>
+			</Columns>
+		</PageWrapper>
 		<SettingsBox />
 		<SocialIcons />
 		<Languages />
