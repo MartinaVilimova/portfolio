@@ -31,3 +31,21 @@ export const Button = styled.button`
 		text-shadow: none;
 	}
 `
+
+export const SmallButton = styled(Button)`
+	padding: 0.5em 1em;
+	margin: 0.5em;
+	font-size: 0.8em;
+
+	@media (max-width: ${MediaQueries.SmallerIpad}) {
+		padding: 0.5em 1em;
+	}
+
+	&:hover {
+		text-shadow: none;
+		box-shadow: 0.3em 0.3em 0.3em ${({ theme }) => theme.bg.shadowBlack},
+			-0.3em -0.3em 0.3em ${({ theme }) => theme.bg.shadowWhite},
+			0.3em 0.3em 0.3em ${({ theme }) => theme.bg.shadowBlack} inset,
+			-0.3em -0.3em 0.3em ${({ theme }) => theme.bg.shadowWhite} inset;
+	}
+`

@@ -12,7 +12,7 @@ type Props = {
 }
 
 //@TODO: later add an animation to slowly display each item
-const Item: React.FC<Props> = ({ data }) => (
+const ItemResume: React.FC<Props> = ({ data }) => (
 	<>
 		{data.map((text, index) => (
 			<Wrapper key={index}>
@@ -30,4 +30,4 @@ const Item: React.FC<Props> = ({ data }) => (
 	</>
 )
 
-export default Item
+export default ItemResume

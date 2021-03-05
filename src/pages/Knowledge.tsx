@@ -1,5 +1,5 @@
 import React from 'react'
-import PageWrapper, { UnitsData } from '../components/PageWrapper'
+import WrapperPages, { UnitsData } from '../components/WrapperPages'
 import Title from '../components/Title'
 import ButtonScrollTop from '../features/ButtonScrollTop'
 import KnowledgeContent from '../contentPage/Knowledge'
@@ -11,10 +11,10 @@ import SocialIcons from '../features/SocialIcons'
 const Knowledge: React.FC = () => (
 	<>
 		<NavBar />
-		<PageWrapper units={UnitsData.LargePage}>
+		<WrapperPages units={UnitsData.LargePage}>
 			<Title bigTitle="Znalosti" smallTitle="Znalosti" />
 			<KnowledgeContent />
-		</PageWrapper>
+		</WrapperPages>
 		<SettingsBox />
 		<SocialIcons />
 		<ButtonScrollTop />

@@ -9,6 +9,7 @@ export const Wrapper = styled.section<{
 	display: grid;
 	width: 100%;
 	grid-template-columns: ${({ quantity }) => quantity};
+	background-color: blue;
 
 	@media (max-width: ${MediaQueries.Desktop}) {
 		grid-template-columns: 1fr 1fr;

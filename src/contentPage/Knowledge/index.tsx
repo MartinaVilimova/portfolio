@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-scroll'
-import Item from '../../components/Item'
-import { dataKnowledge } from '../../components/Item/data'
+import ItemResume from '../../components/ItemResume'
+import { dataKnowledge } from '../../components/ItemResume/data'
 import { Paragraph } from '../../styled/StyledParagraph/styled'
 import { StyledH3, StyledH6 } from '../../styled/StyledTitle/styled'
 import { BlockAnchors } from './styled'
@@ -26,7 +26,7 @@ const KnowledgeContent: React.FC = () => (
 				</Link>
 			))}
 		</BlockAnchors>
-		<Item data={dataKnowledge} />
+		<ItemResume data={dataKnowledge} />
 	</>
 )
 
