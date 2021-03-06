@@ -9,9 +9,11 @@ import AboutMe from '../../pages/AboutMe'
 import Resume from '../../pages/Resume'
 import Knowledge from '../../pages/Knowledge'
 import MyWork from '../../pages/MyWork'
+import Contact from '../../pages/Contact'
 
 const Routes: React.FC = () => (
 	<Switch>
+		<Route path="/contact" component={Contact} />
 		<Route path="/my-work" component={MyWork} />
 		<Route path="/knowledge" component={Knowledge} />
 		<Route path="/resume" component={Resume} />

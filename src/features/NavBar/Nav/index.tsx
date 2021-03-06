@@ -21,7 +21,7 @@ const Nav: React.FC = () => {
 					<Link to="/my-work">Má práce</Link>
 				</NavItem>
 				<NavItem>
-					<Link to="/">Kontakt</Link>
+					<Link to="/contact">Kontakt</Link>
 				</NavItem>
 			</NavContent>
 			<Burger open={open} onClick={() => setOpen(!open)}>
