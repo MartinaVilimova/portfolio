@@ -8,44 +8,36 @@ import pokemon from '../../assets/pokemon.png'
 
 export type DataItemsMyWork = {
 	picture: string
-	id: string
 	subtitle: string
 }
 
 export const dataMyWork: DataItemsMyWork[] = [
 	{
 		picture: autoodstrejdy,
-		id: 'a',
 		subtitle: 'Auto od strejdy',
 	},
 	{
 		picture: kafickari,
-		id: 'b',
 		subtitle: 'Kafíčkáři',
 	},
 	{
 		picture: eaglefitness,
-		id: 'c',
 		subtitle: 'Eagle fitness',
 	},
 	{
 		picture: cestovka,
-		id: 'e',
 		subtitle: 'Cestovka',
 	},
 	{
 		picture: zdravemlsani,
-		id: 'f',
 		subtitle: 'Zdravé mlsání',
 	},
 	{
 		picture: kadernictvi,
-		id: 'g',
 		subtitle: 'Kadeřnictví Scissors',
 	},
 	{
 		picture: pokemon,
-		id: 'h',
 		subtitle: 'Pokemon',
 	},
 ]
