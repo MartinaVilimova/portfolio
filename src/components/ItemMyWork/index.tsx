@@ -12,8 +12,8 @@ import { dataMyWork } from './data'
 
 const ItemMyWork: React.FC = () => (
 	<>
-		{dataMyWork.map((item) => (
-			<Wrapper key={item.id}>
+		{dataMyWork.map((item, index) => (
+			<Wrapper key={index}>
 				<Picture src={item.picture} />
 				<HoverBox>
 					<IconsBox>
