@@ -14,4 +14,11 @@ export const Wrapper = styled.article`
 		text-align: center;
 		align-items: center;
 	}
+
+	& a {
+		width: 12.3em;
+		& button {
+			margin: auto;
+		}
+	}
 `

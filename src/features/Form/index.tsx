@@ -7,12 +7,12 @@ type DataForm = {
 	name: string
 	email: string
 	subject: string
-	message?: string
+	message: string
 }
 
 const ContactForm: React.FC = () => {
 	const { register, handleSubmit, errors } = useForm()
-	const onSubmit = (data: DataForm) => console.log(data)
+	const onSubmit = async (data: DataForm) => console.log(data)
 
 	return (
 		<Form onSubmit={handleSubmit(onSubmit)}>

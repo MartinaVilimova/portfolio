@@ -7,6 +7,7 @@ import NavBar from '../features/NavBar'
 import SettingsBox from '../features/Settings'
 import ContactForm from '../features/Form'
 import SocialLinks from '../components/SocialLinks'
+import Copyright from '../components/Copyright'
 
 const Contact: React.FC = () => (
 	<>
@@ -15,6 +16,7 @@ const Contact: React.FC = () => (
 			<Title bigTitle="Kontakt" smallTitle="Kontakt" />
 			<SocialLinks />
 			<ContactForm />
+			<Copyright />
 		</WrapperPages>
 		<SettingsBox />
 		<ButtonScrollTop />
