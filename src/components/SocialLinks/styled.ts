@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import { StyledA } from '../../styled/StyledLink/styled'
 
-export const Wrapper = styled.section`
+export const Wrapper = styled.article`
 	display: flex;
 	justify-content: center;
 	width: 90%;
