@@ -6,6 +6,7 @@ export const Button = styled.button`
 	padding: 0.7em 1.4em;
 	justify-content: center;
 	font-size: 1em;
+	font-family: 'Poppins', sans-serif;
 	color: ${({ theme }) => theme.text.colorful};
 	background-color: ${({ theme }) => theme.bg.primary};
 	border-radius: 1em;
@@ -33,7 +34,7 @@ export const Button = styled.button`
 `
 
 export const SmallButton = styled(Button)`
-	padding: 0.5em 1em;
+	padding: 0.6em 1.2em;
 	margin: 0.5em;
 	font-size: 0.8em;
 

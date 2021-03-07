@@ -5,16 +5,16 @@ import ButtonScrollTop from '../features/ButtonScrollTop'
 import Languages from '../features/Languages'
 import NavBar from '../features/NavBar'
 import SettingsBox from '../features/Settings'
-import SocialIcons from '../features/SocialIcons'
+import ContactForm from '../features/Form'
 
 const Contact: React.FC = () => (
 	<>
 		<NavBar />
 		<WrapperPages units={UnitsData.SmallPage}>
 			<Title bigTitle="Kontakt" smallTitle="Kontakt" />
+			<ContactForm />
 		</WrapperPages>
 		<SettingsBox />
-		<SocialIcons />
 		<ButtonScrollTop />
 		<Languages />
 	</>
