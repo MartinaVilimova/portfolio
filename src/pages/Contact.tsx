@@ -6,12 +6,14 @@ import Languages from '../features/Languages'
 import NavBar from '../features/NavBar'
 import SettingsBox from '../features/Settings'
 import ContactForm from '../features/Form'
+import SocialLinks from '../components/SocialLinks'
 
 const Contact: React.FC = () => (
 	<>
 		<NavBar />
 		<WrapperPages units={UnitsData.SmallPage}>
 			<Title bigTitle="Kontakt" smallTitle="Kontakt" />
+			<SocialLinks />
 			<ContactForm />
 		</WrapperPages>
 		<SettingsBox />
