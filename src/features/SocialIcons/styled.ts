@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { StyledA } from '../../styled/StyledLink/styled'
 import { MediaQueries } from '../../themes'
 
 export const Wrapper = styled.section`
@@ -29,7 +30,7 @@ export const Line = styled.div`
 	margin: 1em 0;
 `
 
-export const Icon = styled.a`
+export const Icon = styled(StyledA)`
 	display: flex;
 	box-sizing: border-box;
 	width: 1.7em;

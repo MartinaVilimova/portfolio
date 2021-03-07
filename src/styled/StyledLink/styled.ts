@@ -5,3 +5,10 @@ export const StyledLink = styled(Link)`
 	text-decoration: none;
 	cursor: default;
 `
+
+export const StyledA = styled.a`
+	text-decoration: none;
+	cursor: pointer;
+	font-weight: 500;
+	color: ${({ theme }) => theme.text.colorful};
+`

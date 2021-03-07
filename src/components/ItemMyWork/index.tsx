@@ -9,6 +9,7 @@ import {
 } from './styled'
 import { Link, Search } from '@styled-icons/feather'
 import { dataMyWork } from './data'
+import { StyledA } from '../../styled/StyledLink/styled'
 
 const ItemMyWork: React.FC = () => (
 	<>
@@ -17,9 +18,11 @@ const ItemMyWork: React.FC = () => (
 				<Picture src={item.picture} />
 				<HoverBox>
 					<IconsBox>
-						<IconButton>
-							<Link />
-						</IconButton>
+						<StyledA href="">
+							<IconButton>
+								<Link />
+							</IconButton>
+						</StyledA>
 						<IconButton>
 							<Search />
 						</IconButton>
