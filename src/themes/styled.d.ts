@@ -12,6 +12,7 @@ declare module 'styled-components' {
 		readonly text: {
 			readonly primary: string
 			readonly grey: string
+			readonly warning: string
 			readonly colorful: string
 		}
 	}
