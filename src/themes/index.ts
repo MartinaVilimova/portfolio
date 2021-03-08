@@ -22,6 +22,7 @@ export const LightTheme: DefaultTheme = {
 	text: {
 		primary: '#212529',
 		grey: '#8b9299',
+		warning: '#e83849',
 		colorful: '#2fb99e',
 	},
 }
@@ -37,6 +38,7 @@ export const DarkTheme: DefaultTheme = {
 	text: {
 		primary: '#fafafa',
 		grey: '#d7e2d2',
+		warning: '#e83849',
 		colorful: '#2fb99e',
 	},
 }

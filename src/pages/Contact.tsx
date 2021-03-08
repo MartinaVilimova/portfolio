@@ -12,7 +12,7 @@ import Copyright from '../components/Copyright'
 const Contact: React.FC = () => (
 	<>
 		<NavBar />
-		<WrapperPages units={UnitsData.SmallPage}>
+		<WrapperPages units={UnitsData.LargePage}>
 			<Title bigTitle="Kontakt" smallTitle="Kontakt" />
 			<SocialLinks />
 			<ContactForm />
