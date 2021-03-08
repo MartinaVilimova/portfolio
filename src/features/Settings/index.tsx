@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { Color, useThemeControl } from '../Theme'
 import { Theme } from '../../themes'
 import Toggle from '../../components/Toggle'
-import { ArrowLeft } from '@styled-icons/feather'
+import { ChevronsLeft } from '@styled-icons/feather'
 import {
 	Wrapper,
 	Content,
@@ -43,9 +43,9 @@ const SettingsBox: React.FC = () => {
 			</Content>
 			<ShadowInsetBox>
 				<HiddenBox></HiddenBox>
-				<IconBox>
-					<ArrowLeft />
-					<SettingsIcon click={open} onClick={() => setOpen(!open)} />
+				<IconBox onClick={() => setOpen(!open)}>
+					<ChevronsLeft />
+					<SettingsIcon click={open} />
 				</IconBox>
 			</ShadowInsetBox>
 		</Wrapper>

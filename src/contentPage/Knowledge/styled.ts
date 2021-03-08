@@ -28,7 +28,7 @@ export const BlockAnchors = styled.div`
 	}
 
 	& h6 {
-		margin-left: 1em;
+		margin: 0 0 0.7em 1em;
 		color: ${({ theme }) => theme.text.colorful};
 	}
 `

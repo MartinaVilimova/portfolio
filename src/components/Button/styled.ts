@@ -34,9 +34,9 @@ export const Button = styled.button`
 `
 
 export const SmallButton = styled(Button)`
-	padding: 0.6em 1.2em;
+	padding: 0.5em 1em;
 	margin: 0.5em;
-	font-size: 0.8em;
+	font-size: 1em;
 
 	@media (max-width: ${MediaQueries.SmallerIpad}) {
 		padding: 0.5em 1em;

@@ -13,6 +13,7 @@ export const Wrapper = styled.nav`
 	padding: 0 1.5em 0 0;
 `
 
+//@TODO: later edit all hex opacity using literal
 export const NavContent = styled.ul<{ open: boolean }>`
 	${sizeNav};
 	display: flex;
