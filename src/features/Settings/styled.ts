@@ -121,13 +121,13 @@ export const IconBox = styled.article`
 	right: 0;
 	top: 0.42em;
 	border-radius: 0.7em;
+	cursor: pointer;
 	color: ${({ theme }) => theme.text.grey};
 	background-color: ${({ theme }) => theme.bg.primary};
 `
 
 export const SettingsIcon = styled(Settings)<{ click: boolean }>`
 	animation: rotation 8s infinite linear;
-	cursor: pointer;
 	color: ${({ click }) =>
 		click
 			? ({ theme }) => theme.text.primary

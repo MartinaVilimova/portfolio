@@ -7,9 +7,10 @@ export const HoverBox = styled.div`
 	align-items: center;
 	flex-direction: column;
 	position: absolute;
-	background-color: ${({ theme }) => theme.bg.shadowBlack};
+	background-color: ${({ theme }) => theme.bg.shadowBlack}E6;
 	border-radius: 1.4em;
-	transform: scale(0);
+	opacity: 0;
+	transform: scale(0.7);
 	top: 0;
 	bottom: 0;
 	left: 0;
@@ -20,13 +21,13 @@ export const HoverBox = styled.div`
 export const Wrapper = styled.article`
 	box-sizing: border-box;
 	display: flex;
-	margin: 1em;
+	margin: 1em 0.5em;
 	justify-self: center;
 	justify-content: center;
 	border-radius: 1.6em;
 	background-color: ${({ theme }) => theme.bg.primary};
 	border: 0.3em solid ${({ theme }) => theme.bg.primary};
-	width: 90%;
+	width: 95%;
 	height: auto;
 	position: relative;
 	box-shadow: 0.3em 0.3em 0.3em ${({ theme }) => theme.bg.shadowBlack},
@@ -34,6 +35,7 @@ export const Wrapper = styled.article`
 
 	@media (max-width: ${MediaQueries.Desktop}) {
 		width: 80%;
+		margin: 1em;
 	}
 
 	@media (max-width: ${MediaQueries.Ipad}) {
@@ -48,6 +50,7 @@ export const Wrapper = styled.article`
 		& ${HoverBox} {
 			background-color: ${({ theme }) => theme.bg.shadowBlack}E6;
 			transform: scale(1);
+			opacity: 1;
 			transition: all 0.5s ease;
 		}
 	}
@@ -100,11 +103,4 @@ export const IconButton = styled.div`
 	&:hover {
 		color: ${({ theme }) => theme.bg.primary};
 	}
-`
-
-export const Subtitle = styled.span`
-	font-size: 1.3em;
-	font-weight: 500;
-	color: ${({ theme }) => theme.text.colorful};
-	margin-top: 0.5em;
 `
