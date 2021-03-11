@@ -15,16 +15,29 @@ export const Wrapper = styled.div<{ visible: boolean }>`
 	@media (max-width: ${MediaQueries.Ipad}) {
 		padding: 1.5em 0 0 0;
 	}
+
+	& > div {
+		width: 60%;
+		height: 95vh;
+		margin: auto;
+
+		@media (max-width: ${MediaQueries.Desktop}) {
+			width: 70%;
+		}
+
+		@media (max-width: ${MediaQueries.Ipad}) {
+			width: 90%;
+		}
+	}
 `
 
 export const ModalBox = styled.section`
-	width: 60%;
-	height: 95vh;
+	width: 100%;
+	height: 100%;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	position: relative;
-	margin: auto;
 	background-color: ${({ theme }) => theme.bg.primary};
 	opacity: 0;
 	z-index: 1001;
@@ -32,14 +45,6 @@ export const ModalBox = styled.section`
 	box-shadow: 0.2em 0.2em 0.2em ${({ theme }) => theme.bg.shadowBlack},
 		-0.2em -0.2em 0.2em ${({ theme }) => theme.bg.shadowWhite};
 	animation: animateTop 0.5s forwards ease;
-
-	@media (max-width: ${MediaQueries.Desktop}) {
-		width: 70%;
-	}
-
-	@media (max-width: ${MediaQueries.Ipad}) {
-		width: 90%;
-	}
 
 	@keyframes animateTop {
 		from {
@@ -89,10 +94,11 @@ export const DescriptionContent = styled.div`
 	}
 
 	& > section {
+		width: 90%;
 		border-radius: 1em;
-		box-shadow: 0.3em 0.3em 0.3em ${({ theme }) => theme.bg.shadowBlack}
+		box-shadow: 0.1em 0.1em 0.1em ${({ theme }) => theme.bg.shadowBlack}
 				inset,
-			-0.3em -0.3em 0.3em ${({ theme }) => theme.bg.shadowWhite} inset;
+			-0.1em -0.1em 0.1em ${({ theme }) => theme.bg.shadowWhite} inset;
 		padding: 1em 0;
 	}
 `
@@ -111,19 +117,5 @@ export const Article = styled.article`
 		@media (max-width: ${MediaQueries.Ipad}) {
 			grid-column: 1/2;
 		}
-	}
-`
-
-export const Pictures = styled.article`
-	width: 100%;
-	display: flex;
-	justify-content: center;
-	padding: 2em 0;
-
-	& img {
-		width: 90%;
-		border-radius: 1.5em;
-		box-shadow: 0.3em 0.3em 0.3em ${({ theme }) => theme.bg.shadowBlack},
-			-0.3em -0.3em 0.3em ${({ theme }) => theme.bg.shadowWhite};
 	}
 `

@@ -21,6 +21,7 @@ export const VerticalText = styled.p`
 	writing-mode: vertical-rl;
 	text-orientation: upright;
 	font-size: 0.9em;
+	width: 1.5em;
 `
 
 export const Line = styled.div`
