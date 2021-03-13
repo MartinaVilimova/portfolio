@@ -100,16 +100,21 @@ export const DescriptionContent = styled.div`
 				inset,
 			-0.1em -0.1em 0.1em ${({ theme }) => theme.bg.shadowWhite} inset;
 		padding: 1em 0;
+
+		@media (max-width: ${MediaQueries.Ipad}) {
+			width: 100%;
+		}
 	}
 `
 
 export const Article = styled.article`
+	box-sizing: border-box;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	width: 100%;
 	height: 100%;
-	padding: 1em 0;
+	padding: 1em 0.5em;
 
 	&:nth-child(1) {
 		grid-column: 1/3;
@@ -118,4 +123,8 @@ export const Article = styled.article`
 			grid-column: 1/2;
 		}
 	}
+`
+
+export const ArticleText = styled.span`
+	text-align: center;
 `

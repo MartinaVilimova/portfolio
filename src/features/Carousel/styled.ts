@@ -50,11 +50,11 @@ export const Wrapper = styled.article`
 			padding: 0.5em;
 			margin: 0;
 			transition: all 0.25s ease-in;
-			background-color: ${({ theme }) => theme.bg.primary}00;
+			background-color: ${({ theme }) => `${theme.bg.primary}00`};
 
 			&:hover {
 				transition: all 0.25s ease-in;
-				background-color: ${({ theme }) => theme.bg.primary}B3;
+				background-color: ${({ theme }) => `${theme.bg.primary}B3`};
 			}
 
 			& .dot {
