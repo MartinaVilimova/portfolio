@@ -1,13 +1,27 @@
 import React, { useState } from 'react'
 import { Wrapper, HoverBox, Picture, IconsBox, IconButton } from './styled'
 import { Link, Search, Github } from '@styled-icons/feather'
-import { dataMyWork } from './data'
+import { DataFilter, DataItemsMyWork, dataMyWork } from './data'
 import { StyledA } from '../../styled/StyledLink/styled'
 import DescriptionMyWork from '../../features/Description'
 import { StyledH5 } from '../../styled/StyledTitle/styled'
 
 const ItemMyWork: React.FC = () => {
 	const [click, setClick] = useState(false)
+	const [data, setData] = useState<DataItemsMyWork>({
+		myWorkItem: {
+			picture: '',
+			subtitle: '',
+			webLink: '',
+			githubLink: '',
+		},
+		authors: [],
+		filter: DataFilter.ownWork,
+		description: '',
+		carousel: [],
+		skills: '',
+		updateDate: '',
+	})
 
 	const shutDown = () => setClick(false)
 
@@ -15,10 +29,10 @@ const ItemMyWork: React.FC = () => {
 		<>
 			{dataMyWork.map((item, index) => (
 				<Wrapper key={index}>
-					<Picture src={item.picture} />
+					<Picture src={item.myWorkItem.picture} />
 					<HoverBox>
 						<IconsBox>
-							{item.webLink && (
+							{item.myWorkItem.webLink && (
 								<StyledA href="">
 									<IconButton>
 										<Link />
@@ -29,12 +43,13 @@ const ItemMyWork: React.FC = () => {
 							<IconButton
 								onClick={() => {
 									setClick(true)
+									setData(item)
 								}}
 							>
 								<Search />
 							</IconButton>
 
-							{item.githubLink && (
+							{item.myWorkItem.githubLink && (
 								<StyledA href="">
 									<IconButton>
 										<Github />
@@ -42,15 +57,11 @@ const ItemMyWork: React.FC = () => {
 								</StyledA>
 							)}
 						</IconsBox>
-						<StyledH5>{item.subtitle}</StyledH5>
+						<StyledH5>{item.myWorkItem.subtitle}</StyledH5>
 					</HoverBox>
 				</Wrapper>
 			))}
-			<DescriptionMyWork
-				hidden={click}
-				shutDown={shutDown}
-				subtitle="Autoodstrejdy"
-			/>
+			<DescriptionMyWork hidden={click} shutDown={shutDown} data={data} />
 		</>
 	)
 }
