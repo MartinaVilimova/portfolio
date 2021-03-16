@@ -9,7 +9,7 @@ export const Wrapper = styled.section<{ visible: boolean }>`
 	height: 2em;
 	position: fixed;
 	padding: 0.5em;
-	bottom: 3em;
+	bottom: 4.5em;
 	right: 2em;
 	border-radius: 50%;
 	color: ${({ theme }) => theme.bg.primary};

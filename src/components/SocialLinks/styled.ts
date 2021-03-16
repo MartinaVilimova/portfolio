@@ -1,10 +1,15 @@
 import styled from 'styled-components'
 import { StyledA } from '../../styled/StyledLink/styled'
+import { MediaQueries } from '../../themes'
 
 export const Wrapper = styled.article`
 	display: flex;
 	justify-content: center;
 	width: 90%;
+
+	@media (max-width: ${MediaQueries.Ipad}) {
+		margin: 0.7em 0;
+	}
 `
 
 export const Icon = styled(StyledA)`

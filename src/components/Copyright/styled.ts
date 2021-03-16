@@ -1,8 +1,14 @@
 import styled from 'styled-components'
+import { MediaQueries } from '../../themes'
 
 export const Text = styled.article`
 	display: flex;
 	justify-content: center;
+	align-items: center;
 	width: 90%;
-	margin: 1em 0 0.7em 0;
+	margin: 1em 0;
+
+	@media (max-width: ${MediaQueries.Ipad}) {
+		flex-direction: column;
+	}
 `

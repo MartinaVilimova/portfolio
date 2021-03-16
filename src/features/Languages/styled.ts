@@ -4,7 +4,7 @@ import { MediaQueries } from '../../themes'
 export const Wrapper = styled.section`
 	display: flex;
 	position: fixed;
-	padding: 0 1em 0.5em 0;
+	padding: 0 1em 0.7em 0;
 	bottom: 0;
 	right: 0;
 
@@ -18,36 +18,31 @@ export const Wrapper = styled.section`
 `
 
 export const Language = styled.span`
-	margin: 0.5em;
+	margin: 0.5em 0.3em;
+	padding: 0 0.5em;
 	letter-spacing: 2px;
+	border-radius: 1em;
 	color: ${({ theme }) => theme.text.primary};
+	box-shadow: 0.1em 0.1em 0.1em ${({ theme }) => theme.bg.shadowBlack},
+		-0.1em -0.1em 0.1em ${({ theme }) => theme.bg.shadowWhite};
 	position: relative;
 	cursor: pointer;
 
+	&:hover {
+		color: ${({ theme }) => theme.text.colorful};
+		box-shadow: 0.1em 0.1em 0.1em ${({ theme }) => theme.bg.shadowBlack}
+				inset,
+			-0.1em -0.1em 0.1em ${({ theme }) => theme.bg.shadowWhite} inset;
+	}
+
 	@media (max-width: ${MediaQueries.Ipad}) {
-		&:active {
+		box-shadow: none;
+		padding: 0;
+		margin: 0.5em;
+
+		&:hover {
 			color: ${({ theme }) => theme.text.colorful};
-		}
-	}
-
-	&:before {
-		content: '';
-		position: absolute;
-		width: 0;
-		height: 2px;
-		bottom: 0;
-		left: 0;
-		background-color: ${({ theme }) => theme.text.colorful};
-		visibility: hidden;
-		transition: all 0.3s ease-in-out;
-	}
-
-	&:hover:before {
-		visibility: visible;
-		width: 100%;
-
-		@media (max-width: ${MediaQueries.Ipad}) {
-			width: 0;
+			box-shadow: none;
 		}
 	}
 `
