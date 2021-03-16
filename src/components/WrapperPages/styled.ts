@@ -21,6 +21,6 @@ export const Wrapper = styled.main<{ value: UnitsData }>`
 		max-width: 90%;
 		height: 100%;
 		padding-left: 0;
-		margin-bottom: 3em;
+		margin-bottom: 1em;
 	}
 `

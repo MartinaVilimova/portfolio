@@ -5,10 +5,13 @@ import { StyledLink } from '../../styled/StyledLink/styled'
 
 const Copyright: React.FC = () => (
 	<Text>
-		Copyright &copy; 2021. Web vytvořila
-		<StyledLink to="/">
-			&nbsp;<ColorfulText>Martina Vilímová</ColorfulText>
-		</StyledLink>
+		<span>Copyright &copy; 2021.</span>
+		<span>
+			Web vytvořila
+			<StyledLink to="/">
+				<ColorfulText>&nbsp;Martina Vilímová</ColorfulText>
+			</StyledLink>
+		</span>
 	</Text>
 )
 

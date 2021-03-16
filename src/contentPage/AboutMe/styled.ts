@@ -54,6 +54,11 @@ export const WrapperLinks = styled.div`
 	justify-content: space-around;
 
 	@media (max-width: ${MediaQueries.SmallerIpad}) {
-		width: 100%;
+		flex-direction: column;
+		align-items: center;
+
+		& button {
+			margin: 0.5em;
+		}
 	}
 `
