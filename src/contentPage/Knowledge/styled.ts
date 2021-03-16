@@ -20,7 +20,7 @@ export const BlockAnchors = styled.div`
 		font-weight: 300;
 
 		&:hover {
-			color: ${({ theme }) => theme.text.colorful};
+			color: ${({ theme }) => theme.text.colorful.basicColor};
 			box-shadow: 0.1em 0.1em 0.1em ${({ theme }) => theme.bg.shadowBlack}
 					inset,
 				-0.1em -0.1em 0.1em ${({ theme }) => theme.bg.shadowWhite} inset;
@@ -28,7 +28,7 @@ export const BlockAnchors = styled.div`
 	}
 
 	& h6 {
-		margin: 0 0 0.7em 1em;
-		color: ${({ theme }) => theme.text.colorful};
+		margin-left: 1em;
+		color: ${({ theme }) => theme.text.colorful.basicColor};
 	}
 `

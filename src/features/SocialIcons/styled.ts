@@ -25,7 +25,7 @@ export const VerticalText = styled.p`
 `
 
 export const Line = styled.div`
-	background-color: ${({ theme }) => theme.text.colorful};
+	background-color: ${({ theme }) => theme.text.colorful.basicColor};
 	width: 0.1em;
 	height: 3em;
 	margin: 1em 0;
@@ -42,7 +42,7 @@ export const Icon = styled(StyledA)`
 	color: ${({ theme }) => theme.text.primary};
 
 	&:hover {
-		color: ${({ theme }) => theme.text.colorful};
+		color: ${({ theme }) => theme.text.colorful.basicColor};
 		box-shadow: 0.1em 0.1em 0.1em ${({ theme }) => theme.bg.shadowBlack}
 				inset,
 			-0.1em -0.1em 0.1em ${({ theme }) => theme.bg.shadowWhite} inset;

@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const BallScale = styled.div`
 	position: absolute;
-	background-color: ${({ theme }) => theme.text.colorful};
+	background-color: ${({ theme }) => theme.text.colorful.basicColor};
 	top: 2em;
 	width: 1em;
 	height: 1em;

@@ -32,7 +32,7 @@ const formItem = css`
 	border: none;
 	font-family: 'Poppins', sans-serif;
 	font-size: 1em;
-	color: ${({ theme }) => theme.text.colorful};
+	color: ${({ theme }) => theme.text.colorful.basicColor};
 	padding: 0.6em 1.3em;
 	border-radius: 1em;
 	margin-top: 0.4em;
@@ -49,7 +49,8 @@ const formItem = css`
 	&:-webkit-autofill:hover,
 	&:-webkit-autofill:focus,
 	&:-webkit-autofill:active {
-		box-shadow: 0 0 0 30px ${({ theme }) => theme.text.colorful}B3 inset !important;
+		box-shadow: 0 0 0 30px
+			${({ theme }) => theme.text.colorful.basicColor}B3 inset !important;
 	}
 `
 

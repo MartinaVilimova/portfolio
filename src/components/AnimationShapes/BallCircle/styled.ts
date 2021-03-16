@@ -6,7 +6,11 @@ export const BallCircle = styled.div`
 	top: 14em;
 	left: 4em;
 	display: block;
-	background-color: ${({ theme }) => theme.text.colorful};
+	background-color: ${({ theme }) => theme.text.colorful.basicColor};
+	box-shadow: 0.2em 0.2em 0.3em
+			${({ theme }) => theme.text.colorful.lightColor} inset,
+		-0.2em -0.2em 0.3em ${({ theme }) => theme.text.colorful.darkColor}
+			inset;
 	filter: brightness(80%);
 	width: 2em;
 	height: 2em;

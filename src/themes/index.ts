@@ -11,10 +11,34 @@ export enum Theme {
 	Light = 'Light',
 }
 
+export enum Color {
+	Green = '#2fb99e',
+	Pink = '#fe668e',
+	Blue = '#0fcae8',
+}
+
+export const chooseColors = {
+	[Color.Green]: {
+		lightColor: '#91f7e3',
+		basicColor: '#2fb99e',
+		darkColor: '#10735f',
+	},
+	[Color.Pink]: {
+		lightColor: '#f4acbf',
+		basicColor: '#fe668e',
+		darkColor: '#983a53',
+	},
+	[Color.Blue]: {
+		lightColor: '#9beffc',
+		basicColor: '#0fcae8',
+		darkColor: '#066f80',
+	},
+}
+
 export const LightTheme: DefaultTheme = {
 	selectedTheme: Theme.Light,
 	bg: {
-		primary: '#f1f3f6',
+		primary: '#e9ecf0',
 		shadowWhite: '#fafafa',
 		shadowBlack: '#dadada',
 		black: '#212225',
@@ -23,7 +47,7 @@ export const LightTheme: DefaultTheme = {
 		primary: '#212529',
 		grey: '#8b9299',
 		warning: '#e83849',
-		colorful: '#2fb99e',
+		colorful: chooseColors[Color.Green],
 	},
 }
 
@@ -37,8 +61,8 @@ export const DarkTheme: DefaultTheme = {
 	},
 	text: {
 		primary: '#fafafa',
-		grey: '#d7e2d2',
+		grey: '#a1a7ac',
 		warning: '#e83849',
-		colorful: '#2fb99e',
+		colorful: chooseColors[Color.Green],
 	},
 }

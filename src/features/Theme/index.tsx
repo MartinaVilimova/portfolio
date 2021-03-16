@@ -1,12 +1,6 @@
 import React, { createContext, useContext, useEffect, useState } from 'react'
 import { ThemeProvider as StyledComponentsThemeProvider } from 'styled-components'
-import { DarkTheme, LightTheme, Theme } from '../../themes'
-
-export enum Color {
-	Green = '#2fb99e',
-	Pink = '#fe668e',
-	Blue = '#0fcae8',
-}
+import { chooseColors, Color, DarkTheme, LightTheme, Theme } from '../../themes'
 
 type ThemeControl = {
 	theme: [Theme, (theme: Theme) => void]
@@ -18,7 +12,7 @@ const selectTheme = {
 	[Theme.Light]: LightTheme,
 }
 
-const defaultTheme = Theme.Light
+const defaultTheme = Theme.Dark
 const defaultColor = Color.Green
 
 const isValidTheme = (theme: string): theme is keyof typeof Theme =>
@@ -87,7 +81,10 @@ const ThemeProvider: React.FC = ({ children }) => {
 			<StyledComponentsThemeProvider
 				theme={{
 					...selectTheme[theme],
-					text: { ...selectTheme[theme].text, colorful: color },
+					text: {
+						...selectTheme[theme].text,
+						colorful: chooseColors[color],
+					},
 				}}
 			>
 				{children}

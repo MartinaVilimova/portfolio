@@ -95,7 +95,7 @@ export const Burger = styled.section<{ open: boolean }>`
 					open ? 'rotate(41deg)' : 'rotate(0)'};
 				background-color: ${({ open }) =>
 					open
-						? ({ theme }) => theme.text.colorful
+						? ({ theme }) => theme.text.colorful.basicColor
 						: ({ theme }) => theme.text.primary};
 			}
 
@@ -108,7 +108,7 @@ export const Burger = styled.section<{ open: boolean }>`
 					open ? 'rotate(-41deg)' : 'rotate(0)'};
 				background-color: ${({ open }) =>
 					open
-						? ({ theme }) => theme.text.colorful
+						? ({ theme }) => theme.text.colorful.basicColor
 						: ({ theme }) => theme.text.primary};
 			}
 		}

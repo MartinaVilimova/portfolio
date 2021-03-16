@@ -16,7 +16,7 @@ export const IconSun = styled.div<{ light: boolean }>`
 	color: ${({ light }) =>
 		light
 			? ({ theme }) => theme.text.grey
-			: ({ theme }) => theme.text.colorful};
+			: ({ theme }) => theme.text.colorful.basicColor};
 `
 
 export const IconMoon = styled.div<{ light: boolean }>`
@@ -24,7 +24,7 @@ export const IconMoon = styled.div<{ light: boolean }>`
 	transform: rotate(250deg);
 	color: ${({ light }) =>
 		light
-			? ({ theme }) => theme.text.colorful
+			? ({ theme }) => theme.text.colorful.basicColor
 			: ({ theme }) => theme.text.grey};
 `
 
@@ -62,7 +62,7 @@ export const RoundSlider = styled.span`
 		bottom: 4px;
 		background: radial-gradient(
 			circle at 10px 10px,
-			${({ theme }) => theme.text.colorful},
+			${({ theme }) => theme.text.colorful.basicColor},
 			${({ theme }) => theme.bg.shadowBlack}
 		);
 		box-shadow: 0.1em 0.1em 0.1em ${({ theme }) => theme.bg.shadowBlack},

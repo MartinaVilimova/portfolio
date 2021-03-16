@@ -37,7 +37,12 @@ export const ContentProfilePhoto = styled.div`
 `
 
 export const ColorShape = styled.div`
-	background-color: ${({ theme }) => theme.text.colorful};
+	background: linear-gradient(
+		318deg,
+		${({ theme }) => theme.text.colorful.darkColor} 0%,
+		${({ theme }) => theme.text.colorful.basicColor} 50%,
+		${({ theme }) => theme.text.colorful.lightColor} 100%
+	);
 	border-radius: 26% 74% 66% 34% / 47% 34% 66% 53%;
 	box-shadow: 0.5em 0.5em 0.5em ${({ theme }) => theme.bg.shadowBlack},
 		-0.5em -0.5em 0.5em ${({ theme }) => theme.bg.shadowWhite};
