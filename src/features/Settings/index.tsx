@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { useThemeControl } from '../Theme'
 import { Color, Theme } from '../../themes'
 import Toggle from '../../components/Toggle'
-import { ChevronsLeft } from '@styled-icons/feather'
+import { ChevronsLeft, Check  } from '@styled-icons/feather'
 import {
 	Wrapper,
 	Content,
@@ -28,7 +28,9 @@ const SettingsBox: React.FC = () => {
 				<Title>Nastavení</Title>
 				<Title>Barevný přepínač</Title>
 				<Colors>
-					<div onClick={() => setColor(Color.Green)} />
+					<div onClick={() => setColor(Color.Green)}>
+						<Check />
+					</div>
 					<div onClick={() => setColor(Color.Pink)} />
 					<div onClick={() => setColor(Color.Blue)} />
 				</Colors>

@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components'
 import { Settings } from '@styled-icons/feather'
-import { Color } from '../../themes'
+import { chooseColors, Color } from '../../themes'
 
 export const Wrapper = styled.section<{ click: boolean }>`
 	width: 14em;
@@ -41,39 +41,50 @@ export const Colors = styled.div`
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	width: 7em;
+	width: 7.5em;
 	height: 2.5em;
 
 	& div {
-		${SameShadow};
+		display: flex;
+		justify-content: center;
+		align-items: center;
 		cursor: pointer;
-		height: 1.5em;
-		width: 1.5em;
+		height: 1.7em;
+		width: 1.7em;
 		border-radius: 50%;
+		opacity: 0.85;
+
+		& svg {
+			height: 1.2em;
+			width: 1.2em;
+		}
 	}
 
 	& div:nth-child(1) {
-		background: radial-gradient(
-			circle at 10px 10px,
-			${Color.Green},
-			${({ theme }) => theme.bg.shadowBlack}
-		);
+		background-color: ${chooseColors[Color.Green].basicColor};
+		box-shadow: 0.1em 0.1em 0.3em ${chooseColors[Color.Green].lightColor}
+				inset,
+			-0.1em -0.1em 0.3em ${chooseColors[Color.Green].darkColor} inset,
+			0.3em 0.3em 0.3em ${({ theme }) => theme.bg.shadowBlack},
+			-0.3em -0.3em 0.3em ${({ theme }) => theme.bg.shadowWhite};
 	}
 
 	& div:nth-child(2) {
-		background: radial-gradient(
-			circle at 10px 10px,
-			${Color.Pink},
-			${({ theme }) => theme.bg.shadowBlack}
-		);
+		background-color: ${chooseColors[Color.Pink].basicColor};
+		box-shadow: 0.1em 0.1em 0.3em ${chooseColors[Color.Pink].lightColor}
+				inset,
+			-0.1em -0.1em 0.3em ${chooseColors[Color.Pink].darkColor} inset,
+			0.3em 0.3em 0.3em ${({ theme }) => theme.bg.shadowBlack},
+			-0.3em -0.3em 0.3em ${({ theme }) => theme.bg.shadowWhite};
 	}
 
 	& div:nth-child(3) {
-		background: radial-gradient(
-			circle at 10px 10px,
-			${Color.Blue},
-			${({ theme }) => theme.bg.shadowBlack}
-		);
+		background-color: ${chooseColors[Color.Blue].basicColor};
+		box-shadow: 0.1em 0.1em 0.3em ${chooseColors[Color.Blue].lightColor}
+				inset,
+			-0.1em -0.1em 0.3em ${chooseColors[Color.Blue].darkColor} inset,
+			0.3em 0.3em 0.3em ${({ theme }) => theme.bg.shadowBlack},
+			-0.3em -0.3em 0.3em ${({ theme }) => theme.bg.shadowWhite};
 	}
 `
 
