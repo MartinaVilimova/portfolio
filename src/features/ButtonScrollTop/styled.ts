@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { MediaQueries, Theme } from '../../themes'
+import { MediaQueries } from '../../themes'
 
 export const Wrapper = styled.section<{ visible: boolean }>`
 	display: ${({ visible }) => (visible ? 'flex' : 'none')};
@@ -13,16 +13,12 @@ export const Wrapper = styled.section<{ visible: boolean }>`
 	right: 2em;
 	border-radius: 50%;
 	color: ${({ theme }) => theme.bg.primary};
-	background: ${({ theme }) =>
-		theme.selectedTheme === Theme.Light
-			? `radial-gradient(circle, ${theme.text.colorful} 45%, transparent 100%),
-				linear-gradient(132deg, ${theme.bg.shadowWhite} 40%, transparent 100%), 
-				linear-gradient(322deg, ${theme.bg.black} 20%, transparent 100%)`
-			: `radial-gradient(circle, ${theme.text.colorful} 45%, transparent 100%),
-				linear-gradient(132deg, ${theme.text.primary} 30%, transparent 100%), 
-				linear-gradient(322deg, ${theme.bg.black} 50%, transparent 100%)`};
-
-	box-shadow: 0.3em 0.3em 0.3em ${({ theme }) => theme.bg.shadowBlack},
+	background-color: ${({ theme }) => theme.text.colorful.basicColor};
+	box-shadow: 0.2em 0.2em 0.3em
+			${({ theme }) => theme.text.colorful.lightColor} inset,
+		-0.2em -0.2em 0.3em ${({ theme }) => theme.text.colorful.darkColor}
+			inset,
+		0.3em 0.3em 0.3em ${({ theme }) => theme.bg.shadowBlack},
 		-0.3em -0.3em 0.3em ${({ theme }) => theme.bg.shadowWhite};
 	cursor: pointer;
 

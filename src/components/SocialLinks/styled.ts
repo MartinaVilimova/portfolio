@@ -20,7 +20,7 @@ export const Icon = styled(StyledA)`
 	padding: 0.5em;
 	margin: 0 1em 0.5em 1em;
 	border-radius: 50%;
-	color: ${({ theme }) => theme.text.colorful};
+	color: ${({ theme }) => theme.text.colorful.basicColor};
 	box-shadow: 0.3em 0.3em 0.3em ${({ theme }) => theme.bg.shadowBlack},
 		-0.3em -0.3em 0.3em ${({ theme }) => theme.bg.shadowWhite};
 

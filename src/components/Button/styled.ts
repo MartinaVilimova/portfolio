@@ -7,7 +7,7 @@ export const Button = styled.button`
 	justify-content: center;
 	font-size: 1em;
 	font-family: 'Poppins', sans-serif;
-	color: ${({ theme }) => theme.text.colorful};
+	color: ${({ theme }) => theme.text.colorful.basicColor}B3;
 	background-color: ${({ theme }) => theme.bg.primary};
 	border-radius: 1em;
 	border: 1px solid ${({ theme }) => theme.bg.primary};
@@ -21,7 +21,7 @@ export const Button = styled.button`
 	}
 
 	&:hover {
-		text-shadow: 0 0 1em ${({ theme }) => theme.text.colorful};
+		color: ${({ theme }) => theme.text.colorful.basicColor};
 	}
 
 	&:active {

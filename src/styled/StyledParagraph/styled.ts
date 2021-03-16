@@ -14,5 +14,5 @@ export const Paragraph = styled.p`
 
 export const ResumeTime = styled.p`
 	font-size: 1em;
-	color: ${({ theme }) => theme.text.colorful};
+	color: ${({ theme }) => theme.text.colorful.basicColor};
 `

@@ -18,7 +18,7 @@ export const Page = styled.div`
 	color: ${({ theme }) => theme.text.primary};
 
 	&:hover {
-		color: ${({ theme }) => theme.text.colorful};
+		color: ${({ theme }) => theme.text.colorful.basicColor};
 		box-shadow: 0.1em 0.1em 0.1em ${({ theme }) => theme.bg.shadowBlack}
 				inset,
 			-0.1em -0.1em 0.1em ${({ theme }) => theme.bg.shadowWhite} inset;
@@ -28,5 +28,5 @@ export const Page = styled.div`
 export const PageArrow = styled(Page)`
 	box-sizing: border-box;
 	padding: 0.4em;
-	color: ${({ theme }) => theme.text.colorful};
+	color: ${({ theme }) => theme.text.colorful.basicColor};
 `

@@ -18,7 +18,7 @@ export const StyledH2 = styled.h2`
 	top: 0.4em;
 	font-weight: 900;
 	font-size: 2rem;
-	color: ${({ theme }) => theme.text.colorful};
+	color: ${({ theme }) => theme.text.colorful.basicColor};
 	text-align: center;
 	margin: 0;
 `

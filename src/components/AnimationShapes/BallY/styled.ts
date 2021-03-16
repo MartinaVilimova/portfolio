@@ -20,7 +20,7 @@ export const BallY = styled.div<{ ballAnimation: string }>`
 		0% {
 			transform: scale(1);
 			top: 4em;
-			background-color: ${({ theme }) => theme.text.colorful};
+			background-color: ${({ theme }) => theme.text.colorful.basicColor};
 		}
 		50% {
 			transform: scale(2.5);
@@ -30,7 +30,7 @@ export const BallY = styled.div<{ ballAnimation: string }>`
 		100% {
 			transform: scale(1);
 			top: 4em;
-			background-color: ${({ theme }) => theme.text.colorful};
+			background-color: ${({ theme }) => theme.text.colorful.basicColor};
 		}
 	}
 
@@ -43,7 +43,7 @@ export const BallY = styled.div<{ ballAnimation: string }>`
 		50% {
 			transform: scale(2.5);
 			top: 4em;
-			background-color: ${({ theme }) => theme.text.colorful};
+			background-color: ${({ theme }) => theme.text.colorful.basicColor};
 		}
 		100% {
 			transform: scale(1);

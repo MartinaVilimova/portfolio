@@ -79,7 +79,7 @@ export const IconButton = styled.div`
 	color: ${({ theme }) => theme.text.primary};
 	background: radial-gradient(
 			circle,
-			${({ theme }) => theme.text.colorful} 45%,
+			${({ theme }) => theme.text.colorful.basicColor} 45%,
 			transparent 100%
 		),
 		linear-gradient(

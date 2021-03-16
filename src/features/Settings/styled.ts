@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components'
 import { Settings } from '@styled-icons/feather'
-import { Color } from '../Theme'
+import { Color } from '../../themes'
 
 export const Wrapper = styled.section<{ click: boolean }>`
 	width: 14em;
@@ -131,10 +131,10 @@ export const SettingsIcon = styled(Settings)<{ click: boolean }>`
 	color: ${({ click }) =>
 		click
 			? ({ theme }) => theme.text.primary
-			: ({ theme }) => theme.text.colorful};
+			: ({ theme }) => theme.text.colorful.basicColor};
 
 	&:hover {
-		color: ${({ theme }) => theme.text.colorful};
+		color: ${({ theme }) => theme.text.colorful.basicColor};
 	}
 
 	@keyframes rotation {
