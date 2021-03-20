@@ -1,12 +1,16 @@
 import React, { useState } from 'react'
 import { Wrapper, HoverBox, Picture, IconsBox, IconButton } from './styled'
 import { Link, Search, Github } from '@styled-icons/feather'
-import { DataFilter, DataItemsMyWork, dataMyWork } from './data'
+import { DataFilter, DataItemsMyWork } from './data'
 import { StyledA } from '../../styled/StyledLink/styled'
 import DescriptionMyWork from '../../features/Description'
 import { StyledH5 } from '../../styled/StyledTitle/styled'
 
-const ItemMyWork: React.FC = () => {
+type Props = {
+	dataItems: DataItemsMyWork[]
+}
+
+const ItemMyWork: React.FC<Props> = ({ dataItems }) => {
 	const [click, setClick] = useState(false)
 	const [data, setData] = useState<DataItemsMyWork>({
 		myWorkItem: {
@@ -27,7 +31,7 @@ const ItemMyWork: React.FC = () => {
 
 	return (
 		<>
-			{dataMyWork.map((item, index) => (
+			{dataItems.map((item, index) => (
 				<Wrapper key={index}>
 					<Picture src={item.myWorkItem.picture} />
 					<HoverBox>
