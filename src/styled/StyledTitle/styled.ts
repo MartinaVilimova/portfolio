@@ -39,7 +39,7 @@ export const StyledH4 = styled.h4`
 export const StyledH5 = styled.h5`
 	font-size: 1.3em;
 	font-weight: 500;
-	color: ${({ theme }) => theme.text.colorful};
+	color: ${({ theme }) => theme.text.colorful.basicColor};
 `
 
 export const StyledH6 = styled.h6`
