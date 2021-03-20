@@ -45,12 +45,9 @@ const formItem = css`
 		font-weight: 300;
 	}
 
-	&:-webkit-autofill,
-	&:-webkit-autofill:hover,
-	&:-webkit-autofill:focus,
-	&:-webkit-autofill:active {
+	&:-webkit-autofill {
 		box-shadow: 0 0 0 30px
-			${({ theme }) => theme.text.colorful.basicColor}B3 inset !important;
+			${({ theme }) => `${theme.text.colorful.basicColor}B3`} inset;
 	}
 `
 

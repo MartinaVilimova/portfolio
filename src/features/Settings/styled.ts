@@ -43,24 +43,19 @@ export const Colors = styled.div`
 	align-items: center;
 	width: 7.5em;
 	height: 2.5em;
+`
 
-	& div {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		cursor: pointer;
-		height: 1.7em;
-		width: 1.7em;
-		border-radius: 50%;
-		opacity: 0.85;
+export const Switcher = styled.div`
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	height: 1.7em;
+	width: 1.7em;
+	border-radius: 50%;
+	opacity: 0.85;
 
-		& svg {
-			height: 1.2em;
-			width: 1.2em;
-		}
-	}
-
-	& div:nth-child(1) {
+	&:nth-child(1) {
 		background-color: ${chooseColors[Color.Green].basicColor};
 		box-shadow: 0.1em 0.1em 0.3em ${chooseColors[Color.Green].lightColor}
 				inset,
@@ -69,7 +64,7 @@ export const Colors = styled.div`
 			-0.3em -0.3em 0.3em ${({ theme }) => theme.bg.shadowWhite};
 	}
 
-	& div:nth-child(2) {
+	&:nth-child(2) {
 		background-color: ${chooseColors[Color.Pink].basicColor};
 		box-shadow: 0.1em 0.1em 0.3em ${chooseColors[Color.Pink].lightColor}
 				inset,
@@ -78,13 +73,19 @@ export const Colors = styled.div`
 			-0.3em -0.3em 0.3em ${({ theme }) => theme.bg.shadowWhite};
 	}
 
-	& div:nth-child(3) {
+	&:nth-child(3) {
 		background-color: ${chooseColors[Color.Blue].basicColor};
 		box-shadow: 0.1em 0.1em 0.3em ${chooseColors[Color.Blue].lightColor}
 				inset,
 			-0.1em -0.1em 0.3em ${chooseColors[Color.Blue].darkColor} inset,
 			0.3em 0.3em 0.3em ${({ theme }) => theme.bg.shadowBlack},
 			-0.3em -0.3em 0.3em ${({ theme }) => theme.bg.shadowWhite};
+	}
+
+	& svg {
+		height: 1.2em;
+		width: 1.2em;
+		color: ${({ theme }) => theme.bg.primary};
 	}
 `
 
