@@ -1,28 +1,26 @@
 import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
-import { NavContent, Wrapper, NavItem, Burger } from './styled'
+import { useLocation } from 'react-router'
+import { menuLinks } from './data'
+import { NavContent, Wrapper, NavItem, Burger, NavLink } from './styled'
 
 const Nav: React.FC = () => {
 	const [open, setOpen] = useState<boolean>(false)
 
+	const location = useLocation()
+
 	return (
 		<Wrapper>
 			<NavContent open={open}>
-				<NavItem>
-					<Link to="/about-me">O mně</Link>
-				</NavItem>
-				<NavItem>
-					<Link to="/resume">Životopis</Link>
-				</NavItem>
-				<NavItem>
-					<Link to="/knowledge">Znalosti</Link>
-				</NavItem>
-				<NavItem>
-					<Link to="/my-work">Má práce</Link>
-				</NavItem>
-				<NavItem>
-					<Link to="/contact">Kontakt</Link>
-				</NavItem>
+				{menuLinks.map((item, index) => (
+					<NavItem key={index}>
+						<NavLink
+							to={item.link}
+							active={location.pathname === item.link}
+						>
+							{item.name}
+						</NavLink>
+					</NavItem>
+				))}
 			</NavContent>
 			<Burger open={open} onClick={() => setOpen(!open)}>
 				<div></div>

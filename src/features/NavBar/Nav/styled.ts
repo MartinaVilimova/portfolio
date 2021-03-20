@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import styled, { css } from 'styled-components'
 import { MediaQueries } from '../../../themes'
 import { getAnimationOpen } from './function'
@@ -45,22 +46,28 @@ export const NavContent = styled.ul<{ open: boolean }>`
 export const NavItem = styled.li`
 	padding: 0 0.7em;
 
-	& a {
-		text-decoration: none;
-		font-size: 1em;
-		font-weight: 400;
-		letter-spacing: 1px;
-		color: ${({ theme }) => theme.text.primary};
-
-		&:hover {
-			color: ${({ theme }) => theme.text.colorful};
-		}
-	}
-
 	@media (max-width: ${MediaQueries.Ipad}) {
 		padding: 0.5em 0.7em;
 		opacity: 0;
 	}
+`
+
+export const NavLink = styled(Link)<{ active: boolean }>`
+	text-decoration: none;
+	font-size: 1em;
+	font-weight: 400;
+	letter-spacing: 1px;
+	color: ${({ theme }) => theme.text.primary};
+
+	&:hover {
+		color: ${({ theme }) => theme.text.colorful};
+	}
+
+	${({ active, theme }) =>
+		active &&
+		`
+			color: ${theme.text.colorful};
+		`}
 `
 
 export const Burger = styled.section<{ open: boolean }>`
