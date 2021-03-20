@@ -7,7 +7,7 @@ export const HoverBox = styled.div`
 	align-items: center;
 	flex-direction: column;
 	position: absolute;
-	background-color: ${({ theme }) => theme.bg.shadowBlack}E6;
+	background-color: ${({ theme }) => `${theme.bg.shadowBlack}E6`};
 	border-radius: 1.4em;
 	opacity: 0;
 	transform: scale(0.7);
@@ -48,7 +48,7 @@ export const Wrapper = styled.article`
 
 	&:hover {
 		& ${HoverBox} {
-			background-color: ${({ theme }) => theme.bg.shadowBlack}E6;
+			background-color: ${({ theme }) => `${theme.bg.shadowBlack}E6`};
 			transform: scale(1);
 			opacity: 1;
 			transition: all 0.5s ease;
@@ -97,7 +97,7 @@ export const IconButton = styled.div`
 			0.3em 0.3em 0.3em ${({ theme }) => theme.bg.shadowBlack}
 		)
 		drop-shadow(
-			-0.3em -0.3em 0.3em ${({ theme }) => theme.bg.shadowWhite}80
+			-0.3em -0.3em 0.3em ${({ theme }) => `${theme.bg.shadowWhite}80`}
 		);
 
 	&:hover {

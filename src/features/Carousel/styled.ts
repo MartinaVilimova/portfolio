@@ -39,11 +39,13 @@ export const Wrapper = styled.article`
 		}
 
 		& .control-prev.control-arrow:before {
-			border-right: 8px solid ${({ theme }) => theme.text.colorful};
+			border-right: 8px solid
+				${({ theme }) => theme.text.colorful.basicColor};
 		}
 
 		& .control-next.control-arrow:before {
-			border-left: 8px solid ${({ theme }) => theme.text.colorful};
+			border-left: 8px solid
+				${({ theme }) => theme.text.colorful.basicColor};
 		}
 
 		& .control-dots {
@@ -58,7 +60,8 @@ export const Wrapper = styled.article`
 			}
 
 			& .dot {
-				background-color: ${({ theme }) => theme.text.colorful};
+				background-color: ${({ theme }) =>
+					theme.text.colorful.basicColor};
 				outline: none;
 				box-shadow: 0.1em 0.1em 0.1em
 					${({ theme }) => theme.bg.shadowBlack};
@@ -73,7 +76,8 @@ export const Wrapper = styled.article`
 			cursor: pointer;
 
 			&:hover {
-				border: 3px solid ${({ theme }) => theme.text.colorful};
+				border: 3px solid
+					${({ theme }) => theme.text.colorful.basicColor};
 			}
 
 			& img {
@@ -83,7 +87,7 @@ export const Wrapper = styled.article`
 
 		& .thumb.selected,
 		.carousel .thumb {
-			border: 3px solid ${({ theme }) => theme.text.colorful};
+			border: 3px solid ${({ theme }) => theme.text.colorful.basicColor};
 		}
 
 		& .thumbs-wrapper {

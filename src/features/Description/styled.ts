@@ -9,7 +9,7 @@ export const Wrapper = styled.div<{ visible: boolean }>`
 	width: 100%;
 	height: 100%;
 	padding: 1.9em 0 0 1.5em;
-	background-color: ${({ theme }) => theme.bg.shadowBlack}B3;
+	background-color: ${({ theme }) => `${theme.bg.shadowBlack}B3`};
 	z-index: 1000;
 
 	@media (max-width: ${MediaQueries.Ipad}) {
@@ -64,7 +64,7 @@ export const FixedTitle = styled.header`
 	justify-content: space-between;
 	width: 100%;
 	height: 3.7em;
-	border-bottom: 1px solid ${({ theme }) => theme.text.grey}80;
+	border-bottom: 1px solid ${({ theme }) => `${theme.text.grey}80`};
 	padding: 0.5em 1.5em;
 `
 
@@ -74,7 +74,7 @@ export const IconCross = styled.div`
 	cursor: pointer;
 
 	&:hover {
-		color: ${({ theme }) => theme.text.colorful};
+		color: ${({ theme }) => theme.text.colorful.basicColor};
 	}
 `
 

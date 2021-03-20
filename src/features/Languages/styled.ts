@@ -29,7 +29,7 @@ export const Language = styled.span`
 	cursor: pointer;
 
 	&:hover {
-		color: ${({ theme }) => theme.text.colorful};
+		color: ${({ theme }) => theme.text.colorful.basicColor};
 		box-shadow: 0.1em 0.1em 0.1em ${({ theme }) => theme.bg.shadowBlack}
 				inset,
 			-0.1em -0.1em 0.1em ${({ theme }) => theme.bg.shadowWhite} inset;
@@ -41,7 +41,7 @@ export const Language = styled.span`
 		margin: 0.5em;
 
 		&:hover {
-			color: ${({ theme }) => theme.text.colorful};
+			color: ${({ theme }) => theme.text.colorful.basicColor};
 			box-shadow: none;
 		}
 	}

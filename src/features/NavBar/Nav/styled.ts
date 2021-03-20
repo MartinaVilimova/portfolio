@@ -60,13 +60,13 @@ export const NavLink = styled(Link)<{ active: boolean }>`
 	color: ${({ theme }) => theme.text.primary};
 
 	&:hover {
-		color: ${({ theme }) => theme.text.colorful};
+		color: ${({ theme }) => theme.text.colorful.basicColor};
 	}
 
 	${({ active, theme }) =>
 		active &&
 		`
-			color: ${theme.text.colorful};
+			color: ${theme.text.colorful.basicColor};
 		`}
 `
 

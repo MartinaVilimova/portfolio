@@ -74,7 +74,7 @@ export const Photo = styled.img`
 	left: 1.1em;
 	filter: drop-shadow(0.3em 0.3em 0.3em ${({ theme }) => theme.bg.black})
 		drop-shadow(
-			-0.3em -0.3em 0.3em ${({ theme }) => theme.bg.shadowWhite}80
+			-0.3em -0.3em 0.3em ${({ theme }) => `${theme.bg.shadowWhite}80`}
 		);
 
 	@media (max-width: ${MediaQueries.Desktop}) {
