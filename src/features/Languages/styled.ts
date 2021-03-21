@@ -17,9 +17,9 @@ export const Wrapper = styled.section`
 	}
 `
 
-export const Language = styled.span`
+export const Language = styled.span<{ active: boolean }>`
 	margin: 0.5em 0.3em;
-	padding: 0 0.5em;
+	padding: 0 0.6em;
 	letter-spacing: 2px;
 	border-radius: 1em;
 	color: ${({ theme }) => theme.text.primary};
@@ -30,10 +30,16 @@ export const Language = styled.span`
 
 	&:hover {
 		color: ${({ theme }) => theme.text.colorful.basicColor};
-		box-shadow: 0.1em 0.1em 0.1em ${({ theme }) => theme.bg.shadowBlack}
-				inset,
-			-0.1em -0.1em 0.1em ${({ theme }) => theme.bg.shadowWhite} inset;
 	}
+
+	${({ active, theme }) =>
+		active &&
+		`
+		color: ${theme.text.colorful.basicColor};
+		box-shadow: 0.1em 0.1em 0.1em ${theme.bg.shadowBlack}
+				inset,
+			-0.1em -0.1em 0.1em ${theme.bg.shadowWhite} inset;
+	`}
 
 	@media (max-width: ${MediaQueries.Ipad}) {
 		box-shadow: none;

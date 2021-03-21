@@ -16,7 +16,7 @@ import {
 	Switcher,
 } from './styled'
 
-const ColorSwitches = [Color.Green, Color.Pink, Color.Blue]
+const colorSwitches = [Color.Green, Color.Pink, Color.Blue]
 
 const SettingsBox: React.FC = () => {
 	const { theme, setColor } = useThemeControl()
@@ -25,7 +25,7 @@ const SettingsBox: React.FC = () => {
 
 	const [open, setOpen] = useState<boolean>(true)
 
-	const [active, setActive] = useState(ColorSwitches[0])
+	const [active, setActive] = useState(colorSwitches[0])
 
 	return (
 		<Wrapper click={open}>
@@ -33,7 +33,7 @@ const SettingsBox: React.FC = () => {
 				<Title>Nastavení</Title>
 				<Title>Barevný přepínač</Title>
 				<Colors>
-					{ColorSwitches.map((item, index) => (
+					{colorSwitches.map((item, index) => (
 						<Switcher
 							key={index}
 							onClick={() => {
