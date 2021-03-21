@@ -54,6 +54,7 @@ export const SmallButton = styled(Button)<{ active: boolean }>`
 		active &&
 		`
 		text-shadow: none;
+		color: ${theme.text.colorful.basicColor};
 		box-shadow: 0.3em 0.3em 0.3em ${theme.bg.shadowBlack},
 			-0.3em -0.3em 0.3em ${theme.bg.shadowWhite},
 			0.3em 0.3em 0.3em ${theme.bg.shadowBlack} inset,
