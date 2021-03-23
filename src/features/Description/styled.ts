@@ -58,7 +58,6 @@ export const ModalBox = styled.section`
 `
 
 export const FixedTitle = styled.header`
-	box-sizing: border-box;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -79,7 +78,6 @@ export const IconCross = styled.div`
 `
 
 export const DescriptionContent = styled.div`
-	box-sizing: border-box;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -87,6 +85,34 @@ export const DescriptionContent = styled.div`
 	height: 100%;
 	overflow-y: scroll;
 	padding: 0 1.5em;
+
+	&::-webkit-scrollbar {
+		width: 1em;
+	}
+
+	&::-webkit-scrollbar-track {
+		border-radius: 0.8em;
+		background: ${({ theme }) => theme.bg.primary};
+		box-shadow: 0.15em 0.15em 0.2em ${({ theme }) => theme.bg.shadowBlack}
+				inset,
+			-0.15em -0.15em 0.2em ${({ theme }) => theme.bg.shadowWhite} inset;
+	}
+
+	&::-webkit-scrollbar-thumb {
+		background: ${({ theme }) => theme.text.colorful.basicColor};
+		box-shadow: 0.15em 0.15em 0.2em
+				${({ theme }) => theme.text.colorful.lightColor} inset,
+			-0.15em -0.15em 0.2em
+				${({ theme }) => theme.text.colorful.darkColor} inset;
+		border-radius: 0.8em;
+	}
+
+	&::-webkit-scrollbar-thumb:hover {
+		box-shadow: 0.1em 0.1em 0.1em
+				${({ theme }) => theme.text.colorful.lightColor} inset,
+			-0.1em -0.1em 0.1em ${({ theme }) => theme.text.colorful.darkColor}
+				inset;
+	}
 
 	& h6 {
 		text-align: center;
