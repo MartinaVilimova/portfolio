@@ -5,51 +5,49 @@ export const Wrapper = styled.article`
 	width: 90%;
 	display: flex;
 	justify-content: center;
-	padding: 2em 0;
+	padding: 2rem 0;
 
 	@media (max-width: ${MediaQueries.Ipad}) {
 		width: 100%;
 	}
 
-	& .carousel-root {
+	.carousel-root {
 		width: 100%;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 	}
 
-	& .carousel.carousel-slider {
-		box-sizing: border-box;
-		border-radius: 1.5em;
-		border: 0.5em solid ${({ theme }) => theme.bg.primary};
-		box-shadow: 0.3em 0.3em 0.3em ${({ theme }) => theme.bg.shadowBlack},
-			-0.3em -0.3em 0.3em ${({ theme }) => theme.bg.shadowWhite};
+	.carousel.carousel-slider {
+		border-radius: 1.5rem;
+		border: 8px solid ${({ theme }) => theme.bg.primary};
+		box-shadow: 5px 5px 5px ${({ theme }) => theme.bg.shadowBlack},
+			-5px -5px 5px ${({ theme }) => theme.bg.shadowWhite};
 	}
 
-	& .carousel {
+	.carousel {
 		width: 80%;
-		margin-top: 1em;
-		border-radius: 1em;
-		box-shadow: 0.3em 0.3em 0.3em ${({ theme }) => theme.bg.shadowBlack}
-				inset,
-			-0.3em -0.3em 0.3em ${({ theme }) => theme.bg.shadowWhite} inset;
+		margin-top: 1rem;
+		border-radius: 1rem;
+		box-shadow: 5px 5px 5px ${({ theme }) => theme.bg.shadowBlack} inset,
+			-5px -5px 5px ${({ theme }) => theme.bg.shadowWhite} inset;
 
 		@media (max-width: ${MediaQueries.Ipad}) {
 			width: 85%;
 		}
 
-		& .control-prev.control-arrow:before {
+		.control-prev.control-arrow:before {
 			border-right: 8px solid
 				${({ theme }) => theme.text.colorful.basicColor};
 		}
 
-		& .control-next.control-arrow:before {
+		.control-next.control-arrow:before {
 			border-left: 8px solid
 				${({ theme }) => theme.text.colorful.basicColor};
 		}
 
-		& .control-dots {
-			padding: 0.5em;
+		.control-dots {
+			padding: 0.5rem;
 			margin: 0;
 			transition: all 0.25s ease-in;
 			background-color: ${({ theme }) => `${theme.bg.primary}00`};
@@ -59,19 +57,19 @@ export const Wrapper = styled.article`
 				background-color: ${({ theme }) => `${theme.bg.primary}B3`};
 			}
 
-			& .dot {
+			.dot {
 				background-color: ${({ theme }) =>
 					theme.text.colorful.basicColor};
 				outline: none;
-				box-shadow: 0.1em 0.1em 0.1em
+				box-shadow: 1.5px 1.5px 1.5px
 					${({ theme }) => theme.bg.shadowBlack};
-				height: 0.7em;
-				width: 0.7em;
+				height: 0.7rem;
+				width: 0.7rem;
 			}
 		}
 
-		& .thumb {
-			border-radius: 0.7em;
+		.thumb {
+			border-radius: 0.7rem;
 			border: none;
 			cursor: pointer;
 
@@ -80,17 +78,20 @@ export const Wrapper = styled.article`
 					${({ theme }) => theme.text.colorful.basicColor};
 			}
 
-			& img {
-				border-radius: 0.5em;
+			img {
+				border-radius: 0.5rem;
+				padding: 0;
+				margin: 0;
 			}
 		}
 
-		& .thumb.selected,
+		.thumb.selected,
 		.carousel .thumb {
 			border: 3px solid ${({ theme }) => theme.text.colorful.basicColor};
+			border-radius: 14px;
 		}
 
-		& .thumbs-wrapper {
+		.thumbs-wrapper {
 			width: 88%;
 			margin: auto;
 
@@ -102,7 +103,7 @@ export const Wrapper = styled.article`
 				display: none;
 			}
 
-			& ul {
+			ul {
 				padding: 0;
 			}
 		}
@@ -111,7 +112,7 @@ export const Wrapper = styled.article`
 
 export const WrapperPicture = styled.div`
 	width: 100%;
-	border-radius: 1.5em;
+	border-radius: 1.5rem;
 `
 
 export const Picture = styled.img`

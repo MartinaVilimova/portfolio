@@ -9,7 +9,7 @@ export const Wrapper = styled.section`
 `
 
 export const BigTitle = styled.div`
-	font-size: 3.5em;
+	font-size: 3.5rem;
 	font-weight: 800;
 	text-align: center;
 	color: ${({ theme }) =>
@@ -17,9 +17,10 @@ export const BigTitle = styled.div`
 			? theme.bg.shadowWhite
 			: theme.bg.shadowBlack};
 	position: relative;
-	top: -0.4em;
+	top: -1.7rem;
 
 	@media (max-width: ${MediaQueries.SmallerIpad}) {
-		font-size: 3em;
+		font-size: 3rem;
+		top: -1rem;
 	}
 `

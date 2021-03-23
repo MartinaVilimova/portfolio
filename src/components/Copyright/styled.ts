@@ -6,7 +6,7 @@ export const Text = styled.article`
 	justify-content: center;
 	align-items: center;
 	width: 90%;
-	margin: 1em 0;
+	margin: 2rem 0;
 
 	@media (max-width: ${MediaQueries.Ipad}) {
 		flex-direction: column;

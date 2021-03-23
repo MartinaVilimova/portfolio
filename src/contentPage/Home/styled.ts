@@ -7,18 +7,14 @@ export const Wrapper = styled.article`
 	flex-direction: column;
 	width: 100%;
 	height: 100%;
-	box-sizing: border-box;
+
+	a {
+		width: 12.3rem;
+	}
 
 	@media (max-width: ${MediaQueries.Ipad}) {
 		order: 2;
 		text-align: center;
 		align-items: center;
-	}
-
-	& a {
-		width: 12.3em;
-		& button {
-			margin: auto;
-		}
 	}
 `

@@ -8,7 +8,7 @@ export const HoverBox = styled.div`
 	flex-direction: column;
 	position: absolute;
 	background-color: ${({ theme }) => `${theme.bg.shadowBlack}E6`};
-	border-radius: 1.4em;
+	border-radius: 1.4rem;
 	opacity: 0;
 	transform: scale(0.7);
 	top: 0;
@@ -19,23 +19,22 @@ export const HoverBox = styled.div`
 `
 
 export const Wrapper = styled.article`
-	box-sizing: border-box;
 	display: flex;
-	margin: 1em 0.5em;
+	margin: 1rem 0.5rem;
 	justify-self: center;
 	justify-content: center;
-	border-radius: 1.6em;
+	border-radius: 1.6rem;
 	background-color: ${({ theme }) => theme.bg.primary};
-	border: 0.3em solid ${({ theme }) => theme.bg.primary};
+	border: 5px solid ${({ theme }) => theme.bg.primary};
 	width: 95%;
 	height: auto;
 	position: relative;
-	box-shadow: 0.3em 0.3em 0.3em ${({ theme }) => theme.bg.shadowBlack},
-		-0.3em -0.3em 0.3em ${({ theme }) => theme.bg.shadowWhite};
+	box-shadow: 5px 5px 5px ${({ theme }) => theme.bg.shadowBlack},
+		-5px -5px 5px ${({ theme }) => theme.bg.shadowWhite};
 
 	@media (max-width: ${MediaQueries.Desktop}) {
 		width: 80%;
-		margin: 1em;
+		margin: 1rem;
 	}
 
 	@media (max-width: ${MediaQueries.Ipad}) {
@@ -48,7 +47,6 @@ export const Wrapper = styled.article`
 
 	&:hover {
 		& ${HoverBox} {
-			background-color: ${({ theme }) => `${theme.bg.shadowBlack}E6`};
 			transform: scale(1);
 			opacity: 1;
 			transition: all 0.5s ease;
@@ -58,7 +56,7 @@ export const Wrapper = styled.article`
 
 export const Picture = styled.img`
 	width: 100%;
-	border-radius: 1.5em;
+	border-radius: 1.5rem;
 `
 
 export const IconsBox = styled.div`
@@ -67,14 +65,13 @@ export const IconsBox = styled.div`
 	width: 100%;
 `
 
-export const IconButton = styled.div`
-	box-sizing: border-box;
+export const IconButton = styled.button`
 	display: flex;
-	width: 2.3em;
-	height: 2.3em;
+	width: 2.3rem;
+	height: 2.3rem;
 	position: relative;
-	padding: 0.5em;
-	margin: 0.5em;
+	padding: 0.5rem;
+	margin: 0.5rem;
 	border-radius: 50%;
 	color: ${({ theme }) => theme.text.primary};
 	background: radial-gradient(
@@ -92,13 +89,8 @@ export const IconButton = styled.div`
 			${({ theme }) => theme.bg.black} 20%,
 			transparent 100%
 		);
-	cursor: pointer;
-	filter: drop-shadow(
-			0.3em 0.3em 0.3em ${({ theme }) => theme.bg.shadowBlack}
-		)
-		drop-shadow(
-			-0.3em -0.3em 0.3em ${({ theme }) => `${theme.bg.shadowWhite}80`}
-		);
+	filter: drop-shadow(5px 5px 5px ${({ theme }) => theme.bg.shadowBlack})
+		drop-shadow(-5px -5px 5px ${({ theme }) => `${theme.bg.shadowWhite}80`});
 
 	&:hover {
 		color: ${({ theme }) => theme.bg.primary};

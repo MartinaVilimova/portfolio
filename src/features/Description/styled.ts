@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 import { MediaQueries } from '../../themes'
 
 export const Wrapper = styled.div<{ visible: boolean }>`
@@ -8,12 +8,12 @@ export const Wrapper = styled.div<{ visible: boolean }>`
 	left: 0;
 	width: 100%;
 	height: 100%;
-	padding: 1.9em 0 0 1.5em;
+	padding: 1.9rem 0 0 1.5rem;
 	background-color: ${({ theme }) => `${theme.bg.shadowBlack}B3`};
 	z-index: 1000;
 
 	@media (max-width: ${MediaQueries.Ipad}) {
-		padding: 1.5em 0 0 0;
+		padding: 1.5rem 0 0 0;
 	}
 
 	& > div {
@@ -30,25 +30,28 @@ export const Wrapper = styled.div<{ visible: boolean }>`
 		}
 	}
 `
-
-export const ModalBox = styled.section`
-	width: 100%;
-	height: 100%;
+const sameLayout = css`
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	align-items: center;
+`
+
+export const ModalBox = styled.section`
+	${sameLayout};
+	width: 100%;
+	height: 100%;
 	position: relative;
 	background-color: ${({ theme }) => theme.bg.primary};
 	opacity: 0;
 	z-index: 1001;
-	border-radius: 0.5em;
-	box-shadow: 0.2em 0.2em 0.2em ${({ theme }) => theme.bg.shadowBlack},
-		-0.2em -0.2em 0.2em ${({ theme }) => theme.bg.shadowWhite};
+	border-radius: 0.5rem;
+	box-shadow: 3px 3px 3px ${({ theme }) => theme.bg.shadowBlack},
+		-3px -3px v ${({ theme }) => theme.bg.shadowWhite};
 	animation: animateTop 0.5s forwards ease;
 
 	@keyframes animateTop {
 		from {
-			transform: translateY(-2em);
+			transform: translateY(-2rem);
 		}
 		to {
 			transform: translateY(0);
@@ -62,15 +65,15 @@ export const FixedTitle = styled.header`
 	align-items: center;
 	justify-content: space-between;
 	width: 100%;
-	height: 3.7em;
+	height: 3.7rem;
 	border-bottom: 1px solid ${({ theme }) => `${theme.text.grey}80`};
-	padding: 0.5em 1.5em;
+	padding: 0.5rem 1.5rem;
 `
 
-export const IconCross = styled.div`
-	width: 2em;
-	height: 2em;
-	cursor: pointer;
+export const IconCross = styled.button`
+	width: 2.7rem;
+	height: 2.7rem;
+	color: ${({ theme }) => theme.text.primary};
 
 	&:hover {
 		color: ${({ theme }) => theme.text.colorful.basicColor};
@@ -78,54 +81,48 @@ export const IconCross = styled.div`
 `
 
 export const DescriptionContent = styled.div`
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+	${sameLayout};
 	width: 100%;
 	height: 100%;
 	overflow-y: scroll;
-	padding: 0 1.5em;
+	padding: 0 1.5rem;
 
 	&::-webkit-scrollbar {
-		width: 1em;
+		width: 1rem;
 	}
 
 	&::-webkit-scrollbar-track {
-		border-radius: 0.8em;
+		border-radius: 0.8rem;
 		background: ${({ theme }) => theme.bg.primary};
-		box-shadow: 0.15em 0.15em 0.2em ${({ theme }) => theme.bg.shadowBlack}
-				inset,
-			-0.15em -0.15em 0.2em ${({ theme }) => theme.bg.shadowWhite} inset;
+		box-shadow: 2px 2px 2px ${({ theme }) => theme.bg.shadowBlack} inset,
+			-2px -2px 2px ${({ theme }) => theme.bg.shadowWhite} inset;
 	}
 
 	&::-webkit-scrollbar-thumb {
 		background: ${({ theme }) => theme.text.colorful.basicColor};
-		box-shadow: 0.15em 0.15em 0.2em
-				${({ theme }) => theme.text.colorful.lightColor} inset,
-			-0.15em -0.15em 0.2em
-				${({ theme }) => theme.text.colorful.darkColor} inset;
-		border-radius: 0.8em;
+		box-shadow: 2px 2px 2px ${({ theme }) => theme.text.colorful.lightColor}
+				inset,
+			-2px -2px 2px ${({ theme }) => theme.text.colorful.darkColor} inset;
+		border-radius: 0.8rem;
 	}
 
 	&::-webkit-scrollbar-thumb:hover {
-		box-shadow: 0.1em 0.1em 0.1em
-				${({ theme }) => theme.text.colorful.lightColor} inset,
-			-0.1em -0.1em 0.1em ${({ theme }) => theme.text.colorful.darkColor}
-				inset;
+		box-shadow: 1px 1px 1px ${({ theme }) => theme.text.colorful.lightColor}
+				inset,
+			-1px -1px 1px ${({ theme }) => theme.text.colorful.darkColor} inset;
 	}
 
-	& h6 {
+	h6 {
 		text-align: center;
-		padding-bottom: 0.5em;
+		padding-bottom: 0.5rem;
 	}
 
 	& > section {
 		width: 90%;
-		border-radius: 1em;
-		box-shadow: 0.1em 0.1em 0.1em ${({ theme }) => theme.bg.shadowBlack}
-				inset,
-			-0.1em -0.1em 0.1em ${({ theme }) => theme.bg.shadowWhite} inset;
-		padding: 1em 0;
+		border-radius: 1rem;
+		box-shadow: 2px 2px 2px ${({ theme }) => theme.bg.shadowBlack} inset,
+			-2px -2px 2px ${({ theme }) => theme.bg.shadowWhite} inset;
+		padding: 1rem 0;
 
 		@media (max-width: ${MediaQueries.Ipad}) {
 			width: 100%;
@@ -134,13 +131,10 @@ export const DescriptionContent = styled.div`
 `
 
 export const Article = styled.article`
-	box-sizing: border-box;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+	${sameLayout};
 	width: 100%;
 	height: 100%;
-	padding: 1em 0.5em;
+	padding: 1rem 0.5rem;
 
 	&:nth-child(1) {
 		grid-column: 1/3;

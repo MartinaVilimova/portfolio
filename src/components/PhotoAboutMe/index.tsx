@@ -4,7 +4,7 @@ import { Wrapper, Photo } from './styled'
 
 const PhotoAboutMe: React.FC = () => (
 	<Wrapper>
-		<Photo src={picture} alt="má náhodná fotografie" />
+		<Photo src={picture} alt="Má fotografie" />
 	</Wrapper>
 )
 

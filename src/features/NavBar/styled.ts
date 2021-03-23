@@ -3,12 +3,12 @@ import { MediaQueries } from '../../themes'
 
 const sizeNav = css`
 	width: 100%;
-	height: 4em;
+	height: 4rem;
 `
 
 export const Wrapper = styled.header`
 	${sizeNav};
-	margin-bottom: 1em;
+	margin-bottom: 1rem;
 `
 
 export const FixedNavBar = styled.div<{ shadow: boolean }>`
@@ -20,9 +20,7 @@ export const FixedNavBar = styled.div<{ shadow: boolean }>`
 	z-index: 999;
 	background-color: ${({ theme }) => theme.bg.primary};
 	box-shadow: ${({ shadow }) =>
-		shadow
-			? ({ theme }) => `0.5em 0em 0.5em ${theme.bg.shadowBlack}`
-			: 'none'};
+		shadow ? ({ theme }) => `8px 0 8px ${theme.bg.shadowBlack}` : 'none'};
 	transition: box-shadow 0.5s ease;
 
 	@media (max-width: ${MediaQueries.Ipad}) {
@@ -35,14 +33,13 @@ export const LogoBox = styled.section`
 	display: flex;
 	align-items: center;
 	justify-content: flex-start;
-	padding: 0 0 0 1.5em;
+	padding: 0 0 0 1.5rem;
 `
 
-export const Logo = styled.span`
+export const Logo = styled.a`
 	margin: 0;
-	font-size: 1.5em;
+	font-size: 1.5rem;
 	font-weight: 400;
 	letter-spacing: 1px;
 	color: ${({ theme }) => theme.text.primary};
-	cursor: pointer;
 `

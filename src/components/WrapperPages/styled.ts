@@ -10,7 +10,7 @@ export const Wrapper = styled.main<{ value: UnitsData }>`
 	align-items: center;
 	max-width: 60%;
 	height: ${({ value }) => value};
-	padding-left: 3em;
+	padding-left: 3rem;
 
 	@media (max-width: ${MediaQueries.Desktop}) {
 		max-width: 80%;
@@ -21,6 +21,6 @@ export const Wrapper = styled.main<{ value: UnitsData }>`
 		max-width: 90%;
 		height: 100%;
 		padding-left: 0;
-		margin-bottom: 1em;
+		margin-bottom: 1rem;
 	}
 `

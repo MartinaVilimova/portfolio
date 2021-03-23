@@ -7,7 +7,7 @@ const Copyright: React.FC = () => (
 	<Text>
 		<span>Copyright &copy; 2021.</span>
 		<span>
-			Web vytvořila
+			&nbsp;Web vytvořila
 			<StyledLink to="/">
 				<ColorfulText>&nbsp;Martina Vilímová</ColorfulText>
 			</StyledLink>
