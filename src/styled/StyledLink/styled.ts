@@ -6,7 +6,6 @@ export const StyledLink = styled(Link)`
 `
 
 export const StyledA = styled.a`
-	text-decoration: none;
 	font-weight: 500;
 	color: ${({ theme }) => theme.text.colorful.basicColor};
 `

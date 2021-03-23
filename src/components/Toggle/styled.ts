@@ -6,12 +6,11 @@ export const Wrapper = styled.section`
 `
 
 const iconCss = css`
-	width: 1.5em;
-	margin: 0 0.5em;
-	cursor: pointer;
+	width: 1.5rem;
+	margin: 0 0.5rem;
 `
 
-export const IconSun = styled.div<{ light: boolean }>`
+export const IconSun = styled.a<{ light: boolean }>`
 	${iconCss};
 	color: ${({ light }) =>
 		light
@@ -19,7 +18,7 @@ export const IconSun = styled.div<{ light: boolean }>`
 			: ({ theme }) => theme.text.colorful.basicColor};
 `
 
-export const IconMoon = styled.div<{ light: boolean }>`
+export const IconMoon = styled.a<{ light: boolean }>`
 	${iconCss};
 	transform: rotate(250deg);
 	color: ${({ light }) =>
@@ -31,15 +30,15 @@ export const IconMoon = styled.div<{ light: boolean }>`
 export const Switch = styled.label`
 	position: relative;
 	display: inline-flex;
-	width: 60px;
-	height: 34px;
+	width: 3.75rem;
+	height: 2.13rem;
 `
 
 const sameShadow = css`
 	background-color: ${({ theme }) => theme.bg.primary};
 	border: 1px solid ${({ theme }) => theme.bg.primary};
-	box-shadow: 0.3em 0.3em 0.3em ${({ theme }) => theme.bg.shadowBlack} inset,
-		-0.3em -0.3em 0.3em ${({ theme }) => theme.bg.shadowWhite} inset;
+	box-shadow: 5px 5px 5px ${({ theme }) => theme.bg.shadowBlack} inset,
+		-5px -5px 5px ${({ theme }) => theme.bg.shadowWhite} inset;
 `
 
 export const RoundSlider = styled.span`
@@ -51,22 +50,22 @@ export const RoundSlider = styled.span`
 	right: 0;
 	bottom: 0;
 	transition: 0.4s;
-	border-radius: 34px;
+	border-radius: 2.13rem;
 
 	&:before {
 		position: absolute;
 		content: '';
-		height: 24px;
-		width: 24px;
-		left: 5px;
-		bottom: 4px;
+		height: 1.5rem;
+		width: 1.5rem;
+		left: 0.3rem;
+		bottom: 0.26rem;
 		background: radial-gradient(
 			circle at 10px 10px,
 			${({ theme }) => theme.text.colorful.basicColor},
 			${({ theme }) => theme.bg.shadowBlack}
 		);
-		box-shadow: 0.1em 0.1em 0.1em ${({ theme }) => theme.bg.shadowBlack},
-			-0.1em -0.1em 0.1em ${({ theme }) => theme.bg.shadowWhite};
+		box-shadow: 1.5px 1.5px 1.5px ${({ theme }) => theme.bg.shadowBlack},
+			-1.5px -1.5px 1.5px ${({ theme }) => theme.bg.shadowWhite};
 		transition: 0.4s;
 		border-radius: 50%;
 	}
@@ -86,6 +85,6 @@ export const Checkbox = styled.input.attrs((props) => ({
 	}
 
 	&:checked + ${RoundSlider}:before {
-		transform: translateX(25px);
+		transform: translateX(1.6rem);
 	}
 `

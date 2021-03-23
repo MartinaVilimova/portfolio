@@ -1,23 +1,26 @@
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 import { MediaQueries } from '../../themes'
+
+const sameStyle = css`
+	box-shadow: 5px 5px 5px ${({ theme }) => theme.bg.shadowBlack},
+		-5px -5px 5px ${({ theme }) => theme.bg.shadowWhite},
+		5px 5px 5px ${({ theme }) => theme.bg.shadowBlack} inset,
+		-5px -5px 5px ${({ theme }) => theme.bg.shadowWhite} inset;
+`
 
 export const Button = styled.button`
 	display: inline;
-	padding: 0.7em 1.4em;
+	padding: 0.7rem 1.4rem;
 	justify-content: center;
-	font-size: 1em;
-	font-family: 'Poppins', sans-serif;
+	font-size: 1rem;
 	color: ${({ theme }) => `${theme.text.colorful.basicColor}B3`};
-	background-color: ${({ theme }) => theme.bg.primary};
-	border-radius: 1em;
+	border-radius: 1rem;
 	border: 1px solid ${({ theme }) => theme.bg.primary};
-	box-shadow: 0.3em 0.3em 0.3em ${({ theme }) => theme.bg.shadowBlack},
-		-0.3em -0.3em 0.3em ${({ theme }) => theme.bg.shadowWhite};
-	cursor: pointer;
-	outline: none;
+	box-shadow: 5px 5px 5px ${({ theme }) => theme.bg.shadowBlack},
+		-5px -5px 5px ${({ theme }) => theme.bg.shadowWhite};
 
 	@media (max-width: ${MediaQueries.SmallerIpad}) {
-		padding: 0.7em 1em;
+		padding: 0.7rem 1rem;
 	}
 
 	&:hover {
@@ -25,29 +28,23 @@ export const Button = styled.button`
 	}
 
 	&:active {
-		box-shadow: 0.3em 0.3em 0.3em ${({ theme }) => theme.bg.shadowBlack},
-			-0.3em -0.3em 0.3em ${({ theme }) => theme.bg.shadowWhite},
-			0.3em 0.3em 0.3em ${({ theme }) => theme.bg.shadowBlack} inset,
-			-0.3em -0.3em 0.3em ${({ theme }) => theme.bg.shadowWhite} inset;
+		${sameStyle};
 		text-shadow: none;
 	}
 `
 
 export const SmallButton = styled(Button)<{ active: boolean }>`
-	padding: 0.6em 1.2em;
-	margin: 0.5em;
-	font-size: 1em;
+	padding: 0.5rem 1.2rem;
+	margin: 0.6rem;
+	font-size: 0.95rem;
 
 	@media (max-width: ${MediaQueries.SmallerIpad}) {
-		padding: 0.5em 1em;
+		padding: 0.5rem 1rem;
 	}
 
 	&:hover {
 		text-shadow: none;
-		box-shadow: 0.3em 0.3em 0.3em ${({ theme }) => theme.bg.shadowBlack},
-			-0.3em -0.3em 0.3em ${({ theme }) => theme.bg.shadowWhite},
-			0.3em 0.3em 0.3em ${({ theme }) => theme.bg.shadowBlack} inset,
-			-0.3em -0.3em 0.3em ${({ theme }) => theme.bg.shadowWhite} inset;
+		${sameStyle};
 	}
 
 	${({ active, theme }) =>
@@ -55,9 +52,9 @@ export const SmallButton = styled(Button)<{ active: boolean }>`
 		`
 		text-shadow: none;
 		color: ${theme.text.colorful.basicColor};
-		box-shadow: 0.3em 0.3em 0.3em ${theme.bg.shadowBlack},
-			-0.3em -0.3em 0.3em ${theme.bg.shadowWhite},
-			0.3em 0.3em 0.3em ${theme.bg.shadowBlack} inset,
-			-0.3em -0.3em 0.3em ${theme.bg.shadowWhite} inset;
+		box-shadow: 5px 5px 5px ${theme.bg.shadowBlack},
+			-5px -5px 5px ${theme.bg.shadowWhite},
+			5px 5px 5px ${theme.bg.shadowBlack} inset,
+			-5px -5px 5px ${theme.bg.shadowWhite} inset;
 	`}
 `

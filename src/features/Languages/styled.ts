@@ -4,29 +4,29 @@ import { MediaQueries } from '../../themes'
 export const Wrapper = styled.section`
 	display: flex;
 	position: fixed;
-	padding: 0 1em 0.7em 0;
+	padding: 0 1rem 0.7rem 0;
 	bottom: 0;
 	right: 0;
 
 	@media (max-width: ${MediaQueries.Ipad}) {
 		position: fixed;
-		top: 1em;
-		right: 4em;
+		top: 1rem;
+		right: 4rem;
 		z-index: 999;
-		height: 2.5em;
+		height: 2.5rem;
 	}
 `
 
-export const Language = styled.span<{ active: boolean }>`
-	margin: 0.5em 0.3em;
-	padding: 0 0.6em;
+export const Language = styled.button<{ active: boolean }>`
+	margin: 0.5rem 0.3rem;
+	padding: 0.1rem 0.6rem;
+	font-size: 1rem;
 	letter-spacing: 2px;
-	border-radius: 1em;
+	border-radius: 1rem;
 	color: ${({ theme }) => theme.text.primary};
-	box-shadow: 0.1em 0.1em 0.1em ${({ theme }) => theme.bg.shadowBlack},
-		-0.1em -0.1em 0.1em ${({ theme }) => theme.bg.shadowWhite};
+	box-shadow: 1.5px 1.5px 1.5px ${({ theme }) => theme.bg.shadowBlack},
+		-1.5px -1.5px 1.5px ${({ theme }) => theme.bg.shadowWhite};
 	position: relative;
-	cursor: pointer;
 
 	&:hover {
 		color: ${({ theme }) => theme.text.colorful.basicColor};
@@ -36,15 +36,15 @@ export const Language = styled.span<{ active: boolean }>`
 		active &&
 		`
 		color: ${theme.text.colorful.basicColor};
-		box-shadow: 0.1em 0.1em 0.1em ${theme.bg.shadowBlack}
+		box-shadow: 1.5px 1.5px 1.5px ${theme.bg.shadowBlack}
 				inset,
-			-0.1em -0.1em 0.1em ${theme.bg.shadowWhite} inset;
+			-1.5px -1.5px 1.5px ${theme.bg.shadowWhite} inset;
 	`}
 
 	@media (max-width: ${MediaQueries.Ipad}) {
 		box-shadow: none;
 		padding: 0;
-		margin: 0.5em;
+		margin: 0.5rem;
 
 		&:hover {
 			color: ${({ theme }) => theme.text.colorful.basicColor};

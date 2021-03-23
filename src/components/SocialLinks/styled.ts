@@ -8,26 +8,25 @@ export const Wrapper = styled.article`
 	width: 90%;
 
 	@media (max-width: ${MediaQueries.Ipad}) {
-		margin: 0.7em 0;
+		margin: 0.7rem 0;
 	}
 `
 
 export const Icon = styled(StyledA)`
 	display: flex;
-	box-sizing: border-box;
-	width: 2.5em;
-	height: 2.5em;
-	padding: 0.5em;
-	margin: 0 1em 0.5em 1em;
+	width: 2.5rem;
+	height: 2.5rem;
+	padding: 0.5rem;
+	margin: 0 1rem 0.5rem 1rem;
 	border-radius: 50%;
 	color: ${({ theme }) => theme.text.colorful.basicColor};
-	box-shadow: 0.3em 0.3em 0.3em ${({ theme }) => theme.bg.shadowBlack},
-		-0.3em -0.3em 0.3em ${({ theme }) => theme.bg.shadowWhite};
+	box-shadow: 5px 5px 5px ${({ theme }) => theme.bg.shadowBlack},
+		-5px -5px 5px ${({ theme }) => theme.bg.shadowWhite};
 
 	&:hover {
-		box-shadow: 0.3em 0.3em 0.3em ${({ theme }) => theme.bg.shadowBlack},
-			-0.3em -0.3em 0.3em ${({ theme }) => theme.bg.shadowWhite},
-			0.3em 0.3em 0.3em ${({ theme }) => theme.bg.shadowBlack} inset,
-			-0.3em -0.3em 0.3em ${({ theme }) => theme.bg.shadowWhite} inset;
+		box-shadow: 5px 5px 5px ${({ theme }) => theme.bg.shadowBlack},
+			-5px -5px 5px ${({ theme }) => theme.bg.shadowWhite},
+			5px 5px 5px ${({ theme }) => theme.bg.shadowBlack} inset,
+			-5px -5px 5px ${({ theme }) => theme.bg.shadowWhite} inset;
 	}
 `

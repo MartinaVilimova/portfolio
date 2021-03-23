@@ -1,29 +1,30 @@
 import styled, { css } from 'styled-components'
 import { Button } from '../../components/Button/styled'
 
-export const Form = styled.form`
+const sameStyle = css`
 	display: flex;
 	flex-direction: column;
+`
+
+export const Form = styled.form`
+	${sameStyle};
 	width: 90%;
 
-	& ${Button} {
-		width: 9em;
+	${Button} {
+		width: 9rem;
 		margin: auto;
-		margin-bottom: 1.5em;
+		margin-bottom: 1.5rem;
 	}
 `
 
 export const FormItem = styled.article`
-	display: flex;
-	flex-direction: column;
-	width: 100%;
-	padding: 0 0 2em 0;
-	margin: 0.1em;
+	${sameStyle};
+	padding: 0 0 2rem 0;
+	margin: 0.1rem;
 `
 
 export const FormLabel = styled.label`
-	width: 100%;
-	padding-left: 1.1em;
+	padding-left: 1.1rem;
 	color: ${({ theme }) => theme.text.primary};
 `
 
@@ -31,14 +32,14 @@ const formItem = css`
 	outline: none;
 	border: none;
 	font-family: 'Poppins', sans-serif;
-	font-size: 1em;
+	font-size: 1rem;
 	color: ${({ theme }) => theme.text.colorful.basicColor};
-	padding: 0.6em 1.3em;
-	border-radius: 1em;
-	margin-top: 0.4em;
+	padding: 0.6rem 1.3rem;
+	border-radius: 1rem;
+	margin-top: 0.4rem;
 	background-color: ${({ theme }) => theme.bg.primary};
-	box-shadow: 0.3em 0.3em 0.3em ${({ theme }) => theme.bg.shadowBlack} inset,
-		-0.3em -0.3em 0.3em ${({ theme }) => theme.bg.shadowWhite} inset;
+	box-shadow: 5px 5px 5px ${({ theme }) => theme.bg.shadowBlack} inset,
+		-5px -5px 5px ${({ theme }) => theme.bg.shadowWhite} inset;
 
 	&::placeholder {
 		color: ${({ theme }) => theme.text.grey};
@@ -57,7 +58,7 @@ export const FormInput = styled.input`
 
 export const FormTextArea = styled.textarea`
 	${formItem};
-	height: 9em;
+	height: 9rem;
 	resize: none;
 `
 
@@ -66,15 +67,15 @@ export const ErrorMessage = styled.p`
 	justify-content: center;
 	margin: auto;
 	min-width: 30%;
-	padding: 0.5em 1.5em;
-	border-radius: 0.7em;
+	padding: 0.5rem 1.5rem;
+	border-radius: 0.7rem;
 	color: ${({ theme }) => theme.text.warning};
 	border: 1px solid ${({ theme }) => theme.text.warning};
 	background-color: ${({ theme }) => theme.bg.primary};
-	box-shadow: 0.3em 0.3em 0.3em ${({ theme }) => theme.bg.shadowBlack},
-		-0.3em -0.3em 0.3em ${({ theme }) => theme.bg.shadowWhite};
+	box-shadow: 5px 5px 5px ${({ theme }) => theme.bg.shadowBlack},
+		-5px -5px 5px ${({ theme }) => theme.bg.shadowWhite};
 	position: relative;
-	top: 1em;
+	top: 1rem;
 
 	&:before {
 		content: '';
@@ -82,12 +83,10 @@ export const ErrorMessage = styled.p`
 		width: 0;
 		height: 0;
 		bottom: 100%;
-		left: 1.5em;
-		border: 0.7em solid transparent;
+		left: 1.5rem;
+		border: 0.7rem solid transparent;
 		border-top: none;
 		border-bottom-color: ${({ theme }) => theme.text.warning};
-		filter: drop-shadow(
-			0 -0.15em 0.15em ${({ theme }) => theme.bg.shadowWhite}
-		);
+		filter: drop-shadow(0 -2px 2px ${({ theme }) => theme.bg.shadowWhite});
 	}
 `

@@ -1,28 +1,23 @@
-import { Link } from 'react-router-dom'
 import styled, { css } from 'styled-components'
+import { StyledLink } from '../../../styled/StyledLink/styled'
 import { MediaQueries } from '../../../themes'
 import { getAnimationOpen } from './function'
 
 const sizeNav = css`
+	display: flex;
 	width: 100%;
-	height: 4em;
+	height: 4rem;
+	justify-content: flex-end;
 `
 
 export const Wrapper = styled.nav`
 	${sizeNav};
-	box-sizing: border-box;
-	padding: 0 1.5em 0 0;
+	padding: 0 1.5rem 0 0;
 `
 
-//@TODO: later edit all hex opacity using literal
 export const NavContent = styled.ul<{ open: boolean }>`
 	${sizeNav};
-	display: flex;
-	justify-content: flex-end;
 	align-items: center;
-	margin: 0;
-	padding: 0;
-	list-style: none;
 
 	@media (max-width: ${MediaQueries.Ipad}) {
 		display: ${({ open }) => (open ? 'flex' : 'none')};
@@ -31,9 +26,9 @@ export const NavContent = styled.ul<{ open: boolean }>`
 		justify-content: flex-start;
 		align-items: flex-end;
 		position: absolute;
-		padding-right: 1.5em;
+		padding-right: 1.5rem;
 		background-color: ${({ theme }) => `${theme.bg.shadowBlack}B3`};
-		top: 4em;
+		top: 4rem;
 		right: 0;
 		z-index: 998;
 
@@ -44,17 +39,16 @@ export const NavContent = styled.ul<{ open: boolean }>`
 `
 
 export const NavItem = styled.li`
-	padding: 0 0.7em;
+	padding: 0 0.7rem;
 
 	@media (max-width: ${MediaQueries.Ipad}) {
-		padding: 0.5em 0.7em;
+		padding: 0.5rem 0.7rem;
 		opacity: 0;
 	}
 `
 
-export const NavLink = styled(Link)<{ active: boolean }>`
-	text-decoration: none;
-	font-size: 1em;
+export const NavLink = styled(StyledLink)<{ active: boolean }>`
+	font-size: 1rem;
 	font-weight: 400;
 	letter-spacing: 1px;
 	color: ${({ theme }) => theme.text.primary};
@@ -70,23 +64,22 @@ export const NavLink = styled(Link)<{ active: boolean }>`
 		`}
 `
 
-export const Burger = styled.section<{ open: boolean }>`
+export const Burger = styled.button<{ open: boolean }>`
 	display: none;
 
 	@media (max-width: ${MediaQueries.Ipad}) {
 		display: flex;
-		height: 4em;
+		height: 4rem;
 		flex-direction: column;
 		justify-content: center;
 		align-items: flex-end;
-		cursor: pointer;
 
 		& > div {
-			width: 1.8em;
-			height: 0.15em;
-			margin: 0.2em;
+			width: 1.8rem;
+			height: 0.15rem;
+			margin: 0.2rem;
 			background-color: ${({ theme }) => theme.text.primary};
-			border-radius: 1em;
+			border-radius: 1rem;
 			transform-origin: 1px;
 			transition: all 0.4s ease;
 

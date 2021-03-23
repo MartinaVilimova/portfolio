@@ -3,10 +3,10 @@ import styled from 'styled-components'
 export const Wrapper = styled.div`
 	display: grid;
 	grid-template-columns: 10% 90%;
-	grid-template-rows: 3em 2.2em auto;
+	grid-template-rows: 3rem 2.2rem auto;
 	width: 90%;
 	align-items: center;
-	margin: 0.5em 0;
+	margin: 0.5rem 0;
 `
 
 export const Animation = styled.div`

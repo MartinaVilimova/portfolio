@@ -1,9 +1,9 @@
 import styled from 'styled-components'
 
-export const WrapperButtons = styled.div`
+export const WrapperButtons = styled.section`
 	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-	margin: 2em 0 1em 0;
+	margin: 2rem 0 1rem 0;
 `

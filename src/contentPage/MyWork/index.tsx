@@ -12,14 +12,10 @@ enum ButtonNames {
 	Cooperation = 'Spolupráce',
 }
 
-const buttons: string[] = [
-	ButtonNames.All,
-	ButtonNames.OwnWork,
-	ButtonNames.Cooperation,
-]
+const buttons = [ButtonNames.All, ButtonNames.OwnWork, ButtonNames.Cooperation]
 
 const ContentMyWork: React.FC = () => {
-	const [active, setActive] = useState(buttons[0])
+	const [active, setActive] = useState(ButtonNames.All)
 
 	const [filterData, setFilterData] = useState(dataMyWork)
 

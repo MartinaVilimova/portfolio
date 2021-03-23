@@ -25,7 +25,7 @@ const SettingsBox: React.FC = () => {
 
 	const [open, setOpen] = useState<boolean>(true)
 
-	const [active, setActive] = useState(colorSwitches[0])
+	const [active, setActive] = useState(Color.Green)
 
 	return (
 		<Wrapper click={open}>
