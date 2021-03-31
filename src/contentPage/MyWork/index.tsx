@@ -37,6 +37,15 @@ const ContentMyWork: React.FC = () => {
 		}
 	}
 
+	const [currentPage, setCurrentPage] = useState(1)
+	const [itemsPerPage, setItemsPerPage] = useState(6)
+
+	const indexOfLastItem = currentPage * itemsPerPage
+	const indexOfFirstItem = indexOfLastItem - itemsPerPage
+	const currentItems = filterData.slice(indexOfFirstItem, indexOfLastItem)
+
+	const paginate = (pageNumber: number) => setCurrentPage(pageNumber)
+
 	return (
 		<>
 			<WrapperButtons>
@@ -57,9 +66,16 @@ const ContentMyWork: React.FC = () => {
 				columns={NumberColumns.Columns3}
 				columnsIpad={NumberColumns.Columns1}
 			>
-				<ItemMyWork dataItems={filterData} />
+				<ItemMyWork dataItems={currentItems} />
 			</Columns>
-			<Pagination />
+			<Pagination
+				itemsPerPage={itemsPerPage}
+				totalItems={filterData.length}
+				paginate={paginate}
+				currentPage={currentPage}
+				setCurrentPage={setCurrentPage}
+				setItemsPerPage={setItemsPerPage}
+			/>
 		</>
 	)
 }
