@@ -5,6 +5,17 @@ import { NavContent, Wrapper, NavItem, Burger, NavLink } from './styled'
 
 const Nav: React.FC = () => {
 	const [open, setOpen] = useState<boolean>(false)
+	const [visible, setVisible] = useState<boolean>(false)
+
+	const animateStart = () => {
+		setVisible(true)
+		setOpen(true)
+	}
+
+	const animateEnd = () => {
+		setVisible(false)
+		setTimeout(() => setOpen(false), 1400)
+	}
 
 	const location = useLocation()
 
@@ -12,7 +23,7 @@ const Nav: React.FC = () => {
 		<Wrapper>
 			<NavContent open={open}>
 				{menuLinks.map((item, index) => (
-					<NavItem key={index}>
+					<NavItem key={index} visible={visible}>
 						<NavLink
 							to={item.link}
 							active={location.pathname === item.link}
@@ -22,7 +33,10 @@ const Nav: React.FC = () => {
 					</NavItem>
 				))}
 			</NavContent>
-			<Burger open={open} onClick={() => setOpen(!open)}>
+			<Burger
+				open={open}
+				onClick={() => (open ? animateEnd() : animateStart())}
+			>
 				<div></div>
 				<div></div>
 				<div></div>
