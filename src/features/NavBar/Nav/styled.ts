@@ -1,7 +1,6 @@
 import styled, { css } from 'styled-components'
 import { StyledLink } from '../../../styled/StyledLink/styled'
 import { MediaQueries } from '../../../themes'
-import { getAnimationOpen } from './function'
 
 const sizeNav = css`
 	display: flex;
@@ -26,24 +25,60 @@ export const NavContent = styled.ul<{ open: boolean }>`
 		justify-content: flex-start;
 		align-items: flex-end;
 		position: absolute;
-		padding-right: 1.5rem;
+		padding: 1rem 1.5rem 0 0;
 		background-color: ${({ theme }) => `${theme.bg.shadowBlack}B3`};
 		top: 4rem;
 		right: 0;
 		z-index: 998;
-
-		& > li {
-			${({ open }) => open && getAnimationOpen()};
-		}
 	}
 `
 
-export const NavItem = styled.li`
+export const NavItem = styled.li<{ visible: boolean }>`
 	padding: 0 0.7rem;
 
 	@media (max-width: ${MediaQueries.Ipad}) {
 		padding: 0.5rem 0.7rem;
-		opacity: 0;
+		opacity: ${({ visible }) => (visible ? '0' : '1')};
+		animation: ${({ visible }) => (visible ? 'animateStart' : 'animateEnd')}
+			1s ease forwards;
+
+		@keyframes animateStart {
+			0% {
+				opacity: 0;
+				transform: translateY(-1rem);
+			}
+			100% {
+				opacity: 1;
+				transform: translateY(0);
+			}
+		}
+
+		@keyframes animateEnd {
+			0% {
+				opacity: 1;
+				transform: translateY(0);
+			}
+			100% {
+				opacity: 0;
+				transform: translateY(-1rem);
+			}
+		}
+
+		&:nth-child(1) {
+			animation-delay: ${({ visible }) => (visible ? '0s' : '0.8s')};
+		}
+		&:nth-child(2) {
+			animation-delay: ${({ visible }) => (visible ? '0.2s' : '0.6s')};
+		}
+		&:nth-child(3) {
+			animation-delay: ${({ visible }) => (visible ? '0.4s' : '0.4s')};
+		}
+		&:nth-child(4) {
+			animation-delay: ${({ visible }) => (visible ? '0.6s' : '0.2s')};
+		}
+		&:nth-child(5) {
+			animation-delay: ${({ visible }) => (visible ? '0.8s' : '0s')};
+		}
 	}
 `
 
