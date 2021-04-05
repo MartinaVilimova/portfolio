@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-scroll'
-import ItemResume from '../../components/ItemResume'
+import ItemResume, { AnimationType } from '../../components/ItemResume'
 import { dataKnowledge } from '../../components/ItemResume/data'
 import { StyledA } from '../../styled/StyledLink/styled'
 import { Paragraph } from '../../styled/StyledParagraph/styled'
@@ -27,7 +27,7 @@ const KnowledgeContent: React.FC = () => (
 				</Link>
 			))}
 		</BlockAnchors>
-		<ItemResume data={dataKnowledge} />
+		<ItemResume data={dataKnowledge} animationType={AnimationType.Fade} />
 	</>
 )
 
