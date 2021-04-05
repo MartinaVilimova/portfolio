@@ -36,14 +36,6 @@ const ItemMyWork: React.FC<Props> = ({ dataItems }) => {
 					<Picture src={item.myWorkItem.picture} />
 					<HoverBox>
 						<IconsBox>
-							{item.myWorkItem.webLink && (
-								<StyledA href="">
-									<IconButton>
-										<Link />
-									</IconButton>
-								</StyledA>
-							)}
-
 							<IconButton
 								onClick={() => {
 									setClick(true)
@@ -52,6 +44,14 @@ const ItemMyWork: React.FC<Props> = ({ dataItems }) => {
 							>
 								<Search />
 							</IconButton>
+
+							{item.myWorkItem.webLink && (
+								<StyledA href="">
+									<IconButton>
+										<Link />
+									</IconButton>
+								</StyledA>
+							)}
 
 							{item.myWorkItem.githubLink && (
 								<StyledA href="">
