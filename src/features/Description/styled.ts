@@ -36,7 +36,7 @@ const sameLayout = css`
 	align-items: center;
 `
 
-export const ModalBox = styled.section`
+export const ModalBox = styled.section<{ animate: boolean }>`
 	${sameLayout};
 	width: 100%;
 	height: 100%;
@@ -47,15 +47,26 @@ export const ModalBox = styled.section`
 	border-radius: 0.5rem;
 	box-shadow: 3px 3px 3px ${({ theme }) => theme.bg.shadowBlack},
 		-3px -3px v ${({ theme }) => theme.bg.shadowWhite};
-	animation: animateTop 0.5s forwards ease;
+	animation: ${({ animate }) => (animate ? 'animateStart' : 'animateEnd')}
+		0.5s forwards ease;
 
-	@keyframes animateTop {
+	@keyframes animateStart {
 		from {
 			transform: translateY(-2rem);
 		}
 		to {
 			transform: translateY(0);
 			opacity: 1;
+		}
+	}
+
+	@keyframes animateEnd {
+		from {
+			transform: translateY(0);
+			opacity: 1;
+		}
+		to {
+			transform: translateY(-2rem);
 		}
 	}
 `
