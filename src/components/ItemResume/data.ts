@@ -30,6 +30,12 @@ export const dataExperience: DataItemsResume[] = [
 
 export const dataKnowledge: DataItemsResume[] = [
 	{
+		title: 'React Hooks',
+		time: 'Duben 2021',
+		paragraph:
+			'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio nisi molestias officiis alias recusandae rem quos similique. Esse, pariatur. Architecto soluta perferendis eum? Accusantium similique laudantium quidem delectus non? Iusto.',
+	},
+	{
 		title: 'React Form',
 		time: 'Únor 2021',
 		paragraph:
