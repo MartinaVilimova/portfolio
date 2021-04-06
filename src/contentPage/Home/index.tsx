@@ -35,7 +35,7 @@ const IntroText: React.FC = () => {
 				dolor felis, sagittis at, luctus sed, aliquam non, tellus. Etiam
 				egestas wisi a erat. Mauris metus. Quisque porta.
 			</Paragraph>
-			<StyledLink to="/">
+			<StyledLink to="/CV_vilimova_martina.pdf" target="_blank" download>
 				<Button>Stáhnout životopis</Button>
 			</StyledLink>
 		</Wrapper>

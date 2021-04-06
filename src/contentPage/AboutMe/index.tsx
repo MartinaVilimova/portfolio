@@ -9,7 +9,7 @@ import {
 	WrapperLinks,
 } from './styled'
 import { Button } from '../../components/Button/styled'
-import { StyledLink } from '../../styled/StyledLink/styled'
+import { StyledA, StyledLink } from '../../styled/StyledLink/styled'
 import { StyledH3 } from '../../styled/StyledTitle/styled'
 import Columns, { NumberColumns } from '../../components/Columns'
 import { Paragraph } from '../../styled/StyledParagraph/styled'
@@ -25,24 +25,36 @@ const AboutMeText: React.FC = () => (
 		>
 			<PersonalInfo1>
 				<Name>
-					Narození:<Text> 14.&nbsp;7.&nbsp;1996</Text>
+					Narození:<Text>&nbsp;14.&nbsp;7.&nbsp;1996</Text>
 				</Name>
 				<Name>
-					Nacházím se:<Text> Česká&nbsp;republika</Text>
+					Nacházím se:<Text>&nbsp;Česká&nbsp;republika</Text>
 				</Name>
 				<Name>
-					Město:<Text> Praha</Text>
+					Město:<Text>&nbsp;Praha</Text>
 				</Name>
 			</PersonalInfo1>
 			<PersonalInfo1>
 				<Name>
-					Telefon:<Text> +420&nbsp;728&nbsp;445&nbsp;052</Text>
+					Telefon:
+					<Text>
+						&nbsp;
+						<StyledA href="tel:+420728445052">
+							+420&nbsp;728&nbsp;445&nbsp;052
+						</StyledA>
+					</Text>
 				</Name>
 				<Name>
-					Email:<Text> vilima.tul@gmail.com</Text>
+					Email:
+					<Text>
+						&nbsp;
+						<StyledA href="mailto:vilima.tul@gmail.com">
+							vilima.tul@gmail.com
+						</StyledA>
+					</Text>
 				</Name>
 				<Name>
-					Zaměstnaná:<Text> freelancer</Text>
+					Zaměstnaná:<Text>&nbsp;freelancer</Text>
 				</Name>
 			</PersonalInfo1>
 		</Columns>
@@ -57,10 +69,10 @@ const AboutMeText: React.FC = () => (
 			incidunt.
 		</Paragraph>
 		<WrapperLinks>
-			<StyledLink to="/">
+			<StyledLink to="/CV_vilimova_martina.pdf" target="_blank" download>
 				<Button>Stáhnout životopis</Button>
 			</StyledLink>
-			<StyledLink to="/">
+			<StyledLink to="/contact">
 				<Button>Napiš mi</Button>
 			</StyledLink>
 		</WrapperLinks>
