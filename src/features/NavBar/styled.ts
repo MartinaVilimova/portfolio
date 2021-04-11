@@ -1,5 +1,5 @@
 import styled, { css } from 'styled-components'
-import { MediaQueries } from '../../themes'
+import { MediaQueries } from 'themes'
 
 const sizeNav = css`
 	width: 100%;

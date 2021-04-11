@@ -1,6 +1,6 @@
 import styled from 'styled-components'
-import { StyledA } from '../../styled/StyledLink/styled'
-import { MediaQueries } from '../../themes'
+import { StyledA } from 'styled/StyledLink/styled'
+import { MediaQueries } from 'themes'
 
 export const Wrapper = styled.section`
 	display: flex;

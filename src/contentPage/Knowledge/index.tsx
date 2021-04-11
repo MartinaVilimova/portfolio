@@ -1,10 +1,10 @@
 import React from 'react'
 import { Link } from 'react-scroll'
-import ItemResume, { AnimationType } from '../../components/ItemResume'
-import { dataKnowledge } from '../../components/ItemResume/data'
-import { StyledA } from '../../styled/StyledLink/styled'
-import { Paragraph } from '../../styled/StyledParagraph/styled'
-import { StyledH3, StyledH6 } from '../../styled/StyledTitle/styled'
+import ItemResume, { AnimationType } from 'components/ItemResume'
+import { dataKnowledge } from 'components/ItemResume/data'
+import { StyledH3, StyledH6 } from 'styled/StyledTitle/styled'
+import { StyledA } from 'styled/StyledLink/styled'
+import { Paragraph } from 'styled/StyledParagraph/styled'
 import { BlockAnchors } from './styled'
 
 const KnowledgeContent: React.FC = () => (

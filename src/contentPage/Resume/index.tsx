@@ -1,7 +1,7 @@
 import React from 'react'
-import ItemResume, { AnimationType } from '../../components/ItemResume'
-import { dataEducation, dataExperience } from '../../components/ItemResume/data'
-import { StyledH3 } from '../../styled/StyledTitle/styled'
+import ItemResume, { AnimationType } from 'components/ItemResume'
+import { dataEducation, dataExperience } from 'components/ItemResume/data'
+import { StyledH3 } from 'styled/StyledTitle/styled'
 import { Article, WrapperItems } from './styled'
 
 const ResumeContent: React.FC = () => (

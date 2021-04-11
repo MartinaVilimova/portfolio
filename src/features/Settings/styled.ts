@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components'
 import { Settings } from '@styled-icons/feather'
-import { chooseColors, Color } from '../../themes'
+import { chooseColors, Color } from 'themes'
 
 export const Wrapper = styled.section<{ click: boolean }>`
 	width: 14rem;

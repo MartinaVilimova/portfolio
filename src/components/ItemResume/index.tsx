@@ -1,7 +1,8 @@
 import React from 'react'
 import { Element } from 'react-scroll'
-import { Paragraph, ResumeTime } from '../../styled/StyledParagraph/styled'
-import { StyledH6 } from '../../styled/StyledTitle/styled'
+import { Fade, Zoom } from 'react-awesome-reveal'
+import { Paragraph, ResumeTime } from 'styled/StyledParagraph/styled'
+import { StyledH6 } from 'styled/StyledTitle/styled'
 import { DataItemsResume } from './data'
 import {
 	CoverForShadesOfColors,
@@ -10,7 +11,6 @@ import {
 	BallScale,
 	LineY,
 } from './styled'
-import { Fade, Zoom } from 'react-awesome-reveal'
 
 export enum AnimationType {
 	Fade = 'fade',

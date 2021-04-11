@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
-import { Wrapper, Page, PageArrow, WrapperButton } from './styled'
 import { ArrowRight, ArrowLeft } from '@styled-icons/feather'
-import { Button } from '../../components/Button/styled'
+import { Button } from 'components/Button/styled'
+import { Wrapper, Page, PageArrow, WrapperButton } from './styled'
 
 type Props = {
 	itemsPerPage: number

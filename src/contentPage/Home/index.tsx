@@ -1,11 +1,11 @@
 import React from 'react'
 import Typed from 'react-typed'
-import { ColorfulText } from '../../styled/ColorfulText/styled'
+import { Button } from 'components/Button/styled'
+import { StyledH1, StyledH4 } from 'styled/StyledTitle/styled'
+import { ColorfulText } from 'styled/ColorfulText/styled'
+import { StyledLink } from 'styled/StyledLink/styled'
+import { Paragraph } from 'styled/StyledParagraph/styled'
 import { Wrapper } from './styled'
-import { Button } from '../../components/Button/styled'
-import { StyledLink } from '../../styled/StyledLink/styled'
-import { StyledH1, StyledH4 } from '../../styled/StyledTitle/styled'
-import { Paragraph } from '../../styled/StyledParagraph/styled'
 
 const IntroText: React.FC = () => {
 	return (

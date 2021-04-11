@@ -1,10 +1,10 @@
 import React, { useState } from 'react'
-import { Wrapper, HoverBox, Picture, IconsBox, IconButton } from './styled'
 import { Link, Search, Github } from '@styled-icons/feather'
+import DescriptionMyWork from 'features/Description'
+import { StyledA } from 'styled/StyledLink/styled'
+import { StyledH5 } from 'styled/StyledTitle/styled'
 import { DataFilter, DataItemsMyWork } from './data'
-import { StyledA } from '../../styled/StyledLink/styled'
-import DescriptionMyWork from '../../features/Description'
-import { StyledH5 } from '../../styled/StyledTitle/styled'
+import { Wrapper, HoverBox, Picture, IconsBox, IconButton } from './styled'
 
 type Props = {
 	dataItems: DataItemsMyWork[]

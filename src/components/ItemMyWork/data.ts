@@ -1,15 +1,15 @@
-import autoodstrejdy from '../../assets/autoodstrejdy.png'
-import kafickari from '../../assets/kafickari.png'
-import eaglefitness from '../../assets/eaglefitness.png'
-import cestovka from '../../assets/cestovka.png'
-import zdravemlsani from '../../assets/zdravemlsani.png'
-import kadernictvi from '../../assets/kadernictvi.png'
-import pokemon from '../../assets/pokemon.png'
+import autoodstrejdy from 'assets/autoodstrejdy.png'
+import kafickari from 'assets/kafickari.png'
+import eaglefitness from 'assets/eaglefitness.png'
+import cestovka from 'assets/cestovka.png'
+import zdravemlsani from 'assets/zdravemlsani.png'
+import kadernictvi from 'assets/kadernictvi.png'
+import pokemon from 'assets/pokemon.png'
 import {
 	AuthorDetail,
 	dataAuthors,
 	NameAuthors,
-} from '../../features/Description/authors'
+} from 'features/Description/authors'
 
 export enum DataFilter {
 	cooperation = 'spolupráce',

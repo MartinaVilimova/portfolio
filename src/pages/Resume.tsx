@@ -1,12 +1,12 @@
 import React from 'react'
-import Columns, { NumberColumns } from '../components/Columns'
-import WrapperPages, { UnitsData } from '../components/WrapperPages'
-import Title from '../components/Title'
-import Languages from '../features/Languages'
-import NavBar from '../features/NavBar'
-import ResumeContent from '../contentPage/Resume'
-import SettingsBox from '../features/Settings'
-import SocialIcons from '../features/SocialIcons'
+import WrapperPages, { UnitsData } from 'components/WrapperPages'
+import Columns, { NumberColumns } from 'components/Columns'
+import Title from 'components/Title'
+import ResumeContent from 'contentPage/Resume'
+import SettingsBox from 'features/Settings'
+import SocialIcons from 'features/SocialIcons'
+import Languages from 'features/Languages'
+import NavBar from 'features/NavBar'
 
 const Resume: React.FC = () => (
 	<>

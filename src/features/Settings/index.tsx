@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
-import { useThemeControl } from '../Theme'
-import { Color, Theme } from '../../themes'
-import Toggle from '../../components/Toggle'
 import { ChevronsLeft, Check } from '@styled-icons/feather'
+import Toggle from 'components/Toggle'
+import { useThemeControl } from 'features/Theme'
+import { Color, Theme } from 'themes'
 import {
 	Wrapper,
 	Content,

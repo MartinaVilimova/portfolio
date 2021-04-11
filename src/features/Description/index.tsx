@@ -1,6 +1,12 @@
 import React, { useEffect, useState } from 'react'
-import { StyledH5, StyledH6 } from '../../styled/StyledTitle/styled'
 import OutsideClickHandler from 'react-outside-click-handler'
+import { X } from '@styled-icons/feather'
+import Columns, { NumberColumns } from 'components/Columns'
+import { DataItemsMyWork } from 'components/ItemMyWork/data'
+import PicturesCarousel from 'features/Carousel'
+import { StyledH5, StyledH6 } from 'styled/StyledTitle/styled'
+import { Paragraph } from 'styled/StyledParagraph/styled'
+import { StyledA } from 'styled/StyledLink/styled'
 import {
 	ModalBox,
 	Wrapper,
@@ -10,12 +16,6 @@ import {
 	Article,
 	ArticleText,
 } from './styled'
-import { X } from '@styled-icons/feather'
-import Columns, { NumberColumns } from '../../components/Columns'
-import { Paragraph } from '../../styled/StyledParagraph/styled'
-import PicturesCarousel from '../Carousel'
-import { DataItemsMyWork } from '../../components/ItemMyWork/data'
-import { StyledA } from '../../styled/StyledLink/styled'
 
 type Props = {
 	hidden: boolean

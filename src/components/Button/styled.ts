@@ -1,5 +1,5 @@
 import styled, { css } from 'styled-components'
-import { MediaQueries } from '../../themes'
+import { MediaQueries } from 'themes'
 
 const sameStyle = css`
 	box-shadow: 5px 5px 5px ${({ theme }) => theme.bg.shadowBlack},

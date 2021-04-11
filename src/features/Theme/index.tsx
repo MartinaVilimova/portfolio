@@ -1,6 +1,6 @@
 import React, { createContext, useContext, useEffect, useState } from 'react'
 import { ThemeProvider as StyledComponentsThemeProvider } from 'styled-components'
-import { chooseColors, Color, DarkTheme, LightTheme, Theme } from '../../themes'
+import { chooseColors, Color, DarkTheme, LightTheme, Theme } from 'themes'
 
 type ThemeControl = {
 	theme: [Theme, (theme: Theme) => void]
