@@ -70,6 +70,7 @@ export const Wrapper = styled.article`
 
 		.thumb {
 			border-radius: 0.7rem;
+			padding: 0;
 			border: none;
 			cursor: pointer;
 
@@ -104,7 +105,8 @@ export const Wrapper = styled.article`
 			}
 
 			ul {
-				padding: 0;
+				display: flex;
+				padding: 0.6rem 0;
 			}
 		}
 	}

@@ -8,7 +8,9 @@ type Props = {
 	data: DataItemsMyWork
 }
 
-const PicturesCarousel: React.FC<Props> = ({ data }) => (
+const PicturesCarousel: React.FC<Props> = ({ data }) => {
+
+	return (
 	<Wrapper>
 		<Carousel
 			showArrows={true}
@@ -16,6 +18,7 @@ const PicturesCarousel: React.FC<Props> = ({ data }) => (
 			showIndicators={true}
 			showThumbs={true}
 			thumbWidth={100}
+			selectedItem={0}
 			dynamicHeight={true}
 			renderThumbs={() =>
 				data.carousel.map((item, index) => (
@@ -33,5 +36,6 @@ const PicturesCarousel: React.FC<Props> = ({ data }) => (
 		</Carousel>
 	</Wrapper>
 )
+			}
 
 export default PicturesCarousel
