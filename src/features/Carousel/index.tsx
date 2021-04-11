@@ -1,7 +1,7 @@
 import React from 'react'
 import 'react-responsive-carousel/lib/styles/carousel.min.css'
 import { Carousel } from 'react-responsive-carousel'
-import { DataItemsMyWork } from '../../components/ItemMyWork/data'
+import { DataItemsMyWork } from 'components/ItemMyWork/data'
 import { Wrapper, WrapperPicture, Picture } from './styled'
 
 type Props = {

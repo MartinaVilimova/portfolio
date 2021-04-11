@@ -1,10 +1,10 @@
 import React from 'react'
-import errorPhoto from '../../assets/error-photo.png'
-import { Button } from '../../components/Button/styled'
-import { ColorfulText } from '../../styled/ColorfulText/styled'
-import { StyledLink } from '../../styled/StyledLink/styled'
-import { Paragraph } from '../../styled/StyledParagraph/styled'
-import { StyledH4 } from '../../styled/StyledTitle/styled'
+import errorPhoto from 'assets/error-photo.png'
+import { Button } from 'components/Button/styled'
+import { ColorfulText } from 'styled/ColorfulText/styled'
+import { StyledLink } from 'styled/StyledLink/styled'
+import { Paragraph } from 'styled/StyledParagraph/styled'
+import { StyledH4 } from 'styled/StyledTitle/styled'
 import { Wrapper, Photo } from './styled'
 
 const ErrorInfo: React.FC = () => (

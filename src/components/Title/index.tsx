@@ -1,5 +1,5 @@
 import React from 'react'
-import { StyledH2 } from '../../styled/StyledTitle/styled'
+import { StyledH2 } from 'styled/StyledTitle/styled'
 import { Wrapper, BigTitle } from './styled'
 
 type Props = {

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
+import { ColorfulText } from 'styled/ColorfulText/styled'
+import { StyledLink } from 'styled/StyledLink/styled'
 import Nav from './Nav'
-import { ColorfulText } from '../../styled/ColorfulText/styled'
-import { StyledLink } from '../../styled/StyledLink/styled'
 import { Wrapper, FixedNavBar, LogoBox, Logo } from './styled'
 
 const NavBar: React.FC = () => {

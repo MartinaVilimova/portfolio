@@ -1,6 +1,6 @@
 import styled from 'styled-components'
+import { MediaQueries } from 'themes'
 import { UnitsData } from '.'
-import { MediaQueries } from '../../themes'
 
 export const Wrapper = styled.main<{ value: UnitsData }>`
 	display: flex;

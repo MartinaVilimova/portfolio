@@ -1,6 +1,6 @@
 import styled from 'styled-components'
+import { MediaQueries } from 'themes'
 import { NumberColumns } from '.'
-import { MediaQueries } from '../../themes'
 
 export const Wrapper = styled.section<{
 	quantity: NumberColumns

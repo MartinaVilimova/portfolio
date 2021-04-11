@@ -1,11 +1,11 @@
 import React from 'react'
-import WrapperPages, { UnitsData } from '../components/WrapperPages'
-import Title from '../components/Title'
-import ContentMyWork from '../contentPage/MyWork'
-import Languages from '../features/Languages'
-import NavBar from '../features/NavBar'
-import SettingsBox from '../features/Settings'
-import SocialIcons from '../features/SocialIcons'
+import WrapperPages, { UnitsData } from 'components/WrapperPages'
+import ContentMyWork from 'contentPage/MyWork'
+import Title from 'components/Title'
+import SettingsBox from 'features/Settings'
+import SocialIcons from 'features/SocialIcons'
+import Languages from 'features/Languages'
+import NavBar from 'features/NavBar'
 
 const MyWork: React.FC = () => (
 	<>

@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
-import { SmallButton } from '../../components/Button/styled'
-import Columns, { NumberColumns } from '../../components/Columns'
-import ItemMyWork from '../../components/ItemMyWork'
-import { DataFilter, dataMyWork } from '../../components/ItemMyWork/data'
-import Pagination from '../../features/Pagination'
+import { DataFilter, dataMyWork } from 'components/ItemMyWork/data'
+import Columns, { NumberColumns } from 'components/Columns'
+import { SmallButton } from 'components/Button/styled'
+import ItemMyWork from 'components/ItemMyWork'
+import Pagination from 'features/Pagination'
 import { WrapperButtons } from './styled'
 
 enum ButtonNames {

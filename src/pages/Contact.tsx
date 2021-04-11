@@ -1,13 +1,13 @@
 import React from 'react'
-import WrapperPages, { UnitsData } from '../components/WrapperPages'
-import Title from '../components/Title'
-import ButtonScrollTop from '../features/ButtonScrollTop'
-import Languages from '../features/Languages'
-import NavBar from '../features/NavBar'
-import SettingsBox from '../features/Settings'
-import ContactForm from '../features/Form'
-import SocialLinks from '../components/SocialLinks'
-import Copyright from '../components/Copyright'
+import WrapperPages, { UnitsData } from 'components/WrapperPages'
+import SocialLinks from 'components/SocialLinks'
+import Copyright from 'components/Copyright'
+import Title from 'components/Title'
+import ButtonScrollTop from 'features/ButtonScrollTop'
+import SettingsBox from 'features/Settings'
+import ContactForm from 'features/Form'
+import Languages from 'features/Languages'
+import NavBar from 'features/NavBar'
 
 const Contact: React.FC = () => (
 	<>

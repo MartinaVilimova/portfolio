@@ -1,6 +1,6 @@
 import React from 'react'
-import { Wrapper, VerticalText, Line, Icon } from './styled'
 import { Github, Facebook, Linkedin } from '@styled-icons/boxicons-logos/'
+import { Wrapper, VerticalText, Line, Icon } from './styled'
 
 const SocialIcons: React.FC = () => (
 	<Wrapper>

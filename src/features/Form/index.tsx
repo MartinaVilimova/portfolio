@@ -1,6 +1,6 @@
 import React from 'react'
 import { useForm } from 'react-hook-form'
-import { Button } from '../../components/Button/styled'
+import { Button } from 'components/Button/styled'
 import {
 	Form,
 	FormItem,

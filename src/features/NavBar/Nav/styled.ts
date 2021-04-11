@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components'
-import { StyledLink } from '../../../styled/StyledLink/styled'
-import { MediaQueries } from '../../../themes'
+import { StyledLink } from 'styled/StyledLink/styled'
+import { MediaQueries } from 'themes'
 
 const sizeNav = css`
 	display: flex;

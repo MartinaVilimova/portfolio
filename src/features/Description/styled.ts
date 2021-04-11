@@ -1,5 +1,5 @@
 import styled, { css } from 'styled-components'
-import { MediaQueries } from '../../themes'
+import { MediaQueries } from 'themes'
 
 export const Wrapper = styled.div<{ visible: boolean }>`
 	display: ${({ visible }) => (visible ? 'block' : 'none')};

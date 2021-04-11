@@ -1,5 +1,10 @@
 import React from 'react'
-import { ColorfulText } from '../../styled/ColorfulText/styled'
+import { Button } from 'components/Button/styled'
+import Columns, { NumberColumns } from 'components/Columns'
+import { StyledA, StyledLink } from 'styled/StyledLink/styled'
+import { ColorfulText } from 'styled/ColorfulText/styled'
+import { StyledH3 } from 'styled/StyledTitle/styled'
+import { Paragraph } from 'styled/StyledParagraph/styled'
 import {
 	Wrapper,
 	PersonalInfo1,
@@ -8,11 +13,6 @@ import {
 	SmallText,
 	WrapperLinks,
 } from './styled'
-import { Button } from '../../components/Button/styled'
-import { StyledA, StyledLink } from '../../styled/StyledLink/styled'
-import { StyledH3 } from '../../styled/StyledTitle/styled'
-import Columns, { NumberColumns } from '../../components/Columns'
-import { Paragraph } from '../../styled/StyledParagraph/styled'
 
 const AboutMeText: React.FC = () => (
 	<Wrapper>
