@@ -28,6 +28,7 @@
 	"dependencies": {
 		"@styled-icons/boxicons-logos": "^10.23.0",
 		"@styled-icons/feather": "^10.18.0",
+		"emailjs-com": "^2.6.4",
 		"firebase": "^8.4.1",
 		"react": "^17.0.1",
 		"react-awesome-reveal": "^3.7.1",
