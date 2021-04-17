@@ -2,6 +2,7 @@ import React from 'react'
 import { firestore } from 'services/firebase'
 import { useForm } from 'react-hook-form'
 import { Button } from 'components/Button/styled'
+import emailjs from 'emailjs-com'
 import {
 	Form,
 	FormItem,
@@ -18,22 +19,47 @@ type DataForm = {
 	message: string
 }
 
+const saveMessageToDB = async (data: DataForm) => {
+	try {
+		await firestore
+			.collection('messages')
+			.add({ ...data, timeStamp: Date.now() })
+	} catch (error) {
+		console.error(
+			'Firestore failed to post message. Error from firebase:',
+			error
+		)
+	}
+}
+
+const sendMessageToEmail = async (data: DataForm) => {
+	// TODO: create config for all
+	try {
+		emailjs.send(
+			process.env.REACT_APP_EMAILJS_SERVICE_ID || '',
+			process.env.REACT_APP_EMAILJS_TEMPLATE_ID || '',
+			{
+				from_name: data.email,
+				message: data.message,
+				subject: data.subject,
+			},
+			process.env.REACT_APP_EMAILJS_USER_ID || ''
+		)
+	} catch (error) {
+		console.error(
+			'Emailjs failed to send message. Error from emailjs:',
+			error
+		)
+	}
+}
+
 const ContactForm: React.FC = () => {
 	const { register, handleSubmit, errors, reset } = useForm()
 	const onSubmit = async (data: DataForm) => {
-		try {
-			await firestore
-				.collection('messages')
-				.add({ ...data, timeStamp: Date.now() })
-			reset()
-		} catch (error) {
-			console.error(
-				'Firestore failed to post message. Error from firebase:',
-				error
-			)
-		}
-	}
+		await Promise.all([saveMessageToDB(data), sendMessageToEmail(data)])
 
+		reset()
+	}
 	return (
 		<Form onSubmit={handleSubmit(onSubmit)}>
 			{/* ---------NAME------------*/}
