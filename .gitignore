@@ -12,6 +12,7 @@
 /build
 
 # environment setup
+.env
 .env.local
 .env.development.local
 .env.test.local
@@ -27,3 +28,6 @@ yarn-error.log*
 
 # misc
 .DS_Store
+
+# firebase
+firebase-debug.log
