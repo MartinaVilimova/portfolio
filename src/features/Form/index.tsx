@@ -1,4 +1,5 @@
 import React from 'react'
+import { firestore } from 'services/firebase'
 import { useForm } from 'react-hook-form'
 import { Button } from 'components/Button/styled'
 import {
@@ -18,8 +19,20 @@ type DataForm = {
 }
 
 const ContactForm: React.FC = () => {
-	const { register, handleSubmit, errors } = useForm()
-	const onSubmit = async (data: DataForm) => console.log(data)
+	const { register, handleSubmit, errors, reset } = useForm()
+	const onSubmit = async (data: DataForm) => {
+		try {
+			await firestore
+				.collection('messages')
+				.add({ ...data, timeStamp: Date.now() })
+			reset()
+		} catch (error) {
+			console.error(
+				'Firestore failed to post message. Error from firebase:',
+				error
+			)
+		}
+	}
 
 	return (
 		<Form onSubmit={handleSubmit(onSubmit)}>
