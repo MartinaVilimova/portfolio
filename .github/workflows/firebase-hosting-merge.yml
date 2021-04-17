@@ -41,7 +41,7 @@ jobs:
                   REACT_APP_FIREBASE_MEASUREMENT_ID: ${{ secrets.REACT_APP_FIREBASE_MEASUREMENT_ID }}
 
             - name: Firebase deploy
-            - uses: FirebaseExtended/action-hosting-deploy@v0
+              uses: FirebaseExtended/action-hosting-deploy@v0
               with:
                   repoToken: '${{ secrets.GITHUB_TOKEN }}'
                   firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_MARTINA_VILIMOVA_PORTFOLIO }}'
