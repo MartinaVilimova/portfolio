@@ -31,9 +31,9 @@ const IntroText: React.FC = () => {
 				></Typed>
 			</StyledH4>
 			<Paragraph>
-				Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Mauris
-				dolor felis, sagittis at, luctus sed, aliquam non, tellus. Etiam
-				egestas wisi a erat. Mauris metus. Quisque porta.
+				Lorem ipsum Lorem ipsum dolor sit amet, consectetuer adipiscing
+				elit. Mauris dolor felis, sagittis at, luctus sed, aliquam non,
+				tellus. Etiam egestas wisi a erat. Mauris metus. Quisque porta.
 			</Paragraph>
 			<StyledLink to="/CV_vilimova_martina.pdf" target="_blank" download>
 				<Button>Stáhnout životopis</Button>
