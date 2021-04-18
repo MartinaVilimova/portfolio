@@ -1,4 +1,5 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next'
 import WrapperPages, { UnitsData } from 'components/WrapperPages'
 import KnowledgeContent from 'contentPage/Knowledge'
 import Title from 'components/Title'
@@ -8,18 +9,25 @@ import SocialIcons from 'features/SocialIcons'
 import Languages from 'features/Languages'
 import NavBar from 'features/NavBar'
 
-const Knowledge: React.FC = () => (
-	<>
-		<NavBar />
-		<WrapperPages units={UnitsData.LargePage}>
-			<Title bigTitle="Znalosti" smallTitle="Znalosti" />
-			<KnowledgeContent />
-		</WrapperPages>
-		<SettingsBox />
-		<SocialIcons />
-		<ButtonScrollTop />
-		<Languages />
-	</>
-)
+const Knowledge: React.FC = () => {
+	const { t } = useTranslation()
+
+	return (
+		<>
+			<NavBar />
+			<WrapperPages units={UnitsData.LargePage}>
+				<Title
+					bigTitle={t('menu.knowledge')}
+					smallTitle={t('menu.knowledge')}
+				/>
+				<KnowledgeContent />
+			</WrapperPages>
+			<SettingsBox />
+			<SocialIcons />
+			<ButtonScrollTop />
+			<Languages />
+		</>
+	)
+}
 
 export default Knowledge
