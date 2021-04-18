@@ -1,4 +1,5 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next'
 import WrapperPages, { UnitsData } from 'components/WrapperPages'
 import ContentMyWork from 'contentPage/MyWork'
 import Title from 'components/Title'
@@ -7,17 +8,24 @@ import SocialIcons from 'features/SocialIcons'
 import Languages from 'features/Languages'
 import NavBar from 'features/NavBar'
 
-const MyWork: React.FC = () => (
-	<>
-		<NavBar />
-		<WrapperPages units={UnitsData.LargePage}>
-			<Title bigTitle="Má práce" smallTitle="Má práce" />
-			<ContentMyWork />
-		</WrapperPages>
-		<SettingsBox />
-		<SocialIcons />
-		<Languages />
-	</>
-)
+const MyWork: React.FC = () => {
+	const { t } = useTranslation()
+
+	return (
+		<>
+			<NavBar />
+			<WrapperPages units={UnitsData.LargePage}>
+				<Title
+					bigTitle={t('menu.myWork')}
+					smallTitle={t('menu.myWork')}
+				/>
+				<ContentMyWork />
+			</WrapperPages>
+			<SettingsBox />
+			<SocialIcons />
+			<Languages />
+		</>
+	)
+}
 
 export default MyWork
