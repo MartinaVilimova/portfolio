@@ -1,6 +1,8 @@
 import React from 'react'
+import { I18nextProvider } from 'react-i18next'
 import { Route, Switch } from 'react-router-dom'
 import ThemeProvider from 'features/Theme'
+import i18n from 'locales'
 import { GlobalStyles } from './styled'
 
 // Pages
@@ -12,6 +14,7 @@ import MyWork from 'pages/MyWork'
 import Contact from 'pages/Contact'
 import FindError from 'pages/Error'
 import SuccessfullySent from 'pages/SentEmail'
+
 
 const Routes: React.FC = () => (
 	<Switch>
@@ -27,10 +30,12 @@ const Routes: React.FC = () => (
 )
 
 const App: React.FC = () => (
-	<ThemeProvider>
-		<GlobalStyles />
-		<Routes />
-	</ThemeProvider>
+	<I18nextProvider i18n={i18n}>
+		<ThemeProvider>
+			<GlobalStyles />
+			<Routes />
+		</ThemeProvider>
+	</I18nextProvider>
 )
 
 export default App
