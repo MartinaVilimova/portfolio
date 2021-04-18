@@ -1,12 +1,25 @@
 {
 	"translation": {
-		"common": {
+		"recurrent": {
 			"name": "Martina Vilímová",
-			"downloadCV": "Stáhnout životopis"
+			"downloadCV": "Stáhnout životopis",
+			"followMe": "Sleduj mě",
+			"settings": "Nastavení",
+			"colorSwitch": "Barevný přepínač",
+			"theme": "Světlá & Tmavá verze"
+		},
+		"menu": {
+			"aboutMe": "O mně",
+			"resume": "Životopis",
+			"knowledge": "Znalosti",
+			"myWork": "Má práce",
+			"contact": "Kontakt"
 		},
 		"homepage": {
-			"workWith": "pracuji s ",
-			"title": "Lorem ipsum Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Mauris dolor felis, sagittis at, luctus sed, aliquam non, tellus. Etiam egestas wisi a erat. Mauris metus. Quisque porta."
+			"firstName": "Martina ",
+			"lastName": "Vilímová",
+			"workWith": "Pracuji s ",
+			"article": "Programování webových stránek mě okouzlilo a během krátké doby se ze mě stal IT nadšenec, který už začíná rozumět vývojářskému slangu a snaží se každým dnem objevovat svět frontend developera."
 		}
 	}
 }

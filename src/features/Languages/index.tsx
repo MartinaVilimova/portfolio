@@ -1,8 +1,7 @@
 import React, { useState } from 'react'
 import i18next from 'i18next'
-
+import { AvailableLanguages } from 'locales'
 import { Wrapper, Language } from './styled'
-import { AvailableLanguages } from '../../locales'
 
 const languageOptions = [AvailableLanguages.CS, AvailableLanguages.EN]
 

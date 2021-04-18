@@ -1,4 +1,5 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next'
 import Typed from 'react-typed'
 import { Button } from 'components/Button/styled'
 import { StyledH1, StyledH4 } from 'styled/StyledTitle/styled'
@@ -6,7 +7,6 @@ import { ColorfulText } from 'styled/ColorfulText/styled'
 import { StyledLink } from 'styled/StyledLink/styled'
 import { Paragraph } from 'styled/StyledParagraph/styled'
 import { Wrapper } from './styled'
-import { useTranslation } from 'react-i18next'
 
 const IntroText: React.FC = () => {
 	const { t } = useTranslation()
@@ -14,8 +14,8 @@ const IntroText: React.FC = () => {
 	return (
 		<Wrapper>
 			<StyledH1>
-				{t('common.name')}
-				<ColorfulText>Vilímová</ColorfulText>
+				{t('homepage.firstName')}
+				<ColorfulText>{t('homepage.lastName')}</ColorfulText>
 			</StyledH1>
 			<StyledH4>
 				<ColorfulText>{t('homepage.workWith')}</ColorfulText>
@@ -34,9 +34,9 @@ const IntroText: React.FC = () => {
 					loop
 				></Typed>
 			</StyledH4>
-			<Paragraph>{t('homepage.title')}</Paragraph>
+			<Paragraph>{t('homepage.article')}</Paragraph>
 			<StyledLink to="/CV_vilimova_martina.pdf" target="_blank" download>
-				<Button>{t('common.downloadCV')}</Button>
+				<Button>{t('recurrent.downloadCV')}</Button>
 			</StyledLink>
 		</Wrapper>
 	)

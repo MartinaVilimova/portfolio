@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { useTranslation } from 'react-i18next'
 import { ChevronsLeft, Check } from '@styled-icons/feather'
 import Toggle from 'components/Toggle'
 import { useThemeControl } from 'features/Theme'
@@ -27,11 +28,13 @@ const SettingsBox: React.FC = () => {
 
 	const [active, setActive] = useState(Color.Green)
 
+	const { t } = useTranslation()
+
 	return (
 		<Wrapper click={open}>
 			<Content>
-				<Title>Nastavení</Title>
-				<Title>Barevný přepínač</Title>
+				<Title>{t('recurrent.settings')}</Title>
+				<Title>{t('recurrent.colorSwitch')}</Title>
 				<Colors>
 					{colorSwitches.map((item, index) => (
 						<Switcher
@@ -46,7 +49,7 @@ const SettingsBox: React.FC = () => {
 					))}
 				</Colors>
 				<Line />
-				<Title>Světlá &#38; Tmavá verze</Title>
+				<Title>{t('recurrent.theme')}</Title>
 				<Toggle
 					isChecked={selectedTheme !== Theme.Light}
 					onChange={(checked) =>

@@ -1,12 +1,25 @@
 {
 	"translation": {
-		"common": {
+		"recurrent": {
 			"name": "Martina Vilímová",
-			"downloadCV": "Download resume"
+			"downloadCV": "Download resume",
+			"followMe": "Follow me",
+			"settings": "Settings",
+			"colorSwitch": "Color switch",
+			"theme": "Light & Dark version"
+		},
+		"menu": {
+			"aboutMe": "About me",
+			"resume": "Resume",
+			"knowledge": "Knowledge",
+			"myWork": "My work",
+			"contact": "Contact"
 		},
 		"homepage": {
-			"workWith": "work with ",
-			"title": "Lorem ipsum Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Mauris dolor felis, sagittis at, luctus sed, aliquam non, tellus. Etiam egestas wisi a erat. Mauris metus. Quisque porta."
+			"firstName": "Martina ",
+			"lastName": "Vilímová",
+			"workWith": "I work with ",
+			"article": "Website programming fascinated me and in a short time I became an IT enthusiast who is already beginning to understand developer slang and tries every day to discover the world of the frontend developer."
 		}
 	}
 }
