@@ -11,10 +11,12 @@ import Knowledge from 'pages/Knowledge'
 import MyWork from 'pages/MyWork'
 import Contact from 'pages/Contact'
 import FindError from 'pages/Error'
+import SuccessfullySent from 'pages/SentEmail'
 
 const Routes: React.FC = () => (
 	<Switch>
-		<Route path="/error" component={FindError} />
+		<Route path="/successfully-sent" component={SuccessfullySent} />
+		<Route path="/error-404" component={FindError} />
 		<Route path="/contact" component={Contact} />
 		<Route path="/my-work" component={MyWork} />
 		<Route path="/knowledge" component={Knowledge} />

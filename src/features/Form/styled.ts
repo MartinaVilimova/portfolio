@@ -1,5 +1,6 @@
 import styled, { css } from 'styled-components'
 import { Button } from 'components/Button/styled'
+import { MediaQueries } from 'themes'
 
 const sameStyle = css`
 	display: flex;
@@ -62,7 +63,7 @@ export const FormTextArea = styled.textarea`
 	resize: none;
 `
 
-export const ErrorMessage = styled.p`
+export const ErrorMessageTop = styled.p`
 	display: flex;
 	justify-content: center;
 	margin: auto;
@@ -80,13 +81,43 @@ export const ErrorMessage = styled.p`
 	&:before {
 		content: '';
 		position: absolute;
-		width: 0;
-		height: 0;
 		bottom: 100%;
 		left: 1.5rem;
 		border: 0.7rem solid transparent;
 		border-top: none;
 		border-bottom-color: ${({ theme }) => theme.text.warning};
 		filter: drop-shadow(0 -2px 2px ${({ theme }) => theme.bg.shadowWhite});
+	}
+`
+
+export const ErrorMessageLeftTop = styled(ErrorMessageTop)`
+	&:before {
+		left: -1.04rem;
+		top: 35%;
+		transform: rotate(270deg);
+
+		@media (max-width: ${MediaQueries.Ipad}) {
+			left: 1.5rem;
+			top: -1rem;
+			transform: rotate(0);
+		}
+	}
+`
+
+export const DisplayCaptcha = styled.div<{ open: boolean }>`
+	display: ${({ open }) => (open ? 'flex' : 'none')};
+	margin-bottom: 2rem;
+
+	p {
+		margin-left: 2rem;
+	}
+
+	@media (max-width: ${MediaQueries.Ipad}) {
+		flex-direction: column;
+		margin-bottom: 3rem;
+
+		p {
+			margin-left: 0;
+		}
 	}
 `

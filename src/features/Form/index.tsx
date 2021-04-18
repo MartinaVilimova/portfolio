@@ -1,15 +1,21 @@
-import React from 'react'
-import { firestore } from 'services/firebase'
+import React, { useState } from 'react'
+import { useHistory } from 'react-router'
 import { useForm } from 'react-hook-form'
-import { Button } from 'components/Button/styled'
+import ReCAPTCHA from 'react-google-recaptcha'
+import { firestore } from 'services/firebase'
 import emailjs from 'emailjs-com'
+import { Button } from 'components/Button/styled'
+import { useThemeControl } from 'features/Theme'
+import { Theme } from 'themes'
 import {
 	Form,
 	FormItem,
 	FormInput,
 	FormLabel,
 	FormTextArea,
-	ErrorMessage,
+	ErrorMessageTop,
+	DisplayCaptcha,
+	ErrorMessageLeftTop,
 } from './styled'
 
 type DataForm = {
@@ -55,11 +61,28 @@ const sendMessageToEmail = async (data: DataForm) => {
 
 const ContactForm: React.FC = () => {
 	const { register, handleSubmit, errors, reset } = useForm()
-	const onSubmit = async (data: DataForm) => {
-		await Promise.all([saveMessageToDB(data), sendMessageToEmail(data)])
+	const [isRobot, setIsRobot] = useState(true)
+	const [open, setOpen] = useState(false)
 
+	const { theme } = useThemeControl()
+	const [actualTheme] = theme
+	const history = useHistory()
+
+	const onChange = (token: string | null) =>
+		token ? setIsRobot(false) : setIsRobot(true)
+
+	const onSubmit = async (data: DataForm) => {
+		//await Promise.all([saveMessageToDB(data), sendMessageToEmail(data)])
+		if (isRobot) {
+			setOpen(true)
+			return
+		}
+
+		setOpen(false)
 		reset()
+		history.push('/successfully-sent')
 	}
+
 	return (
 		<Form onSubmit={handleSubmit(onSubmit)}>
 			{/* ---------NAME------------*/}
@@ -87,7 +110,7 @@ const ContactForm: React.FC = () => {
 					})}
 				/>
 				{errors.name && (
-					<ErrorMessage>{errors.name.message}</ErrorMessage>
+					<ErrorMessageTop>{errors.name.message}</ErrorMessageTop>
 				)}
 			</FormItem>
 
@@ -112,7 +135,7 @@ const ContactForm: React.FC = () => {
 					})}
 				/>
 				{errors.email && (
-					<ErrorMessage>{errors.email.message}</ErrorMessage>
+					<ErrorMessageTop>{errors.email.message}</ErrorMessageTop>
 				)}
 			</FormItem>
 
@@ -141,7 +164,7 @@ const ContactForm: React.FC = () => {
 					})}
 				/>
 				{errors.subject && (
-					<ErrorMessage>{errors.subject.message}</ErrorMessage>
+					<ErrorMessageTop>{errors.subject.message}</ErrorMessageTop>
 				)}
 			</FormItem>
 
@@ -155,6 +178,18 @@ const ContactForm: React.FC = () => {
 					ref={register}
 				/>
 			</FormItem>
+
+			{/* TODO: Verify that it works well without token callback */}
+			<DisplayCaptcha open={open}>
+				<ReCAPTCHA
+					sitekey={process.env.REACT_APP_RECAPTCHA_SITE_KEY || ''}
+					onChange={onChange}
+					theme={actualTheme === Theme.Dark ? 'dark' : 'light'}
+				/>
+				<ErrorMessageLeftTop>
+					Prosím potvrďte, že nejste robot.
+				</ErrorMessageLeftTop>
+			</DisplayCaptcha>
 
 			{/* ---------BUTTON------------*/}
 			<Button type="submit">ODESLAT</Button>
