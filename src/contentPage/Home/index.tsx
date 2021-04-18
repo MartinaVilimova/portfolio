@@ -36,7 +36,7 @@ const IntroText: React.FC = () => {
 			</StyledH4>
 			<Paragraph>{t('homepage.article')}</Paragraph>
 			<StyledLink to="/CV_vilimova_martina.pdf" target="_blank" download>
-				<Button>{t('recurrent.downloadCV')}</Button>
+				<Button>{t('special.downloadCV')}</Button>
 			</StyledLink>
 		</Wrapper>
 	)

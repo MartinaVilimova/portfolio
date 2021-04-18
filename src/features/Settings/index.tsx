@@ -33,8 +33,8 @@ const SettingsBox: React.FC = () => {
 	return (
 		<Wrapper click={open}>
 			<Content>
-				<Title>{t('recurrent.settings')}</Title>
-				<Title>{t('recurrent.colorSwitch')}</Title>
+				<Title>{t('special.settings')}</Title>
+				<Title>{t('special.colorSwitch')}</Title>
 				<Colors>
 					{colorSwitches.map((item, index) => (
 						<Switcher
@@ -49,7 +49,7 @@ const SettingsBox: React.FC = () => {
 					))}
 				</Colors>
 				<Line />
-				<Title>{t('recurrent.theme')}</Title>
+				<Title>{t('special.theme')}</Title>
 				<Toggle
 					isChecked={selectedTheme !== Theme.Light}
 					onChange={(checked) =>
