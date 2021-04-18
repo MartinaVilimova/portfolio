@@ -6,15 +6,19 @@ import { ColorfulText } from 'styled/ColorfulText/styled'
 import { StyledLink } from 'styled/StyledLink/styled'
 import { Paragraph } from 'styled/StyledParagraph/styled'
 import { Wrapper } from './styled'
+import { useTranslation } from 'react-i18next'
 
 const IntroText: React.FC = () => {
+	const { t } = useTranslation()
+
 	return (
 		<Wrapper>
 			<StyledH1>
-				Martina <ColorfulText>Vilímová</ColorfulText>
+				{t('common.name')}
+				<ColorfulText>Vilímová</ColorfulText>
 			</StyledH1>
 			<StyledH4>
-				<ColorfulText>Pracuji s </ColorfulText>
+				<ColorfulText>{t('homepage.workWith')}</ColorfulText>
 				<Typed
 					strings={[
 						'HMTL',
@@ -30,13 +34,9 @@ const IntroText: React.FC = () => {
 					loop
 				></Typed>
 			</StyledH4>
-			<Paragraph>
-				Lorem ipsum Lorem ipsum dolor sit amet, consectetuer adipiscing
-				elit. Mauris dolor felis, sagittis at, luctus sed, aliquam non,
-				tellus. Etiam egestas wisi a erat. Mauris metus. Quisque porta.
-			</Paragraph>
+			<Paragraph>{t('homepage.title')}</Paragraph>
 			<StyledLink to="/CV_vilimova_martina.pdf" target="_blank" download>
-				<Button>Stáhnout životopis</Button>
+				<Button>{t('common.downloadCV')}</Button>
 			</StyledLink>
 		</Wrapper>
 	)
