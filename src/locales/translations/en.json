@@ -1,12 +1,14 @@
 {
 	"translation": {
-		"recurrent": {
+		"special": {
 			"name": "Martina Vilímová",
 			"downloadCV": "Download resume",
 			"followMe": "Follow me",
 			"settings": "Settings",
 			"colorSwitch": "Color switch",
-			"theme": "Light & Dark version"
+			"theme": "Light & Dark version",
+			"designed": "Web designed",
+			"backToHomePage": "Go to the home page"
 		},
 		"menu": {
 			"aboutMe": "About me",
@@ -20,6 +22,33 @@
 			"lastName": "Vilímová",
 			"workWith": "I work with ",
 			"article": "Website programming fascinated me and in a short time I became an IT enthusiast who is already beginning to understand developer slang and tries every day to discover the world of the frontend developer."
+		},
+		"contact": {
+			"name": "Name *",
+			"nameErrorRequired": "Please enter your name.",
+			"nameErrorPattern": "Use only letters.",
+			"nameErrorMax": "Your name is too long.",
+			"nameErrorMin": "Enter your full name.",
+			"email": "Email *",
+			"emailErrorRequired": "Please enter your email.",
+			"emailErrorPattern": "Invalid email address format.",
+			"emailErrorMax": "Your email is longer than 254 letters.",
+			"subject": "Subject *",
+			"subjectPlaceholder": "I'm looking for a developer",
+			"subjectErrorRequired": "Please enter the subject of your message.",
+			"subjectErrorPattern": "There is an unsupported symbol in the text.",
+			"subjectErrorMax": "Your subject is unnecessarily long.",
+			"subjectErrorMin": "Your subject is too short.",
+			"message": "Message *",
+			"messagePlaceholder": "Write me the reason for your connection ...",
+			"messageErrorRequired": "Please write me the reason for your connection.",
+			"captchaErrorRequired": "Please confirm that you are not a robot.",
+			"submit": "SEND"
+		},
+		"successfullySent": {
+			"title": "Message was successfully sent",
+			"sentence1": "Thank you for it that choosing to contact me.",
+			"sentence2": "I will try to respond to your message as soon as possible to the email you provided in the form."
 		}
 	}
 }

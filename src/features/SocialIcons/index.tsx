@@ -8,7 +8,7 @@ const SocialIcons: React.FC = () => {
 
 	return (
 		<Wrapper>
-			<VerticalText>{t('recurrent.followMe')}</VerticalText>
+			<VerticalText>{t('special.followMe')}</VerticalText>
 			<Line />
 			<Icon href="https://github.com/MartinaVilimova" target="_blank">
 				<Github />

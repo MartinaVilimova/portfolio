@@ -1,12 +1,14 @@
 {
 	"translation": {
-		"recurrent": {
+		"special": {
 			"name": "Martina Vilímová",
 			"downloadCV": "Stáhnout životopis",
 			"followMe": "Sleduj mě",
 			"settings": "Nastavení",
 			"colorSwitch": "Barevný přepínač",
-			"theme": "Světlá & Tmavá verze"
+			"theme": "Světlá & Tmavá verze",
+			"designed": "Web vytvořila",
+			"backToHomePage": "Přejít na úvodní stránku"
 		},
 		"menu": {
 			"aboutMe": "O mně",
@@ -20,6 +22,33 @@
 			"lastName": "Vilímová",
 			"workWith": "Pracuji s ",
 			"article": "Programování webových stránek mě okouzlilo a během krátké doby se ze mě stal IT nadšenec, který už začíná rozumět vývojářskému slangu a snaží se každým dnem objevovat svět frontend developera."
+		},
+		"contact": {
+			"name": "Jméno *",
+			"nameErrorRequired": "Prosím, zadejte své jméno.",
+			"nameErrorPattern": "Používejte pouze písmena.",
+			"nameErrorMax": "Vaše jméno je příliš dlouhé.",
+			"nameErrorMin": "Zadejte své celé jméno.",
+			"email": "Email *",
+			"emailErrorRequired": "Prosím, zadejte svůj email.",
+			"emailErrorPattern": "Neplatný formát e-mailové adresy.",
+			"emailErrorMax": "Váš e-mail má více než 254 znaků.",
+			"subject": "Předmět *",
+			"subjectPlaceholder": "Sháním programátora",
+			"subjectErrorRequired": "Prosím, zadejte předmět Vaší zprávy.",
+			"subjectErrorPattern": "V textu se nachází nepodporovaný symbol.",
+			"subjectErrorMax": "Váš předmět je zbytečně dlouhý.",
+			"subjectErrorMin": "Váš předmět je příliš krátký.",
+			"message": "Zpráva *",
+			"messagePlaceholder": "Napište mi důvod Vašeho spojení ...",
+			"messageErrorRequired": "Prosím, napište mi důvod Vašeho spojení.",
+			"captchaErrorRequired": "Prosím potvrďte, že nejste robot.",
+			"submit": "ODESLAT"
+		},
+		"successfullySent": {
+			"title": "Zpráva byla úspěšně odeslána",
+			"sentence1": "Děkuji za to, že jste se rozhodli mě kontaktovat.",
+			"sentence2": "Budu se snažit na Vaší zprávu odpovědět co nejdříve na email, který jste uvedli ve formuláři."
 		}
 	}
 }

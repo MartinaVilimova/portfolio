@@ -15,7 +15,6 @@ import Contact from 'pages/Contact'
 import FindError from 'pages/Error'
 import SuccessfullySent from 'pages/SentEmail'
 
-
 const Routes: React.FC = () => (
 	<Switch>
 		<Route path="/successfully-sent" component={SuccessfullySent} />
