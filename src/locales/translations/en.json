@@ -46,9 +46,14 @@
 			"submit": "SEND"
 		},
 		"successfullySent": {
-			"title": "Message was successfully sent",
+			"title": "Message was successfully sent.",
 			"sentence1": "Thank you for it that choosing to contact me.",
 			"sentence2": "I will try to respond to your message as soon as possible to the email you provided in the form."
+		},
+		"error": {
+			"title": "I searched everywhere, but I didn't really find this page.",
+			"sentence1": "Please make sure you did not make a mistake in the URL.",
+			"sentence2": "It is also possible that the page has been moved or completely deleted."
 		}
 	}
 }

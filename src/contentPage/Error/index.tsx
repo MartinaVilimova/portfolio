@@ -1,4 +1,5 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next'
 import errorPhoto from 'assets/error-photo.png'
 import { Button } from 'components/Button/styled'
 import { ColorfulText } from 'styled/ColorfulText/styled'
@@ -7,23 +8,25 @@ import { Paragraph } from 'styled/StyledParagraph/styled'
 import { StyledH4 } from 'styled/StyledTitle/styled'
 import { Wrapper, Photo } from './styled'
 
-const ErrorInfo: React.FC = () => (
-	<Wrapper>
-		<Photo src={errorPhoto} />
-		<StyledH4>
-			<ColorfulText>
-				Hledala jsem, kde se dalo, ale tuhle stránku jsem nenašla.
-			</ColorfulText>
-		</StyledH4>
-		<Paragraph>
-			Ujistěte se prosím, že jste neudělali chybu v URL adrese.
-			<br />
-			Je také možné, že byla stránka přemístěna nebo odstraněna.
-		</Paragraph>
-		<StyledLink to="/">
-			<Button>Přejít na úvodní stránku</Button>
-		</StyledLink>
-	</Wrapper>
-)
+const ErrorInfo: React.FC = () => {
+	const { t } = useTranslation()
+
+	return (
+		<Wrapper>
+			<Photo src={errorPhoto} />
+			<StyledH4>
+				<ColorfulText>{t('error.title')}</ColorfulText>
+			</StyledH4>
+			<Paragraph>
+				{t('error.sentence1')}
+				<br />
+				{t('error.sentence2')}
+			</Paragraph>
+			<StyledLink to="/">
+				<Button>{t('special.backToHomePage')}</Button>
+			</StyledLink>
+		</Wrapper>
+	)
+}
 
 export default ErrorInfo

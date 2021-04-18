@@ -46,9 +46,14 @@
 			"submit": "ODESLAT"
 		},
 		"successfullySent": {
-			"title": "Zpráva byla úspěšně odeslána",
+			"title": "Zpráva byla úspěšně odeslána.",
 			"sentence1": "Děkuji za to, že jste se rozhodli mě kontaktovat.",
 			"sentence2": "Budu se snažit na Vaší zprávu odpovědět co nejdříve na email, který jste uvedli ve formuláři."
+		},
+		"error": {
+			"title": "Hledala jsem, kde se dalo, ale tuhle stránku jsem opravdu nenašla.",
+			"sentence1": "Ujistěte se prosím, že jste neudělali chybu v URL adrese.",
+			"sentence2": "Je také možné, že byla stránka přemístěna nebo úplně odstraněna."
 		}
 	}
 }
