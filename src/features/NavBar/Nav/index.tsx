@@ -1,11 +1,14 @@
 import React, { useState } from 'react'
+import { useTranslation } from 'react-i18next'
 import { useLocation } from 'react-router'
-import { menuLinks } from './data'
+import { getMenuLinks } from './data'
 import { NavContent, Wrapper, NavItem, Burger, NavLink } from './styled'
 
 const Nav: React.FC = () => {
 	const [open, setOpen] = useState<boolean>(false)
 	const [visible, setVisible] = useState<boolean>(false)
+
+	const { t } = useTranslation()
 
 	const animateStart = () => {
 		setVisible(true)
@@ -22,7 +25,7 @@ const Nav: React.FC = () => {
 	return (
 		<Wrapper>
 			<NavContent open={open}>
-				{menuLinks.map((item, index) => (
+				{getMenuLinks(t).map((item, index) => (
 					<NavItem key={index} visible={visible}>
 						<NavLink
 							to={item.link}

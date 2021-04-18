@@ -1,27 +1,29 @@
+import { TFunction } from 'react-i18next'
+
 export type MenuLinksType = {
 	link: string
 	name: string
 }
 
-export const menuLinks: MenuLinksType[] = [
+export const getMenuLinks = (t: TFunction<'translation'>): MenuLinksType[] => [
 	{
 		link: '/about-me',
-		name: 'O mně',
+		name: t('menu.aboutMe'),
 	},
 	{
 		link: '/resume',
-		name: 'Životopis',
+		name: t('menu.resume'),
 	},
 	{
 		link: '/knowledge',
-		name: 'Znalosti',
+		name: t('menu.knowledge'),
 	},
 	{
 		link: '/my-work',
-		name: 'Má práce',
+		name: t('menu.myWork'),
 	},
 	{
 		link: '/contact',
-		name: 'Kontakt',
+		name: t('menu.contact'),
 	},
 ]
