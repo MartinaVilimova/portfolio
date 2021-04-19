@@ -12,7 +12,9 @@ export const Paragraph = styled.p`
 	}
 `
 
-export const ResumeTime = styled.p`
+export const ResumeSubtitle = styled.p`
 	font-size: 1rem;
 	color: ${({ theme }) => theme.text.colorful.basicColor};
+	line-height: 1.3rem;
+	padding: 0.3rem 0;
 `

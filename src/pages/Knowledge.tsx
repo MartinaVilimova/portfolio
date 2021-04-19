@@ -6,7 +6,6 @@ import Title from 'components/Title'
 import ButtonScrollTop from 'features/ButtonScrollTop'
 import SettingsBox from 'features/Settings'
 import SocialIcons from 'features/SocialIcons'
-import Languages from 'features/Languages'
 import NavBar from 'features/NavBar'
 
 const Knowledge: React.FC = () => {
@@ -25,7 +24,6 @@ const Knowledge: React.FC = () => {
 			<SettingsBox />
 			<SocialIcons />
 			<ButtonScrollTop />
-			<Languages />
 		</>
 	)
 }

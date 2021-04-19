@@ -2,6 +2,7 @@ import React from 'react'
 import { I18nextProvider } from 'react-i18next'
 import { Route, Switch } from 'react-router-dom'
 import ThemeProvider from 'features/Theme'
+import Languages from 'features/Languages'
 import i18n from 'locales'
 import { GlobalStyles } from './styled'
 
@@ -33,6 +34,7 @@ const App: React.FC = () => (
 		<ThemeProvider>
 			<GlobalStyles />
 			<Routes />
+			<Languages />
 		</ThemeProvider>
 	</I18nextProvider>
 )

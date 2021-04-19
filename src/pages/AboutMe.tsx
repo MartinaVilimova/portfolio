@@ -7,7 +7,6 @@ import Title from 'components/Title'
 import AboutMeText from 'contentPage/AboutMe'
 import SettingsBox from 'features/Settings'
 import SocialIcons from 'features/SocialIcons'
-import Languages from 'features/Languages'
 import NavBar from 'features/NavBar'
 
 const AboutMe: React.FC = () => {
@@ -31,7 +30,6 @@ const AboutMe: React.FC = () => {
 			</WrapperPages>
 			<SettingsBox />
 			<SocialIcons />
-			<Languages />
 		</>
 	)
 }

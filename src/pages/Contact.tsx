@@ -7,7 +7,6 @@ import Title from 'components/Title'
 import ButtonScrollTop from 'features/ButtonScrollTop'
 import SettingsBox from 'features/Settings'
 import ContactForm from 'features/Form'
-import Languages from 'features/Languages'
 import NavBar from 'features/NavBar'
 
 const Contact: React.FC = () => {
@@ -27,7 +26,6 @@ const Contact: React.FC = () => {
 			</WrapperPages>
 			<SettingsBox />
 			<ButtonScrollTop />
-			<Languages />
 		</>
 	)
 }

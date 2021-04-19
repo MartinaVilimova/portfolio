@@ -3,7 +3,6 @@ import WrapperPages, { UnitsData } from 'components/WrapperPages'
 import ErrorInfo from 'contentPage/Error'
 import SettingsBox from 'features/Settings'
 import SocialIcons from 'features/SocialIcons'
-import Languages from 'features/Languages'
 import NavBar from 'features/NavBar'
 
 const FindError: React.FC = () => (
@@ -14,7 +13,6 @@ const FindError: React.FC = () => (
 		</WrapperPages>
 		<SettingsBox />
 		<SocialIcons />
-		<Languages />
 	</>
 )
 

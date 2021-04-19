@@ -23,6 +23,28 @@
 			"workWith": "Pracuji s ",
 			"article": "Programování webových stránek mě okouzlilo a během krátké doby se ze mě stal IT nadšenec, který už začíná rozumět vývojářskému slangu a snaží se každým dnem objevovat svět frontend developera."
 		},
+		"resume": {
+			"educationTitle": "Vzdělání",
+			"education2": {
+				"title": "Technická univerzita Liberec",
+				"specialization": "Textilní technologie, materiály a nanomateriály",
+				"time": "2015 - 2018",
+				"paragraph": "Na univerzitě jsem nabyla vědomosti o textilních materiálech a jejich zpracování. Získala jsem cennou laboratorní praxi v analýze, testování a výzkumu a obdržela jsem cenu děkana za bakalářskou práci - Odstředivé zvlákňování bikomponentních vláken."
+			},
+			"education1": {
+				"title": "Integrovaná střední škola živnostenská, Plzeň",
+				"specialization": "Modelování a navrhování oděvů",
+				"time": "2011 - 2015",
+				"paragraph": "Umělecká škola mě obohatila o znalosti dějin umění a módy, matematické konstrukce oděvů a strojového šití svých modelů. Dále zvýšila mé malířské schopnosti a pomáhala mi se rozvíjet v prezentaci své vytvořené návrhové řady."
+			},
+			"experienceTitle": "IT Pracovní zkušenosti",
+			"experience1": {
+				"title": "VIDIA-DESIGN s.r.o.",
+				"specialization": "Kodér/Webmaster",
+				"time": "Listopad 2019",
+				"paragraph": "Většina mé pracovní náplně spočívala ve vkládání a upravování obsahu webových stránek (CMS). Pokud bylo třeba dělala jsem také úpravy front-end kódu (HTML, CSS/LESS) a design prvků (Photoshop, Adobe XD). "
+			}
+		},
 		"contact": {
 			"name": "Jméno *",
 			"nameErrorRequired": "Prosím, zadejte své jméno.",

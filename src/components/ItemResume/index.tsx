@@ -1,7 +1,7 @@
 import React from 'react'
 import { Element } from 'react-scroll'
 import { Fade, Zoom } from 'react-awesome-reveal'
-import { Paragraph, ResumeTime } from 'styled/StyledParagraph/styled'
+import { Paragraph, ResumeSubtitle } from 'styled/StyledParagraph/styled'
 import { StyledH6 } from 'styled/StyledTitle/styled'
 import { DataItemsResume } from './data'
 import {
@@ -32,7 +32,10 @@ const ItemResume: React.FC<Props> = ({ data, animationType }) => {
 			<Element name={contain.title}>
 				<StyledH6>{contain.title}</StyledH6>
 			</Element>
-			<ResumeTime>{contain.time}</ResumeTime>
+			{contain.specialization && (
+				<ResumeSubtitle>{contain.specialization}</ResumeSubtitle>
+			)}
+			<ResumeSubtitle>{contain.time}</ResumeSubtitle>
 			<Paragraph>{contain.paragraph}</Paragraph>
 		</Wrapper>
 	)
