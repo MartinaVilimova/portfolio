@@ -5,7 +5,6 @@ import ContentMyWork from 'contentPage/MyWork'
 import Title from 'components/Title'
 import SettingsBox from 'features/Settings'
 import SocialIcons from 'features/SocialIcons'
-import Languages from 'features/Languages'
 import NavBar from 'features/NavBar'
 
 const MyWork: React.FC = () => {
@@ -23,7 +22,6 @@ const MyWork: React.FC = () => {
 			</WrapperPages>
 			<SettingsBox />
 			<SocialIcons />
-			<Languages />
 		</>
 	)
 }

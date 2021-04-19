@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-scroll'
 import ItemResume, { AnimationType } from 'components/ItemResume'
-import { dataKnowledge } from 'components/ItemResume/data'
+import { getDataKnowledge } from 'components/ItemResume/data'
 import { StyledH3, StyledH6 } from 'styled/StyledTitle/styled'
 import { StyledA } from 'styled/StyledLink/styled'
 import { Paragraph } from 'styled/StyledParagraph/styled'
@@ -21,13 +21,16 @@ const KnowledgeContent: React.FC = () => (
 		</Paragraph>
 		<BlockAnchors>
 			<StyledH6>Co jsem se naučila</StyledH6>
-			{dataKnowledge.map((text, index) => (
+			{getDataKnowledge.map((text, index) => (
 				<Link key={index} to={text.title} smooth={true} offset={-85}>
 					{text.title}
 				</Link>
 			))}
 		</BlockAnchors>
-		<ItemResume data={dataKnowledge} animationType={AnimationType.Fade} />
+		<ItemResume
+			data={getDataKnowledge}
+			animationType={AnimationType.Fade}
+		/>
 	</>
 )
 

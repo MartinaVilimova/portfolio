@@ -3,7 +3,6 @@ import WrapperPages, { UnitsData } from 'components/WrapperPages'
 import SentEmail from 'contentPage/SuccessSent'
 import SettingsBox from 'features/Settings'
 import SocialIcons from 'features/SocialIcons'
-import Languages from 'features/Languages'
 import NavBar from 'features/NavBar'
 
 const SuccessfullySent: React.FC = () => (
@@ -14,7 +13,6 @@ const SuccessfullySent: React.FC = () => (
 		</WrapperPages>
 		<SettingsBox />
 		<SocialIcons />
-		<Languages />
 	</>
 )
 

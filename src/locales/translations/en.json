@@ -23,6 +23,28 @@
 			"workWith": "I work with ",
 			"article": "Website programming fascinated me and in a short time I became an IT enthusiast who is already beginning to understand developer slang and tries every day to discover the world of the frontend developer."
 		},
+		"resume": {
+			"educationTitle": "Education",
+			"education2": {
+				"title": "Technical university of Liberec",
+				"specialization": "Textile technologies, materials and nanomaterials",
+				"time": "2015 - 2018",
+				"paragraph": "At university, I gained knowledge about textile materials and their processing. I gained valuable laboratory experience in analysis, testing and research and I received the Dean's award for the bachelor's thesis - Centrifugal spinning of bicomponent fibers."
+			},
+			"education1": {
+				"title": "Integrated trade secondary school of business, Pilsen",
+				"specialization": "Creation and design of clothing",
+				"time": "2011 - 2015",
+				"paragraph": "The art school enriched me with knowledge of the history of art and fashion, mathematical construction of clothes and machine sewing their models. The school also increased my painting skills and helped me develop in the presentation of my created design series."
+			},
+			"experienceTitle": "IT Work experience",
+			"experience1": {
+				"title": "VIDIA-DESIGN s.r.o.",
+				"specialization": "Encoder/Webmaster",
+				"time": "November 2019",
+				"paragraph": "Most of my job was to insert and edit website content (CMS). If necessary, I also made adjustments to the front-end code (HTML, CSS/LESS) and design elements (Photoshop, Adobe XD)."
+			}
+		},
 		"contact": {
 			"name": "Name *",
 			"nameErrorRequired": "Please enter your name.",

@@ -1,6 +1,8 @@
 import styled from 'styled-components'
 
 export const CoverForShadesOfColors = styled.div`
+	width: 100%;
+
 	& > div:nth-child(3n + 1) article div:first-child div {
 		filter: brightness(90%);
 	}
@@ -15,7 +17,7 @@ export const CoverForShadesOfColors = styled.div`
 export const Wrapper = styled.article`
 	display: grid;
 	grid-template-columns: 10% 90%;
-	grid-template-rows: 3rem 2.2rem auto;
+	grid-template-rows: auto auto auto auto;
 	width: 90%;
 	align-items: center;
 	margin: 0.5rem 0;
@@ -23,7 +25,7 @@ export const Wrapper = styled.article`
 
 export const Animation = styled.div`
 	display: flex;
-	grid-row: 1 / 4;
+	grid-row: 1 / 5;
 	width: 100%;
 	height: 100%;
 	justify-content: center;

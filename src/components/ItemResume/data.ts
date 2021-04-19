@@ -1,34 +1,41 @@
+import { TFunction } from 'react-i18next'
+
 export type DataItemsResume = {
 	title: string
+	specialization?: string
 	time: string
 	paragraph: string
 }
 
-export const dataEducation: DataItemsResume[] = [
+export const getDataEducation = (
+	t: TFunction<'translation'>
+): DataItemsResume[] => [
 	{
-		title: 'Technická univerzita Liberec',
-		time: '2015 - 2018',
-		paragraph:
-			'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio nisi molestias officiis alias recusandae rem quos similique. Esse, pariatur. Architecto soluta perferendis eum? Accusantium similique laudantium quidem delectus non? Iusto.',
+		title: t('resume.education2.title'),
+		specialization: t('resume.education2.specialization'),
+		time: t('resume.education2.time'),
+		paragraph: t('resume.education2.paragraph'),
 	},
 	{
-		title: 'Integrovaná střední škola živnostenská',
-		time: '2011 - 2015',
-		paragraph:
-			'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio nisi molestias officiis alias recusandae rem quos similique. Esse, pariatur.',
-	},
-]
-
-export const dataExperience: DataItemsResume[] = [
-	{
-		title: 'Vidia Design',
-		time: '2019',
-		paragraph:
-			'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio nisi molestias officiis alias recusandae rem quos similique. Esse, pariatur. Architecto soluta perferendis eum? Accusantium similique laudantium quidem delectus non? Iusto.',
+		title: t('resume.education1.title'),
+		specialization: t('resume.education1.specialization'),
+		time: t('resume.education1.time'),
+		paragraph: t('resume.education1.paragraph'),
 	},
 ]
 
-export const dataKnowledge: DataItemsResume[] = [
+export const getDataExperience = (
+	t: TFunction<'translation'>
+): DataItemsResume[] => [
+	{
+		title: t('resume.experience1.title'),
+		specialization: t('resume.experience1.specialization'),
+		time: t('resume.experience1.time'),
+		paragraph: t('resume.experience1.paragraph'),
+	},
+]
+
+export const getDataKnowledge: DataItemsResume[] = [
 	{
 		title: 'React Hooks',
 		time: 'Duben 2021',
