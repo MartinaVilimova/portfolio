@@ -4,6 +4,7 @@
 			"name": "Martina Vilímová",
 			"downloadCV": "Stáhnout životopis",
 			"followMe": "Sleduj mě",
+			"writeMe": "Napiš mi",
 			"settings": "Nastavení",
 			"colorSwitch": "Barevný přepínač",
 			"theme": "Světlá & Tmavá verze",
@@ -22,6 +23,35 @@
 			"lastName": "Vilímová",
 			"workWith": "Pracuji s ",
 			"article": "Programování webových stránek mě okouzlilo a během krátké doby se ze mě stal IT nadšenec, který už začíná rozumět vývojářskému slangu a snaží se každým dnem objevovat svět frontend developera."
+		},
+		"aboutMe": {
+			"level": "Junior ",
+			"specialization": "Front-end",
+			"birth": {
+				"title": "Narození:",
+				"info": "14. 7. 1996"
+			},
+			"place": {
+				"title": "Nacházím se:",
+				"info": "Česká republika"
+			},
+			"city": {
+				"title": "Město:",
+				"info": "Praha"
+			},
+			"phone": {
+				"title": "Telefon:",
+				"info": "+420 728 445 052"
+			},
+			"email": {
+				"title": "Email:",
+				"info": "vilima.tul@gmail.com"
+			},
+			"job": {
+				"title": "Zaměstnaná:",
+				"info": "freelancer"
+			},
+			"paragraph": ". . ."
 		},
 		"resume": {
 			"educationTitle": "Vzdělání",
