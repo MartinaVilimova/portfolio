@@ -4,6 +4,7 @@
 			"name": "Martina Vilímová",
 			"downloadCV": "Download resume",
 			"followMe": "Follow me",
+			"writeMe": "Write me",
 			"settings": "Settings",
 			"colorSwitch": "Color switch",
 			"theme": "Light & Dark version",
@@ -22,6 +23,35 @@
 			"lastName": "Vilímová",
 			"workWith": "I work with ",
 			"article": "Website programming fascinated me and in a short time I became an IT enthusiast who is already beginning to understand developer slang and tries every day to discover the world of the frontend developer."
+		},
+		"aboutMe": {
+			"level": "Junior ",
+			"specialization": "Front-end",
+			"birth": {
+				"title": "Birth:",
+				"info": "14. 7. 1996"
+			},
+			"place": {
+				"title": "I'm located:",
+				"info": "Czechia"
+			},
+			"city": {
+				"title": "City:",
+				"info": "Prague"
+			},
+			"phone": {
+				"title": "Phone:",
+				"info": "+420 728 445 052"
+			},
+			"email": {
+				"title": "Email:",
+				"info": "vilima.tul@gmail.com"
+			},
+			"job": {
+				"title": "Employed:",
+				"info": "freelancer"
+			},
+			"paragraph": ". . ."
 		},
 		"resume": {
 			"educationTitle": "Education",
