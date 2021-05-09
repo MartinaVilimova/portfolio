@@ -45,6 +45,90 @@
 				"paragraph": "Většina mé pracovní náplně spočívala ve vkládání a upravování obsahu webových stránek (CMS). Pokud bylo třeba dělala jsem také úpravy front-end kódu (HTML, CSS/LESS) a design prvků (Photoshop, Adobe XD). "
 			}
 		},
+		"knowledge": {
+			"title": "S čím jsem se na IT cestě  setkala",
+			"subtitle": "Nemám počítačovou školu ani ....",
+			"titleAnchor": "Má stručná retrospektiva",
+
+			"knowledge13": {
+				"title": "Firebase",
+				"specialization": "samostudium",
+				"time": "Březen 2021",
+				"paragraph": ""
+			},
+			"knowledge12": {
+				"title": "TypeScript",
+				"specialization": "samostudium",
+				"time": "Leden 2021",
+				"paragraph": ""
+			},
+			"knowledge11": {
+				"title": "React - router, hooks, form",
+				"specialization": "samostudium",
+				"time": "Leden 2021",
+				"paragraph": ""
+			},
+			"knowledge10": {
+				"title": "Styled components",
+				"specialization": "samostudium",
+				"time": "Leden 2021",
+				"paragraph": ""
+			},
+			"knowledge9": {
+				"title": "WordPress",
+				"specialization": "kurz - WordPress 1",
+				"time": "Říjen 2020",
+				"paragraph": ""
+			},
+			"knowledge8": {
+				"title": "JavaScript",
+				"specialization": "kurz - JavaScript 1 a 2",
+				"time": "Září 2020",
+				"paragraph": ""
+			},
+			"knowledge7": {
+				"title": "CSS grid, metodologie BEM, Sass, statický generátor webů Eleventy",
+				"specialization": "kurz - Tvořím web od A do Z 2",
+				"time": "Srpen 2020",
+				"paragraph": ""
+			},
+			"knowledge6": {
+				"title": "Boostrap",
+				"specialization": "kurz - Boostrap",
+				"time": "Srpen 2020",
+				"paragraph": ""
+			},
+			"knowledge5": {
+				"title": "React",
+				"specialization": "kurz - Tech meetup React",
+				"time": "Červenec 2020",
+				"paragraph": ""
+			},
+			"knowledge4": {
+				"title": "Git",
+				"specialization": "samostudium, zaměstnání - Vidia Design s.r.o. ",
+				"time": "Listopad 2019",
+				"paragraph": ""
+			},
+			"knowledge3": {
+				"title": "Less, Flexbox, Sourcetree",
+				"specialization": "samostudium, zaměstnání - Vidia Design s.r.o. ",
+				"time": "Listopad 2019",
+				"paragraph": ""
+			},
+			"knowledge2": {
+				"title": "CSS",
+				"specialization": "samostudium",
+				"time": "Červenec 2019",
+				"paragraph": ""
+			},
+			"knowledge1": {
+				"title": "HTML",
+				"specialization": "samostudium",
+				"time": "Červenec 2019",
+				"paragraph": ""
+			}
+		},
 		"contact": {
 			"name": "Jméno *",
 			"nameErrorRequired": "Prosím, zadejte své jméno.",
