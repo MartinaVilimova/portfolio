@@ -45,6 +45,90 @@
 				"paragraph": "Most of my job was to insert and edit website content (CMS). If necessary, I also made adjustments to the front-end code (HTML, CSS/LESS) and design elements (Photoshop, Adobe XD)."
 			}
 		},
+		"knowledge": {
+			"title": "What I met on the IT journey",
+			"subtitle": "....",
+			"titleAnchor": "My brief retrospective",
+
+			"knowledge13": {
+				"title": "Firebase",
+				"specialization": "self-study",
+				"time": "March 2021",
+				"paragraph": ""
+			},
+			"knowledge12": {
+				"title": "TypeScript",
+				"specialization": "self-study",
+				"time": "January 2021",
+				"paragraph": ""
+			},
+			"knowledge11": {
+				"title": "React - router, hooks, form",
+				"specialization": "self-study",
+				"time": "January 2021",
+				"paragraph": ""
+			},
+			"knowledge10": {
+				"title": "Styled components",
+				"specialization": "self-study",
+				"time": "January 2021",
+				"paragraph": ""
+			},
+			"knowledge9": {
+				"title": "WordPress",
+				"specialization": "workshop - WordPress 1",
+				"time": "October 2020",
+				"paragraph": ""
+			},
+			"knowledge8": {
+				"title": "JavaScript",
+				"specialization": "workshop - JavaScript 1 a 2",
+				"time": "September 2020",
+				"paragraph": ""
+			},
+			"knowledge7": {
+				"title": "CSS grid, methodology BEM, Sass, static website generator Eleventy",
+				"specialization": "workshop - I create a website from A to Z 2",
+				"time": "August 2020",
+				"paragraph": ""
+			},
+			"knowledge6": {
+				"title": "Boostrap",
+				"specialization": "workshop - Boostrap",
+				"time": "August 2020",
+				"paragraph": ""
+			},
+			"knowledge5": {
+				"title": "React",
+				"specialization": "workshop - Tech meetup React",
+				"time": "July 2020",
+				"paragraph": ""
+			},
+			"knowledge4": {
+				"title": "Git",
+				"specialization": "self-study, job - Vidia Design s.r.o. ",
+				"time": "November 2019",
+				"paragraph": ""
+			},
+			"knowledge3": {
+				"title": "Less, Flexbox, Sourcetree",
+				"specialization": "self-study, job - Vidia Design s.r.o. ",
+				"time": "November 2019",
+				"paragraph": ""
+			},
+			"knowledge2": {
+				"title": "CSS",
+				"specialization": "self-study",
+				"time": "July 2019",
+				"paragraph": ""
+			},
+			"knowledge1": {
+				"title": "HTML",
+				"specialization": "self-study",
+				"time": "July 2019",
+				"paragraph": ""
+			}
+		},
 		"contact": {
 			"name": "Name *",
 			"nameErrorRequired": "Please enter your name.",
