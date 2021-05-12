@@ -46,7 +46,6 @@ const AboutMeText: React.FC = () => {
 					<Name>
 						{t('aboutMe.phone.title')}
 						<Text>
-							&nbsp;
 							<StyledA href="tel:+420728445052">
 								{t('aboutMe.phone.info')}
 							</StyledA>
@@ -55,7 +54,6 @@ const AboutMeText: React.FC = () => {
 					<Name>
 						{t('aboutMe.email.title')}
 						<Text>
-							&nbsp;
 							<StyledA href="mailto:vilima.tul@gmail.com">
 								{t('aboutMe.email.info')}
 							</StyledA>
@@ -67,14 +65,8 @@ const AboutMeText: React.FC = () => {
 					</Name>
 				</PersonalInfo1>
 			</Columns>
-			<Paragraph>
-				Programování je obor, který nabízí mnoho možností a já v něm
-				vidím velkou budoucnost. bla bla bla Lorem ipsum dolor sit, amet
-				consectetur adipisicing elit. Dolorem repellendus facilis
-				aliquid quibusdam atque molestias sint quos ullam perspiciatis,
-				cupiditate eaque nobis aspernatur ad corporis mollitia aut
-				accusantium ut vitae!
-			</Paragraph>
+			<Paragraph>{t('aboutMe.paragraph1')}</Paragraph>
+			<Paragraph>{t('aboutMe.paragraph2')}</Paragraph>
 			<WrapperLinks>
 				<StyledLink
 					to="/CV_vilimova_martina.pdf"
