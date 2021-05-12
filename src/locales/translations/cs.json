@@ -78,7 +78,7 @@
 		},
 		"knowledge": {
 			"title": "S čím jsem se na IT cestě  setkala",
-			"subtitle": "Nemám počítačovou školu ani ....",
+			"subtitle": "Nechodila jsme na IT školu ani nemám žádné podobné vzdělání v tomto odvětí. Přesto mě tento obor dokázal natolik zaujmout, že jsem se rozhodla mu dát šanci. Začínala jsem základy a postupně jsem přidávala další znalosti, které mě zajímaly, nebo které jsem potřebovala ke své práci. Učila jsem se z informací získaných na internetu, hrála jsem různé hry (např. CodeCombat), zašla na pár kurzů většinou od Czechitas, vytvářela si malá cvičení nebo dělala projekty s přáteli. ",
 			"titleAnchor": "Má stručná retrospektiva",
 
 			"knowledge13": {
@@ -118,10 +118,10 @@
 				"paragraph": ""
 			},
 			"knowledge7": {
-				"title": "CSS grid, metodologie BEM, Sass, statický generátor webů Eleventy",
+				"title": "CSS grid, BEM, Sass, Eleventy",
 				"specialization": "kurz - Tvořím web od A do Z 2",
 				"time": "Srpen 2020",
-				"paragraph": ""
+				"paragraph": "CSS grid, metodologie BEM, Sass, statický generátor webů Eleventy"
 			},
 			"knowledge6": {
 				"title": "Boostrap",
