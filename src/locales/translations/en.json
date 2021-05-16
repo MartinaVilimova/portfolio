@@ -78,86 +78,86 @@
 		},
 		"knowledge": {
 			"title": "What I met on the IT journey",
-			"subtitle": "I didn't go to IT school nor do I have any similar education in this field. Nevertheless, I was very interested in this field, that I decided to give it a chance.  I started the basics and gradually added more knowledge that I was interested in or that I needed for my work. I learned from information obtained on the Internet, played various games (for example CodeCombat), took a few courses, mostly from Czechitas, created small exercises or did projects with friends.",
+			"subtitle": "I didn't go to IT school nor do I have any similar education in this field. Nevertheless, I was very interested in this field, that I decided to give it a chance. I started the basics and gradually added more knowledge that I was interested in or that I needed for my work. I learned from information obtained on the Internet, played various games (for example CodeCombat), took a few courses, mostly from Czechitas, created small exercises or did projects with friends.",
 			"titleAnchor": "My brief retrospective",
 
 			"knowledge13": {
 				"title": "Firebase",
 				"specialization": "self-study",
 				"time": "March 2021",
-				"paragraph": ""
+				"paragraph": "For publishing my sites, I learned to work with Firebase. I learned to base a project on this platform and set up the necessary infrastructure for it. I learned how to work with a firestore database using basic operations and learned user authentication."
 			},
 			"knowledge12": {
 				"title": "TypeScript",
 				"specialization": "self-study",
 				"time": "January 2021",
-				"paragraph": ""
+				"paragraph": "For keep the structure of the code and eliminate errors, I learned the basics of TypeScript. In projects I started using things like interface / type, enum, generics. I tried to type all inputs and outputs and avoided using  type any. In JavaScript I learned more modern notations defined in ES6 (const, arrow function) and while working with data I also learned to work with functions in fields (map, filter, find, reduce, etc.)"
 			},
 			"knowledge11": {
-				"title": "React - router, hooks, form",
-				"specialization": "self-study",
-				"time": "January 2021",
-				"paragraph": ""
-			},
-			"knowledge10": {
 				"title": "Styled components",
 				"specialization": "self-study",
 				"time": "January 2021",
-				"paragraph": ""
+				"paragraph": "When working on a new project in React, styling using Styled components was chosen. This library was new to me, but after reading the documentation, I quickly learned it. I learned to create stylized components, use literals, inherit styles from other components, use props, nesting, pseudo-elements, animations, etc. I tried very hard to follow the DRY principle in my code (don't repeat yourself)."
+			},
+			"knowledge10": {
+				"title": "React - router, hooks, form",
+				"specialization": "self-study",
+				"time": "January 2021",
+				"paragraph": "I've known about the React framework for a long time, but only now have I started to pay a lot of attention to it. Together with friends, we created a new project and learned everything important that this library offers. I learned to functionally program, create code in smaller functional parts, use props, hooks (useState, useEffect, useContext), switch content using React Router Dom and write forms and validate them using React Hook Form."
 			},
 			"knowledge9": {
 				"title": "WordPress",
 				"specialization": "workshop - WordPress 1",
 				"time": "October 2020",
-				"paragraph": ""
+				"paragraph": "I've often heard of software that easily and quickly creates a website, so I wanted to know more about it. That's why I attended an online course on WordPress, where I learned how to install and set up this open-source CMS, learned what are templates and plugins, and created a simple website during the course."
 			},
 			"knowledge8": {
 				"title": "JavaScript",
 				"specialization": "workshop - JavaScript 1 a 2",
 				"time": "September 2020",
-				"paragraph": ""
+				"paragraph": "I really enjoy coding, but I wanted to move a little further again and start inserting a bit of logic into my code. I first learned JavaScript at home and later took two courses, where I really learned my knowledge of variables, conditions, cycles and functions. I then practiced JavaScript a lot in the game CodeCombat."
 			},
 			"knowledge7": {
-				"title": "CSS grid, methodology BEM, Sass, static website generator Eleventy",
+				"title": "CSS grid, BEM, Sass, Eleventy",
 				"specialization": "workshop - I create a website from A to Z 2",
 				"time": "August 2020",
-				"paragraph": ""
+				"paragraph": "Courses always give me a lot of information in a short time, so I enrolled in a weekly course from Czechitas, where I learned many new and great things every day. Besides flexbox and Bootstrap, I have now learned to create a responsive layout using a CSS grid. I learned how to write class names according to the BEM methodology. I expanded my knowledge with another Sass preprocessor and learned to create templates and do a project in the Eleventy static site generator with text file editing."
 			},
 			"knowledge6": {
-				"title": "Boostrap",
-				"specialization": "workshop - Boostrap",
+				"title": "Bootstrap",
+				"specialization": "workshop - Bootstrap",
 				"time": "August 2020",
-				"paragraph": ""
+				"paragraph": "A responsive layout is an absolute necessity of a website today, that's why I decided to take part in another workshop from Czechitas, this time on the topic of Bootstrap. During the day, I learned to embed the framework in my project, the basic techniques of responsive web design, the use of utilities or finished components and editing styles."
 			},
 			"knowledge5": {
 				"title": "React",
 				"specialization": "workshop - Tech meetup React",
 				"time": "July 2020",
-				"paragraph": ""
+				"paragraph": "I didn't know much about React at that time, but I was interested in this JavaScript library, so I didn't hesitate and signed up for the online workshop Tech meetup React from Czechitas. The creation of a class component and a functional component, props, component state, REST API, React Router was discussed."
 			},
 			"knowledge4": {
-				"title": "Git",
+				"title": "Git, Sourcetree",
 				"specialization": "self-study, job - Vidia Design s.r.o. ",
 				"time": "November 2019",
-				"paragraph": ""
+				"paragraph": "While working in a team, I learned to use a git program called Sourcetree so that I could publish my code to a common repository. I learned to work with branches, download new content (git pull), create commits and insert my work (git push)."
 			},
 			"knowledge3": {
-				"title": "Less, Flexbox, Sourcetree",
+				"title": "Less, Flexbox",
 				"specialization": "self-study, job - Vidia Design s.r.o. ",
 				"time": "November 2019",
-				"paragraph": ""
+				"paragraph": "When I started working, I had to learn a lot of new things that I knew nothing about. I learned about responsive web design and created web layouts using flexbox and media query. I also learned to write styles to the LESS preprocessor and took advantage of its benefits such as variables, mixins, nesting, functions, etc."
 			},
 			"knowledge2": {
 				"title": "CSS",
 				"specialization": "self-study",
 				"time": "July 2019",
-				"paragraph": ""
+				"paragraph": "I really enjoyed CSS (cascading styles sheets). We played with colors, sizes, alignments and positions. First I wrote the styles directly into the HTML elements and then into an external file. I learned to use different properties, selector types, pseudo-classes and pseudo-elements."
 			},
 			"knowledge1": {
 				"title": "HTML",
 				"specialization": "self-study",
 				"time": "July 2019",
-				"paragraph": ""
+				"paragraph": "HTML is the basis. I learned to write paired tags (start tag and end tag), unpaired tags (empty elements) and their attributes. She observed differences between block and inline elements. It created texts, links, images, lists, tables, navigations, forms, etc."
 			}
 		},
 		"contact": {
