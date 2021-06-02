@@ -1,3 +1,4 @@
+import { TFunction } from 'react-i18next'
 import autoodstrejdy from 'assets/autoodstrejdy.png'
 import kafickari from 'assets/kafickari.png'
 import eaglefitness from 'assets/eaglefitness.png'
@@ -12,8 +13,8 @@ import {
 } from 'features/Description/authors'
 
 export enum DataFilter {
-	cooperation = 'spolupráce',
-	ownWork = 'vlastní práce',
+	cooperation = 'cooperation',
+	ownWork = 'ownWork',
 }
 
 type DataPicture = {
@@ -36,11 +37,13 @@ export type DataItemsMyWork = {
 	updateDate: string
 }
 
-export const dataMyWork: DataItemsMyWork[] = [
+export const getDataMyWork = (
+	t: TFunction<'translation'>
+): DataItemsMyWork[] => [
 	{
 		myWorkItem: {
 			picture: pokemon,
-			subtitle: 'Aj-tý spojka',
+			subtitle: t('myWork.myWork8.title'),
 			githubLink: '/',
 		},
 		authors: [
@@ -50,21 +53,20 @@ export const dataMyWork: DataItemsMyWork[] = [
 			dataAuthors[NameAuthors.JidraMaca],
 		],
 		filter: DataFilter.cooperation,
-		description:
-			'Phasellus enim erat, vestibulum vel, aliquam a, posuere eu, velit. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Etiam bibendum elit eget erat. Pellentesque pretium lectus id turpis. In dapibus augue non sapien. Etiam bibendum elit eget erat. Fusce nibh. Aliquam erat volutpat. Curabitur vitae diam non enim vestibulum interdum. Quisque tincidunt scelerisque libero. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+		description: t('myWork.myWork8.description'),
 		carousel: [
 			{
 				src: pokemon,
-				alt: 'Aj-tý spojka',
+				alt: t('myWork.myWork8.title'),
 			},
 		],
-		skills: 'React / Styled Component / Firebase ',
-		updateDate: 'Stále ve vývoji',
+		skills: t('myWork.myWork8.skills'),
+		updateDate: t('myWork.myWork8.updateDate'),
 	},
 	{
 		myWorkItem: {
 			picture: pokemon,
-			subtitle: 'Osobní portfolio',
+			subtitle: t('myWork.myWork7.title'),
 			githubLink: '/',
 		},
 		authors: [
@@ -72,122 +74,116 @@ export const dataMyWork: DataItemsMyWork[] = [
 			dataAuthors[NameAuthors.TomasHampl],
 		],
 		filter: DataFilter.cooperation,
-		description:
-			'Phasellus enim erat, vestibulum vel, aliquam a, posuere eu, velit. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Etiam bibendum elit eget erat. Pellentesque pretium lectus id turpis. In dapibus augue non sapien. Etiam bibendum elit eget erat. Fusce nibh. Aliquam erat volutpat. Curabitur vitae diam non enim vestibulum interdum. Quisque tincidunt scelerisque libero. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+		description: t('myWork.myWork7.description'),
 		carousel: [
 			{
 				src: pokemon,
-				alt: 'Osobní portfolio',
+				alt: t('myWork.myWork7.title'),
 			},
 		],
-		skills: 'React / Styled Component / Firebase - upravit',
-		updateDate: 'Duben 2021',
+		skills: t('myWork.myWork7.skills'),
+		updateDate: t('myWork.myWork7.updateDate'),
 	},
 	{
 		myWorkItem: {
 			picture: pokemon,
-			subtitle: 'Pokemon',
+			subtitle: t('myWork.myWork6.title'),
 			githubLink: '/',
 		},
 		authors: [dataAuthors[NameAuthors.MartinaVilimova]],
 		filter: DataFilter.ownWork,
-		description:
-			'Phasellus enim erat, vestibulum vel, aliquam a, posuere eu, velit. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Etiam bibendum elit eget erat. Pellentesque pretium lectus id turpis. In dapibus augue non sapien. Etiam bibendum elit eget erat. Fusce nibh. Aliquam erat volutpat. Curabitur vitae diam non enim vestibulum interdum. Quisque tincidunt scelerisque libero. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+		description: t('myWork.myWork6.description'),
 		carousel: [
 			{
 				src: pokemon,
-				alt: 'pokemon',
+				alt: t('myWork.myWork6.title'),
 			},
 		],
-		skills: 'React',
-		updateDate: 'Březen 2021',
+		skills: t('myWork.myWork6.skills'),
+		updateDate: t('myWork.myWork6.updateDate'),
 	},
 	{
 		myWorkItem: {
 			picture: kafickari,
-			subtitle: 'Kafíčkáři',
+			subtitle: t('myWork.myWork5.title'),
 			webLink: 'http://kafickari.unas.cz/',
 		},
 		authors: [dataAuthors[NameAuthors.MartinaVilimova]],
 		filter: DataFilter.ownWork,
-		description:
-			'Phasellus enim erat, vestibulum vel, aliquam a, posuere eu, velit. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Etiam bibendum elit eget erat. Pellentesque pretium lectus id turpis. In dapibus augue non sapien. Etiam bibendum elit eget erat. Fusce nibh. Aliquam erat volutpat. Curabitur vitae diam non enim vestibulum interdum. Quisque tincidunt scelerisque libero. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+		description: t('myWork.myWork5.description'),
 		carousel: [
 			{
 				src: kafickari,
-				alt: 'kafíčkáři',
+				alt: t('myWork.myWork5.title'),
 			},
 		],
-		skills: 'WordPress',
-		updateDate: 'Listopad 2020',
+		skills: t('myWork.myWork5.skills'),
+		updateDate: t('myWork.myWork5.updateDate'),
 	},
 	{
 		myWorkItem: {
 			picture: cestovka,
-			subtitle: 'Cestovka, Zdravé mlsání',
+			subtitle: t('myWork.myWork4.title'),
 			githubLink: '/',
 		},
 		authors: [dataAuthors[NameAuthors.MartinaVilimova]],
 		filter: DataFilter.ownWork,
-		description:
-			'Phasellus enim erat, vestibulum vel, aliquam a, posuere eu, velit. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Etiam bibendum elit eget erat. Pellentesque pretium lectus id turpis. In dapibus augue non sapien. Etiam bibendum elit eget erat. Fusce nibh. Aliquam erat volutpat. Curabitur vitae diam non enim vestibulum interdum. Quisque tincidunt scelerisque libero. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+		description: t('myWork.myWork4.description'),
 		carousel: [
 			{
 				src: cestovka,
-				alt: 'cestovka',
+				alt: t('myWork.myWork4.alt1'),
 			},
 			{
 				src: zdravemlsani,
-				alt: 'zdrave mlsani',
+				alt: t('myWork.myWork4.alt2'),
 			},
 		],
-		skills: 'Sass / BEM / CssGrid - upravit',
-		updateDate: 'Srpen 2020',
+		skills: t('myWork.myWork4.skills'),
+		updateDate: t('myWork.myWork4.updateDate'),
 	},
 	{
 		myWorkItem: {
 			picture: kadernictvi,
-			subtitle: 'Kadeřnictví Scissors',
+			subtitle: t('myWork.myWork3.title'),
 			githubLink: '/',
 		},
 		authors: [dataAuthors[NameAuthors.MartinaVilimova]],
 		filter: DataFilter.ownWork,
-		description:
-			'Phasellus enim erat, vestibulum vel, aliquam a, posuere eu, velit. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Etiam bibendum elit eget erat. Pellentesque pretium lectus id turpis. In dapibus augue non sapien. Etiam bibendum elit eget erat. Fusce nibh. Aliquam erat volutpat. Curabitur vitae diam non enim vestibulum interdum. Quisque tincidunt scelerisque libero. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+		description: t('myWork.myWork3.description'),
 		carousel: [
 			{
 				src: kadernictvi,
-				alt: 'kadernictvi',
+				alt: t('myWork.myWork3.title'),
 			},
 		],
-		skills: 'Boostrap - upravit',
-		updateDate: 'Srpen 2020',
+		skills: t('myWork.myWork3.skills'),
+		updateDate: t('myWork.myWork3.updateDate'),
 	},
 	{
 		myWorkItem: {
 			picture: eaglefitness,
-			subtitle: 'Eagle fitness',
+			subtitle: t('myWork.myWork2.title'),
 		},
 		authors: [
 			dataAuthors[NameAuthors.MartinaVilimova],
 			dataAuthors[NameAuthors.TomasHampl],
 		],
 		filter: DataFilter.ownWork,
-		description:
-			'Phasellus enim erat, vestibulum vel, aliquam a, posuere eu, velit. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Etiam bibendum elit eget erat. Pellentesque pretium lectus id turpis. In dapibus augue non sapien. Etiam bibendum elit eget erat. Fusce nibh. Aliquam erat volutpat. Curabitur vitae diam non enim vestibulum interdum. Quisque tincidunt scelerisque libero. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+		description: t('myWork.myWork2.description'),
 		carousel: [
 			{
 				src: eaglefitness,
-				alt: 'eagle fitness',
+				alt: t('myWork.myWork2.title'),
 			},
 		],
-		skills: 'HTML / CSS / JS',
-		updateDate: 'Únor 2020',
+		skills: t('myWork.myWork2.skills'),
+		updateDate: t('myWork.myWork2.updateDate'),
 	},
 	{
 		myWorkItem: {
 			picture: autoodstrejdy,
-			subtitle: 'Auto od strejdy',
+			subtitle: t('myWork.myWork1.title'),
 			webLink: 'https://www.autoodstrejdy.cz/',
 		},
 		authors: [
@@ -195,15 +191,14 @@ export const dataMyWork: DataItemsMyWork[] = [
 			dataAuthors[NameAuthors.TomasHampl],
 		],
 		filter: DataFilter.ownWork,
-		description:
-			'Phasellus enim erat, vestibulum vel, aliquam a, posuere eu, velit. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Etiam bibendum elit eget erat. Pellentesque pretium lectus id turpis. In dapibus augue non sapien. Etiam bibendum elit eget erat. Fusce nibh. Aliquam erat volutpat. Curabitur vitae diam non enim vestibulum interdum. Quisque tincidunt scelerisque libero. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+		description: t('myWork.myWork1.description'),
 		carousel: [
 			{
 				src: autoodstrejdy,
-				alt: 'Auto od strejdy',
+				alt: t('myWork.myWork1.title'),
 			},
 		],
-		skills: 'HTML / CSS',
-		updateDate: 'Září 2019',
+		skills: t('myWork.myWork1.skills'),
+		updateDate: t('myWork.myWork1.updateDate'),
 	},
 ]

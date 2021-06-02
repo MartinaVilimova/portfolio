@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import { useTranslation } from 'react-i18next'
 import OutsideClickHandler from 'react-outside-click-handler'
 import { X } from '@styled-icons/feather'
 import Columns, { NumberColumns } from 'components/Columns'
@@ -24,6 +25,8 @@ type Props = {
 }
 
 const DescriptionMyWork: React.FC<Props> = ({ hidden, shutDown, data }) => {
+	const { t } = useTranslation()
+
 	const [animate, setAnimate] = useState(false)
 
 	useEffect(() => {
@@ -47,14 +50,18 @@ const DescriptionMyWork: React.FC<Props> = ({ hidden, shutDown, data }) => {
 					</FixedTitle>
 					<DescriptionContent>
 						<PicturesCarousel data={data} />
-						<StyledH6>Popis projektu</StyledH6>
+						<StyledH6>
+							{t('myWork.description.projectDescription')}
+						</StyledH6>
 						<Paragraph>{data?.description}</Paragraph>
 						<Columns
 							columns={NumberColumns.Columns2}
 							columnsIpad={NumberColumns.Columns1}
 						>
 							<Article>
-								<StyledH6>Projekt vytvořili:</StyledH6>
+								<StyledH6>
+									{t('myWork.description.createdProject')}
+								</StyledH6>
 								{data?.authors.map((item, index) => (
 									<>
 										<StyledA
@@ -71,11 +78,15 @@ const DescriptionMyWork: React.FC<Props> = ({ hidden, shutDown, data }) => {
 								))}
 							</Article>
 							<Article>
-								<StyledH6>Dovednosti:</StyledH6>
+								<StyledH6>
+									{t('myWork.description.skills')}
+								</StyledH6>
 								<ArticleText>{data?.skills}</ArticleText>
 							</Article>
 							<Article>
-								<StyledH6>Má poslední aktualizace:</StyledH6>
+								<StyledH6>
+									{t('myWork.description.lastUpdate')}
+								</StyledH6>
 								<ArticleText>{data?.updateDate}</ArticleText>
 							</Article>
 						</Columns>

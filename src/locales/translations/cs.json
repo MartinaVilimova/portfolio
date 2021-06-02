@@ -170,7 +170,62 @@
 				"morePages": "Načíst víc položek",
 				"lessPages": "Načíst méně položek"
 			},
-			"myWork1": {}
+			"description": {
+				"projectDescription": "Popis projektu",
+				"createdProject": "Projekt vytvořili:",
+				"skills": "Dovednosti:",
+				"lastUpdate": "Má poslední aktualizace:"
+			},
+			"myWork8": {
+				"title": "Aj-tý spojka",
+				"description": "",
+				"skills": "React / Styled Component / Firebase",
+				"updateDate": "Stále ve vývoji"
+			},
+			"myWork7": {
+				"title": "Osobní portfolio",
+				"description": "",
+				"skills": "React / Styled Component / Firebase",
+				"updateDate": "Červen 2021"
+			},
+			"myWork6": {
+				"title": "Pokemon",
+				"description": "",
+				"skills": "React",
+				"updateDate": "Červen 2021"
+			},
+			"myWork5": {
+				"title": "Kafíčkáři",
+				"description": "",
+				"skills": "WordPress",
+				"updateDate": "Listopad 2020"
+			},
+			"myWork4": {
+				"title": "Cestovka, Zdravé mlsání",
+				"description": "",
+				"alt1": "cestovka",
+				"alt2": "zdravé mlsání",
+				"skills": "Sass / BEM / CssGrid",
+				"updateDate": "Srpen 2020"
+			},
+			"myWork3": {
+				"title": "Kadeřnictví Scissors",
+				"description": "",
+				"skills": "Boostrap",
+				"updateDate": "Srpen 2020"
+			},
+			"myWork2": {
+				"title": "Eagle fitness",
+				"description": "",
+				"skills": "HTML / CSS / JS",
+				"updateDate": "Únor 2020"
+			},
+			"myWork1": {
+				"title": "Auto od strejdy",
+				"description": "",
+				"skills": "HTML / CSS",
+				"updateDate": "Září 2019"
+			}
 		},
 		"contact": {
 			"name": "Jméno *",

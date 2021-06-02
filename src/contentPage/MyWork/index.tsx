@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { useTranslation } from 'react-i18next'
-import { DataFilter, dataMyWork } from 'components/ItemMyWork/data'
+import { DataFilter, getDataMyWork } from 'components/ItemMyWork/data'
 import Columns, { NumberColumns } from 'components/Columns'
 import { SmallButton } from 'components/Button/styled'
 import ItemMyWork from 'components/ItemMyWork'
@@ -18,21 +18,21 @@ const ContentMyWork: React.FC = () => {
 
 	const [active, setActive] = useState(buttons[0])
 
-	const [filterData, setFilterData] = useState(dataMyWork)
+	const [filterData, setFilterData] = useState(getDataMyWork(t))
 
 	const aplicationFilter = (button: string) => {
 		setCurrentPage(1)		
 		if (button === buttons[0]) {
-			setFilterData(dataMyWork)
+			setFilterData(getDataMyWork(t))
 		}
 		if (button === buttons[1]) {
-			const dataOwnWork = dataMyWork.filter(
+			const dataOwnWork = getDataMyWork(t).filter(
 				(item) => item.filter === DataFilter.ownWork
 			)
 			setFilterData(dataOwnWork)
 		}
 		if (button === buttons[2]) {
-			const dataCooperationWork = dataMyWork.filter(
+			const dataCooperationWork = getDataMyWork(t).filter(
 				(item) => item.filter === DataFilter.cooperation
 			)
 			setFilterData(dataCooperationWork)
