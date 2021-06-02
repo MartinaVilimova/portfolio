@@ -160,6 +160,18 @@
 				"paragraph": "HTML is the basis. I learned to write paired tags (start tag and end tag), unpaired tags (empty elements) and their attributes. She observed differences between block and inline elements. It created texts, links, images, lists, tables, navigations, forms, etc."
 			}
 		},
+		"myWork": {
+			"button": {
+				"all": "all",
+				"ownWork": "own work",
+				"cooperation": "cooperation"
+			},
+			"pagination": {
+				"morePages": "Load more items",
+				"lessPages": "Load fewer items"
+			},
+			"myWork1": {}
+		},
 		"contact": {
 			"name": "Name *",
 			"nameErrorRequired": "Please enter your name.",
