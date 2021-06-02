@@ -170,6 +170,12 @@
 				"morePages": "Load more items",
 				"lessPages": "Load fewer items"
 			},
+			"description": {
+				"projectDescription": "Project description",
+				"createdProject": "Created the project:",
+				"skills": "Skills:",
+				"lastUpdate": "My last update:"
+			},
 			"myWork1": {}
 		},
 		"contact": {
