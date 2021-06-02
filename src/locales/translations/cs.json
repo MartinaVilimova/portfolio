@@ -160,6 +160,18 @@
 				"paragraph": "HTML je základ. Učila jsem se psát párové a nepárové tagy a jejich atributy. Pozorovala rozdíly mezi blokovými a řádkovými elementy. Tvořila texty, odkazy, obrázky, seznamy, tabulky, navigace, formuláře atd."
 			}
 		},
+		"myWork": {
+			"button": {
+				"all": "všechno",
+				"ownWork": "vlastní práce",
+				"cooperation": "spolupráce"
+			},
+			"pagination": {
+				"morePages": "Načíst víc položek",
+				"lessPages": "Načíst méně položek"
+			},
+			"myWork1": {}
+		},
 		"contact": {
 			"name": "Jméno *",
 			"nameErrorRequired": "Prosím, zadejte své jméno.",

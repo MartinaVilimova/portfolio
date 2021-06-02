@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { useTranslation } from 'react-i18next'
 import { DataFilter, dataMyWork } from 'components/ItemMyWork/data'
 import Columns, { NumberColumns } from 'components/Columns'
 import { SmallButton } from 'components/Button/styled'
@@ -6,31 +7,31 @@ import ItemMyWork from 'components/ItemMyWork'
 import Pagination from 'features/Pagination'
 import { WrapperButtons } from './styled'
 
-enum ButtonNames {
-	All = 'Všechno',
-	OwnWork = 'Jen má práce',
-	Cooperation = 'Spolupráce',
-}
-
-const buttons = [ButtonNames.All, ButtonNames.OwnWork, ButtonNames.Cooperation]
-
 const ContentMyWork: React.FC = () => {
-	const [active, setActive] = useState(ButtonNames.All)
+	const { t } = useTranslation()
+
+	const buttons = [
+		t('myWork.button.all'),
+		t('myWork.button.ownWork'),
+		t('myWork.button.cooperation'),
+	]
+
+	const [active, setActive] = useState(buttons[0])
 
 	const [filterData, setFilterData] = useState(dataMyWork)
 
 	const aplicationFilter = (button: string) => {
-		setCurrentPage(1)
-		if (button === ButtonNames.All) {
+		setCurrentPage(1)		
+		if (button === buttons[0]) {
 			setFilterData(dataMyWork)
 		}
-		if (button === ButtonNames.OwnWork) {
+		if (button === buttons[1]) {
 			const dataOwnWork = dataMyWork.filter(
 				(item) => item.filter === DataFilter.ownWork
 			)
 			setFilterData(dataOwnWork)
 		}
-		if (button === ButtonNames.Cooperation) {
+		if (button === buttons[2]) {
 			const dataCooperationWork = dataMyWork.filter(
 				(item) => item.filter === DataFilter.cooperation
 			)

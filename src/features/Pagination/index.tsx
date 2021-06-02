@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { useTranslation } from 'react-i18next'
 import { ArrowRight, ArrowLeft } from '@styled-icons/feather'
 import { Button } from 'components/Button/styled'
 import { Wrapper, Page, PageArrow, WrapperButton } from './styled'
@@ -20,6 +21,8 @@ const Pagination: React.FC<Props> = ({
 	setCurrentPage,
 	setItemsPerPage,
 }) => {
+	const { t } = useTranslation()
+
 	const pageNumbers = Array(Math.ceil(totalItems / itemsPerPage))
 		.fill(null)
 		.map((_, index) => index + 1)
@@ -72,12 +75,16 @@ const Pagination: React.FC<Props> = ({
 
 	const buttonMore =
 		pageNumbers.length > 1 ? (
-			<Button onClick={handleLoadMore}>Načíst víc položek</Button>
+			<Button onClick={handleLoadMore}>
+				{t('myWork.pagination.morePages')}
+			</Button>
 		) : null
 
 	const buttonLess =
 		itemsPerPage > initialItemNumberLimit ? (
-			<Button onClick={handleLoadLess}>Načíst méně položek</Button>
+			<Button onClick={handleLoadLess}>
+				{t('myWork.pagination.lessPages')}
+			</Button>
 		) : null
 
 	return (
