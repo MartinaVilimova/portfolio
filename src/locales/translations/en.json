@@ -176,7 +176,54 @@
 				"skills": "Skills:",
 				"lastUpdate": "My last update:"
 			},
-			"myWork1": {}
+			"myWork8": {
+				"title": "Aj-tý spojka",
+				"description": "",
+				"skills": "React / Styled Component / Firebase",
+				"updateDate": "Stále ve vývoji"
+			},
+			"myWork7": {
+				"title": "Osobní portfolio",
+				"description": "",
+				"skills": "React / Styled Component / Firebase",
+				"updateDate": "June 2021"
+			},
+			"myWork6": {
+				"title": "Pokemon",
+				"description": "",
+				"skills": "React",
+				"updateDate": "June 2021"
+			},
+			"myWork5": {
+				"title": "Kafíčkáři",
+				"description": "",
+				"skills": "WordPress",
+				"updateDate": "November 2020"
+			},
+			"myWork4": {
+				"title": "Cestovka",
+				"description": "",
+				"skills": "Sass / BEM / CssGrid",
+				"updateDate": "August 2020"
+			},
+			"myWork3": {
+				"title": "Kadeřnictví Scissors",
+				"description": "",
+				"skills": "Boostrap",
+				"updateDate": "August 2020"
+			},
+			"myWork2": {
+				"title": "Eagle fitness",
+				"description": "",
+				"skills": "HTML / CSS / JS",
+				"updateDate": "February 2020"
+			},
+			"myWork1": {
+				"title": "Auto od strejdy",
+				"description": "",
+				"skills": "HTML / CSS",
+				"updateDate": "September 2019"
+			}
 		},
 		"contact": {
 			"name": "Name *",
