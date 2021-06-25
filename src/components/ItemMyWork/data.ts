@@ -1,11 +1,46 @@
 import { TFunction } from 'react-i18next'
-import autoodstrejdy from 'assets/autoodstrejdy.png'
-import kafickari from 'assets/kafickari.png'
-import eaglefitness from 'assets/eaglefitness.png'
-import cestovka from 'assets/cestovka.png'
-import zdravemlsani from 'assets/zdravemlsani.png'
-import kadernictvi from 'assets/kadernictvi.png'
-import pokemon from 'assets/pokemon.png'
+import autoodstrejdy from 'assets/autoodstrejdy/autoodstrejdy.png'
+import autoodstrejdy1 from 'assets/autoodstrejdy/autoodstrejdy1.png'
+import autoodstrejdy2 from 'assets/autoodstrejdy/autoodstrejdy2.png'
+import autoodstrejdy3 from 'assets/autoodstrejdy/autoodstrejdy3.png'
+import autoodstrejdy4 from 'assets/autoodstrejdy/autoodstrejdy4.png'
+import autoodstrejdy5 from 'assets/autoodstrejdy/autoodstrejdy5.png'
+import eaglefitness from 'assets/eaglefitness/eaglefitness.png'
+import eaglefitness1 from 'assets/eaglefitness/eaglefitness1.png'
+import eaglefitness2 from 'assets/eaglefitness/eaglefitness2.png'
+import eaglefitness3 from 'assets/eaglefitness/eaglefitness3.png'
+import eaglefitness4 from 'assets/eaglefitness/eaglefitness4.png'
+import eaglefitness5 from 'assets/eaglefitness/eaglefitness5.png'
+import eaglefitness6 from 'assets/eaglefitness/eaglefitness6.png'
+import eaglefitness7 from 'assets/eaglefitness/eaglefitness7.png'
+import kadernictvi from 'assets/kadernictvi/kadernictvi.png'
+import kadernictvi1 from 'assets/kadernictvi/kadernictvi1.png'
+import cestovka from 'assets/cestovka/cestovka.png'
+import cestovka1 from 'assets/cestovka/cestovka1.png'
+import cestovka2 from 'assets/cestovka/cestovka2.png'
+import cestovka3 from 'assets/cestovka/cestovka3.png'
+import cestovka4 from 'assets/cestovka/cestovka4.png'
+import kafickari from 'assets/kafickari/kafickari.png'
+import kafickari1 from 'assets/kafickari/kafickari1.png'
+import kafickari2 from 'assets/kafickari/kafickari2.png'
+import kafickari3 from 'assets/kafickari/kafickari3.png'
+import kafickari4 from 'assets/kafickari/kafickari4.png'
+import kafickari5 from 'assets/kafickari/kafickari5.png'
+import kafickari6 from 'assets/kafickari/kafickari6.png'
+import kafickari7 from 'assets/kafickari/kafickari7.png'
+import kafickari8 from 'assets/kafickari/kafickari8.png'
+import kafickari9 from 'assets/kafickari/kafickari9.png'
+import kafickari10 from 'assets/kafickari/kafickari10.png'
+import kafickari11 from 'assets/kafickari/kafickari11.png'
+import kafickari12 from 'assets/kafickari/kafickari12.png'
+import kafickari13 from 'assets/kafickari/kafickari13.png'
+import pokemon from 'assets/pokemon/pokemon.png'
+import portfolio from 'assets/portfolio/portfolio.png'
+import portfolio4 from 'assets/portfolio/portfolio4.png'
+import portfolio5 from 'assets/portfolio/portfolio5.png'
+import ajtyspojka from 'assets/ajtyspojka/ajtyspojka.png'
+import ajtyspojka1 from 'assets/ajtyspojka/ajtyspojka1.png'
+import ajtyspojka2 from 'assets/ajtyspojka/ajtyspojka2.png'
 import {
 	AuthorDetail,
 	dataAuthors,
@@ -42,7 +77,7 @@ export const getDataMyWork = (
 ): DataItemsMyWork[] => [
 	{
 		myWorkItem: {
-			picture: pokemon,
+			picture: ajtyspojka,
 			subtitle: t('myWork.myWork8.title'),
 			githubLink: 'https://github.com/out-fox-it/aj-ty-spojka',
 		},
@@ -56,7 +91,11 @@ export const getDataMyWork = (
 		description: t('myWork.myWork8.description'),
 		carousel: [
 			{
-				src: pokemon,
+				src: ajtyspojka1,
+				alt: t('myWork.myWork8.title'),
+			},
+			{
+				src: ajtyspojka2,
 				alt: t('myWork.myWork8.title'),
 			},
 		],
@@ -65,7 +104,7 @@ export const getDataMyWork = (
 	},
 	{
 		myWorkItem: {
-			picture: pokemon,
+			picture: portfolio,
 			subtitle: t('myWork.myWork7.title'),
 			githubLink: 'https://github.com/MartinaVilimova/portfolio',
 		},
@@ -77,7 +116,11 @@ export const getDataMyWork = (
 		description: t('myWork.myWork7.description'),
 		carousel: [
 			{
-				src: pokemon,
+				src: portfolio4,
+				alt: t('myWork.myWork7.title'),
+			},
+			{
+				src: portfolio5,
 				alt: t('myWork.myWork7.title'),
 			},
 		],
@@ -113,7 +156,55 @@ export const getDataMyWork = (
 		description: t('myWork.myWork5.description'),
 		carousel: [
 			{
-				src: kafickari,
+				src: kafickari1,
+				alt: t('myWork.myWork5.title'),
+			},
+			{
+				src: kafickari2,
+				alt: t('myWork.myWork5.title'),
+			},
+			{
+				src: kafickari3,
+				alt: t('myWork.myWork5.title'),
+			},
+			{
+				src: kafickari4,
+				alt: t('myWork.myWork5.title'),
+			},
+			{
+				src: kafickari5,
+				alt: t('myWork.myWork5.title'),
+			},
+			{
+				src: kafickari6,
+				alt: t('myWork.myWork5.title'),
+			},
+			{
+				src: kafickari7,
+				alt: t('myWork.myWork5.title'),
+			},
+			{
+				src: kafickari8,
+				alt: t('myWork.myWork5.title'),
+			},
+			{
+				src: kafickari9,
+				alt: t('myWork.myWork5.title'),
+			},
+			{
+				src: kafickari10,
+				alt: t('myWork.myWork5.title'),
+			},
+			{
+				src: kafickari11,
+				alt: t('myWork.myWork5.title'),
+			},
+			{
+				src: kafickari12,
+				alt: t('myWork.myWork5.title'),
+			},
+			{
+				src: kafickari13,
 				alt: t('myWork.myWork5.title'),
 			},
 		],
@@ -131,7 +222,19 @@ export const getDataMyWork = (
 		description: t('myWork.myWork4.description'),
 		carousel: [
 			{
-				src: cestovka,
+				src: cestovka1,
+				alt: t('myWork.myWork4.title'),
+			},
+			{
+				src: cestovka2,
+				alt: t('myWork.myWork4.title'),
+			},
+			{
+				src: cestovka3,
+				alt: t('myWork.myWork4.title'),
+			},
+			{
+				src: cestovka4,
 				alt: t('myWork.myWork4.title'),
 			},
 		],
@@ -149,7 +252,7 @@ export const getDataMyWork = (
 		description: t('myWork.myWork3.description'),
 		carousel: [
 			{
-				src: kadernictvi,
+				src: kadernictvi1,
 				alt: t('myWork.myWork3.title'),
 			},
 		],
@@ -169,7 +272,31 @@ export const getDataMyWork = (
 		description: t('myWork.myWork2.description'),
 		carousel: [
 			{
-				src: eaglefitness,
+				src: eaglefitness1,
+				alt: t('myWork.myWork2.title'),
+			},
+			{
+				src: eaglefitness2,
+				alt: t('myWork.myWork2.title'),
+			},
+			{
+				src: eaglefitness3,
+				alt: t('myWork.myWork2.title'),
+			},
+			{
+				src: eaglefitness4,
+				alt: t('myWork.myWork2.title'),
+			},
+			{
+				src: eaglefitness5,
+				alt: t('myWork.myWork2.title'),
+			},
+			{
+				src: eaglefitness6,
+				alt: t('myWork.myWork2.title'),
+			},
+			{
+				src: eaglefitness7,
 				alt: t('myWork.myWork2.title'),
 			},
 		],
@@ -190,7 +317,23 @@ export const getDataMyWork = (
 		description: t('myWork.myWork1.description'),
 		carousel: [
 			{
-				src: autoodstrejdy,
+				src: autoodstrejdy1,
+				alt: t('myWork.myWork1.title'),
+			},
+			{
+				src: autoodstrejdy2,
+				alt: t('myWork.myWork1.title'),
+			},
+			{
+				src: autoodstrejdy3,
+				alt: t('myWork.myWork1.title'),
+			},
+			{
+				src: autoodstrejdy4,
+				alt: t('myWork.myWork1.title'),
+			},
+			{
+				src: autoodstrejdy5,
 				alt: t('myWork.myWork1.title'),
 			},
 		],
