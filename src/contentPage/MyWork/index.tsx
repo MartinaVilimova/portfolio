@@ -66,7 +66,9 @@ const ContentMyWork: React.FC = () => {
 				columns={NumberColumns.Columns3}
 				columnsIpad={NumberColumns.Columns1}
 			>
-				<ItemMyWork dataItems={currentItems} />
+				{currentItems.map((item, index) => (
+					<ItemMyWork key={index} dataItem={item} />
+				))}
 			</Columns>
 			<Pagination
 				itemsPerPage={itemsPerPage}
