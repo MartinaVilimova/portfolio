@@ -1,5 +1,5 @@
 import React from 'react'
-import profilePhoto from 'assets/profile-photo.png'
+import profilePhoto from 'assets/photos/profile-photo.png'
 import { BallY } from 'components/AnimationShapes/BallY/styled'
 import { BallCircle } from 'components/AnimationShapes/BallCircle/styled'
 import { Wrapper, ContentProfilePhoto, ColorShape, Photo } from './styled'
