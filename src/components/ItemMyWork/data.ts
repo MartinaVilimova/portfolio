@@ -44,7 +44,7 @@ export const getDataMyWork = (
 		myWorkItem: {
 			picture: pokemon,
 			subtitle: t('myWork.myWork8.title'),
-			githubLink: '/',
+			githubLink: 'https://github.com/out-fox-it/aj-ty-spojka',
 		},
 		authors: [
 			dataAuthors[NameAuthors.MartinaVilimova],
@@ -67,7 +67,7 @@ export const getDataMyWork = (
 		myWorkItem: {
 			picture: pokemon,
 			subtitle: t('myWork.myWork7.title'),
-			githubLink: '/',
+			githubLink: 'https://github.com/MartinaVilimova/portfolio',
 		},
 		authors: [
 			dataAuthors[NameAuthors.MartinaVilimova],
@@ -88,7 +88,7 @@ export const getDataMyWork = (
 		myWorkItem: {
 			picture: pokemon,
 			subtitle: t('myWork.myWork6.title'),
-			githubLink: '/',
+			githubLink: 'https://github.com/MartinaVilimova/pokemon',
 		},
 		authors: [dataAuthors[NameAuthors.MartinaVilimova]],
 		filter: DataFilter.ownWork,
@@ -124,7 +124,7 @@ export const getDataMyWork = (
 		myWorkItem: {
 			picture: cestovka,
 			subtitle: t('myWork.myWork4.title'),
-			githubLink: '/',
+			githubLink: 'https://github.com/MartinaVilimova/cestovka',
 		},
 		authors: [dataAuthors[NameAuthors.MartinaVilimova]],
 		filter: DataFilter.ownWork,
@@ -132,11 +132,7 @@ export const getDataMyWork = (
 		carousel: [
 			{
 				src: cestovka,
-				alt: t('myWork.myWork4.alt1'),
-			},
-			{
-				src: zdravemlsani,
-				alt: t('myWork.myWork4.alt2'),
+				alt: t('myWork.myWork4.title'),
 			},
 		],
 		skills: t('myWork.myWork4.skills'),
@@ -146,7 +142,7 @@ export const getDataMyWork = (
 		myWorkItem: {
 			picture: kadernictvi,
 			subtitle: t('myWork.myWork3.title'),
-			githubLink: '/',
+			githubLink: 'https://github.com/MartinaVilimova/kadernictvi',
 		},
 		authors: [dataAuthors[NameAuthors.MartinaVilimova]],
 		filter: DataFilter.ownWork,

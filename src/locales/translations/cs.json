@@ -201,10 +201,8 @@
 				"updateDate": "Listopad 2020"
 			},
 			"myWork4": {
-				"title": "Cestovka, Zdravé mlsání",
+				"title": "Cestovka",
 				"description": "",
-				"alt1": "cestovka",
-				"alt2": "zdravé mlsání",
 				"skills": "Sass / BEM / CssGrid",
 				"updateDate": "Srpen 2020"
 			},
