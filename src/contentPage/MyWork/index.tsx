@@ -20,6 +20,7 @@ const ContentMyWork: React.FC = () => {
 	const [filterData, setFilterData] = useState(dataMyWork)
 
 	const aplicationFilter = (button: string) => {
+		setCurrentPage(1)
 		if (button === ButtonNames.All) {
 			setFilterData(dataMyWork)
 		}
