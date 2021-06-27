@@ -36,8 +36,9 @@ import kafickari12 from 'assets/kafickari/kafickari12.png'
 import kafickari13 from 'assets/kafickari/kafickari13.png'
 import pokemon from 'assets/pokemon/pokemon.png'
 import portfolio from 'assets/portfolio/portfolio.png'
-import portfolio4 from 'assets/portfolio/portfolio4.png'
-import portfolio5 from 'assets/portfolio/portfolio5.png'
+import portfolio1 from 'assets/portfolio/portfolio1.png'
+import portfolio2 from 'assets/portfolio/portfolio2.png'
+import portfolio3 from 'assets/portfolio/portfolio3.png'
 import ajtyspojka from 'assets/ajtyspojka/ajtyspojka.png'
 import ajtyspojka1 from 'assets/ajtyspojka/ajtyspojka1.png'
 import ajtyspojka2 from 'assets/ajtyspojka/ajtyspojka2.png'
@@ -116,11 +117,15 @@ export const getDataMyWork = (
 		description: t('myWork.myWork7.description'),
 		carousel: [
 			{
-				src: portfolio4,
+				src: portfolio1,
 				alt: t('myWork.myWork7.title'),
 			},
 			{
-				src: portfolio5,
+				src: portfolio2,
+				alt: t('myWork.myWork7.title'),
+			},
+			{
+				src: portfolio3,
 				alt: t('myWork.myWork7.title'),
 			},
 		],
@@ -149,7 +154,7 @@ export const getDataMyWork = (
 		myWorkItem: {
 			picture: kafickari,
 			subtitle: t('myWork.myWork5.title'),
-			webLink: 'http://kafickari.unas.cz/',
+			webLink: 'http://kafickari.unas.cz',
 		},
 		authors: [dataAuthors[NameAuthors.MartinaVilimova]],
 		filter: DataFilter.ownWork,
@@ -307,7 +312,7 @@ export const getDataMyWork = (
 		myWorkItem: {
 			picture: autoodstrejdy,
 			subtitle: t('myWork.myWork1.title'),
-			webLink: 'https://www.autoodstrejdy.cz/',
+			webLink: 'https://www.autoodstrejdy.cz',
 		},
 		authors: [
 			dataAuthors[NameAuthors.MartinaVilimova],
