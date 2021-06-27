@@ -1,19 +1,20 @@
 import React from 'react'
 import { useTranslation } from 'react-i18next'
-import errorPhoto from 'assets/photos/error-photo.png'
+//import errorPhoto from 'assets/photos/error-photo.png'
 import { Button } from 'components/Button/styled'
 import { ColorfulText } from 'styled/ColorfulText/styled'
 import { StyledLink } from 'styled/StyledLink/styled'
 import { Paragraph } from 'styled/StyledParagraph/styled'
 import { StyledH4 } from 'styled/StyledTitle/styled'
-import { Wrapper, Photo } from './styled'
+import { Wrapper } from './styled'
+//import { Photo } from './styled'
 
 const ErrorInfo: React.FC = () => {
 	const { t } = useTranslation()
 
 	return (
 		<Wrapper>
-			<Photo src={errorPhoto} />
+			{/*<Photo src={errorPhoto} />*/}
 			<StyledH4>
 				<ColorfulText>{t('error.title')}</ColorfulText>
 			</StyledH4>

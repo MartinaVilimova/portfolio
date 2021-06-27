@@ -45,7 +45,7 @@ const ItemMyWork: React.FC<Props> = ({ dataItem }) => {
 						</IconButton>
 
 						{dataItem.myWorkItem.webLink && (
-							<StyledA href="">
+							<StyledA href={dataItem.myWorkItem.webLink}>
 								<IconButton>
 									<Link />
 								</IconButton>
@@ -53,7 +53,7 @@ const ItemMyWork: React.FC<Props> = ({ dataItem }) => {
 						)}
 
 						{dataItem.myWorkItem.githubLink && (
-							<StyledA href="">
+							<StyledA href={dataItem.myWorkItem.githubLink}>
 								<IconButton>
 									<Github />
 								</IconButton>
