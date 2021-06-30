@@ -51,7 +51,7 @@
 				"title": "Zaměstnaná:",
 				"info": "freelancer"
 			},
-			"paragraph1": "Člověk tráví v práci třetinu svého života, a proto chci mít takovou práci, která by mě bavila, dávala mi pocit smysluplnosti a i dobrou výplatu. Tyto hodnoty se mi podařilo najít v programováním. ",
+			"paragraph1": "Člověk tráví v práci třetinu svého života, a proto chci mít takovou práci, která by mě bavila, dávala mi pocit smysluplnosti a i dobrou výplatu. Tyto hodnoty se mi podařilo najít v programování. ",
 			"paragraph2": "Mou velkou předností je píle a touha po sebezdokonalování se.  Vždy se snažím posunout aspoň o kousíček dál. Nesnáším, když se zaseknu u nějakého problému, ale zároveň miluju tu radost z jeho vyřešení. Líbí se mi kreativní a různorodá tvorba práce a zároveň poskytnutá i určitá svoboda. Jsem cílevědomý a týmový hráč."
 		},
 		"resume": {
@@ -73,91 +73,115 @@
 				"title": "VIDIA-DESIGN s.r.o.",
 				"specialization": "Kodér/Webmaster",
 				"time": "Listopad 2019",
-				"paragraph": "Většina mé pracovní náplně spočívala ve vkládání a upravování obsahu webových stránek (CMS). Pokud bylo třeba dělala jsem také úpravy front-end kódu (HTML, CSS/LESS) a design prvků (Photoshop, Adobe XD). "
+				"paragraph": "Většina mé pracovní náplně spočívala ve vkládání a upravování obsahu webových stránek (CMS). Pokud bylo třeba, dělala jsem také úpravy front-end kódu (HTML, CSS/LESS) a design prvků (Photoshop, Adobe XD). "
 			}
 		},
 		"knowledge": {
 			"title": "S čím jsem se na IT cestě  setkala",
 			"subtitle": "Nechodila jsme na IT školu ani nemám žádné podobné vzdělání v tomto odvětí. Přesto mě tento obor dokázal natolik zaujmout, že jsem se rozhodla mu dát šanci. Začínala jsem základy a postupně jsem přidávala další znalosti, které mě zajímaly, nebo které jsem potřebovala ke své práci. Učila jsem se z informací získaných na internetu, hrála jsem různé hry (např. CodeCombat), zašla na pár kurzů většinou od Czechitas, vytvářela si malá cvičení nebo dělala projekty s přáteli. ",
-			"titleAnchor": "Má stručná retrospektiva",
-
-			"knowledge13": {
+			"titleProgram": "Programy, IDE, platformy",
+			"titleAnchor": "Jazyky, frameworky, knihovny",
+			"knowledge19": {
 				"title": "Firebase",
 				"specialization": "samostudium",
 				"time": "Březen 2021",
 				"paragraph": "Abych mohla své weby veřejně publikovat, naučila jsem se pracovat s Firebase. Naučila jsem se založit na této platformě projekt a nastavit k němu potřebnou infrastrukturu. Dozvěděla jsem se, jak pracovat s firestore databází pomocí základních operací a naučila jsem se autentizaci uživatele."
 			},
-			"knowledge12": {
+			"knowledge18": {
 				"title": "TypeScript",
 				"specialization": "samostudium",
 				"time": "Leden 2021",
 				"paragraph": "Pro dodržení struktury kódu a eliminaci chyb, jsem se naučila základy TypeScriptu. V projektech jsem začala používat věci jako interface/type, enum, generiku. Snažila jsem se otypovávat všechny vstupy a výstupy a vyvarovala se používání typu any. V JavaScriptu jsem se učila modernější zápisy definované v ES6 (const, arrow function) a při práci s daty jsem se též naučila pracovat s funkcemi na polích (map, filter, find, reduce atd.)"
 			},
-			"knowledge11": {
+			"knowledge17": {
 				"title": "Styled components",
 				"specialization": "samostudium",
 				"time": "Leden 2021",
 				"paragraph": "Při práci na novém projektu v Reactu se zvolilo stylování pomocí Styled components. Tato knihovna byla pro mě nová, ale po přečtení dokumentace jsem byla rychle v obraze. Naučila jsem se tvořit stylované komponenty, používat literály, dědit styly z jiných komponent, používat propsy, vnoření, pseudoelementy, animace atd. Hodně jsem se teď snažila ve svém kódu dodržovat DRY princip (neopakovat sám sebe)."
 			},
-			"knowledge10": {
+			"knowledge16": {
 				"title": "React - router, hooks, form",
 				"specialization": "samostudium",
 				"time": "Leden 2021",
 				"paragraph": "O React frameworku jsem měla povědomí už dlouho, ale až teď jsem se mu začala věnovat naplno. Společně s přáteli jsme si vytvořili nový projekt a učili se vše podstatné co tato knihovna nabízí. Naučila jsem se funkcionálně programovat, tvořit kód po menších funkčních částech, používat propsy, hooky (useState, useEffect, useContext), přepínání obsahu pomocí React Router Dom a psaní formulářů a jejich validaci pomocí React Hook Form."
 			},
-			"knowledge9": {
+			"knowledge15": {
+				"title": "GitHub",
+				"specialization": "samostudium",
+				"time": "Leden 2021",
+				"paragraph": "Ve chvíli kdy jsem začala pracovat na projektu, na kterém spolupracovalo více lidí, měla jsme svou práci uloženou na GitHubu ve společném repozitáři. Díky tomu jsem se naučila dělat code review, vytvářet pull requesty a řešit nepříjemné konflikty. Během této práce jsem si zlepšila a upevnila také své znalosti s gitem."
+			},
+			"knowledge14": {
 				"title": "WordPress",
 				"specialization": "kurz - WordPress 1",
 				"time": "Říjen 2020",
 				"paragraph": "Často jsem slýchala o softwarech, které jednoduše a rychle vytvoří webovou stránku, a tak jsem se chtěla o tom dozvědět více. Proto jsem se zúčastnila online kurzu na WordPress, kde jsem se naučila, jak tento redakční systém spustit a nastavit, dozvěděla jsem se co jsou to šablony a pluginy a vytvořila jsem si během kurzu jednoduchý web."
 			},
-			"knowledge8": {
+			"knowledge13": {
 				"title": "JavaScript",
 				"specialization": "kurz - JavaScript 1 a 2",
 				"time": "Září 2020",
 				"paragraph": "Kódování mě opravdu velmi baví, ale chtěla jsem se posunout zase o kousek dál a začít do svého kódu vkládat kousek logiky. JavaScript jsem se nejdříve učila doma a později jsem zašla na dva kurzy, kde jsem si upevnila své znalosti o proměnných, podmínkách, cyklech a funkcích. JavaScript jsem pak hodně procvičovala ve hře CodeCombat."
 			},
-			"knowledge7": {
+			"knowledge12": {
 				"title": "CSS grid, BEM, Sass, Eleventy",
 				"specialization": "kurz - Tvořím web od A do Z 2",
 				"time": "Srpen 2020",
 				"paragraph": "Kurzy mě vždy dají velké množství informací během krátké doby, a tak jsem se zapsala do týdenního kurzu od Czechitas, kde jsem se každý den naučila mnoho nových a skvělých věcí. Kromě flexboxu a Bootstrapu jsem se teď naučila tvořit responzivní layout pomocí CSS grid. Dozvěděla jsem se, jak zapisovat názvy tříd podle metodiky BEM. Rozšířila své znalosti o další preprocesor Sass a naučila jsem se vytvořit šablony a udělat projekt v generátoru statický webů Eleventy s editací textových souborů."
 			},
-			"knowledge6": {
+			"knowledge11": {
 				"title": "Bootstrap",
 				"specialization": "kurz - Bootstrap",
 				"time": "Srpen 2020",
 				"paragraph": "Jelikož je dnes responzivní layout naprostou nezbytností webových stránek, rozhodla jsem se zúčastnit dalšího workshopu od Czechitas tentokrát na téma Bootstrap. Během dne jsem se naučila vložit framework do svého projektu, základní techniky responzivního web designu, používání nástrojů nebo již hotových částí kódu (komponent) a úpravu stylů."
 			},
-			"knowledge5": {
+			"knowledge10": {
+				"title": "Visual Studio Code"
+			},
+			"knowledge9": {
 				"title": "React",
 				"specialization": "kurz - Tech meetup React",
 				"time": "Červenec 2020",
 				"paragraph": "O Reactu jsem v té době toho ještě moc nevěděla, ale zajímala jsem se o tuto JavaScriptovou knihovnu, a tak jsem neváhala a přihlásila se na online workshop Tech meetup React od Czechitas. Probírala se tvorba komponent pomocí třídy a funkcí, propsy, stav komponent, REST API, React Router."
 			},
-			"knowledge4": {
-				"title": "Git, Sourcetree",
+			"knowledge8": {
+				"title": "Git",
 				"specialization": "samostudium, zaměstnání - Vidia Design s.r.o. ",
 				"time": "Listopad 2019",
 				"paragraph": "Při práci v týmu jsem se naučila používat program pro práci s gitem zvaný Sourcetree, abych mohla svůj kód publikovat do společného repozitáře. Naučila jsem se pracovat s větvemi, stahovat nový obsah (git pull), tvořit commity a vkládat svou práci (git push)."
 			},
-			"knowledge3": {
+			"knowledge7": {
+				"title": "Sourcetree"
+			},
+			"knowledge6": {
+				"title": "PhpStorm"
+			},
+			"knowledge5": {
 				"title": "Less, Flexbox",
 				"specialization": "samostudium, zaměstnání - Vidia Design s.r.o. ",
 				"time": "Listopad 2019",
 				"paragraph": "Při nástupu do práce jsem se musela naučit spoustu nových věcí, o kterých jsem nic nevěděla. Učila jsem se o responzivitě a vytvářela layout webu pomocí flexboxu a media query. Dále jsem se také učila zapisovat styly do preprocesoru LESS a využívala jeho výhod jako jsou proměnné, mixiny, vnoření, funkce atd."
 			},
-			"knowledge2": {
+			"knowledge4": {
 				"title": "CSS",
 				"specialization": "samostudium",
 				"time": "Červenec 2019",
 				"paragraph": "CSS neboli kaskádové styly mě velice bavili. Hrála jsme si s barvami, velikostmi, zarovnáním a pozicemi. Nejdříve jsem psala styly přímo do prvků HTML a pak do externího souboru. Učila jsem se používat různé vlastnosti, typy selektorů, pseudotřídy a pseudoelementy."
 			},
-			"knowledge1": {
+			"knowledge3": {
 				"title": "HTML",
 				"specialization": "samostudium",
 				"time": "Červenec 2019",
 				"paragraph": "HTML je základ. Učila jsem se psát párové a nepárové tagy a jejich atributy. Pozorovala rozdíly mezi blokovými a řádkovými elementy. Tvořila texty, odkazy, obrázky, seznamy, tabulky, navigace, formuláře atd."
+			},
+			"knowledge2": {
+				"title": "PSPad"
+			},
+			"knowledge1": {
+				"title": "Photoshop",
+				"specialization": "samostudium",
+				"time": "Únor 2015",
+				"paragraph": "S Photoshopem jsem se prvně setkala na střední škole, kde jsem pomocí videí dělala úkoly, které byly třeba. Práce s grafikou mě moc bavila a postupem času jsem získala mnoho zkušeností. Zvládám úpravu fotografií, grafických podkladů pro web i nějakou menší kreativní tvorbu."
 			}
 		},
 		"myWork": {
