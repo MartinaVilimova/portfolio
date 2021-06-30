@@ -202,49 +202,49 @@
 			},
 			"myWork8": {
 				"title": "Aj-tý spojka",
-				"description": "",
+				"description": "Aj-tý spojka is a promising project that serves to connect people with the same interest in IT. This is the first job I work on with a larger team. The project is written in TypeScript, uses the React library, and the Styled components library was chosen for styling. The code consists mainly of functional components and react hooks are used to define the state. The whole work is then built on the Firebase platform, thanks to which we applied user authentication on the web. The site is still in progress and more and more components, technology will be added…",
 				"skills": "React / Styled Component / Firebase",
 				"updateDate": "Still under development"
 			},
 			"myWork7": {
-				"title": "Personal portfolio",
-				"description": "",
-				"skills": "React / Styled Component / Firebase",
-				"updateDate": "June 2021"
-			},
-			"myWork6": {
 				"title": "Pokemon",
 				"description": "",
 				"skills": "React",
+				"updateDate": "July 2021"
+			},
+			"myWork6": {
+				"title": "Personal portfolio",
+				"description": "Personal portfolio is a website used for your own presentation and presentation of your work. I created the project in the React library and wrote the code in TypeScript. I chose the Styled components library for styling and I use public libraries for more advanced visual effects. The website is connected to the Firebase platform, which I use for email forwarding and hosting. I performed translations on the website using the i18next library and I also won with my own customization of the website. I created the design and texts myself.",
+				"skills": "React / Styled Component / Firebase",
 				"updateDate": "June 2021"
 			},
 			"myWork5": {
 				"title": "Kafíčkáři",
-				"description": "",
+				"description": "Kafíčkáři is a training website that I created in WordPress and I tried to gain new knowledge and experience with it using new technology for fast website creation. From the knowledge gained from the one-day course, I created my own project, chose a suitable template and installed the necessary plugins. I also researched all the content options of the site that WordPress offers. The website I created contains functional user registration and login, table reservations in the Kafíčkáři company, a blog about coffee with comments and other similar features. I modified some components with my own CSS and then published the website on free hosting.",
 				"skills": "WordPress",
 				"updateDate": "November 2020"
 			},
 			"myWork4": {
 				"title": "Cestovka",
-				"description": "",
-				"skills": "Sass / BEM / CSS grid",
+				"description": "When I took part in the weekly course I create a website from A to Z 2 from Czechitas. I created many small projects every day and at the end I created the Cestovka website. I developed the whole project in the Eleventy static website generator, where I first created templates using the nunjucks language. I then used the new experience with the responsive CSS grid layout on the website. I used the BEM methodology to write the classes and I then did the styling with the help of the Sass preprocessor. I wrote the data in Markdown files and used the front matter notation to insert it into the code.",
+				"skills": "Sass / BEM / CSS grid / Eleventy",
 				"updateDate": "August 2020"
 			},
 			"myWork3": {
 				"title": "Hairdresser's Scissors",
-				"description": "",
+				"description": "Hairdressing Scissors is a one-page project created as part of teaching about Bootstrap on a course from Czechitas. The exercise focused on installing Bootstrap and using different classes and pieces of code in your own projects. Using this technology, I learned the responsive layout and creation of quick pages using pre-built components of the Bootstrap library.",
 				"skills": "Boostrap",
 				"updateDate": "August 2020"
 			},
 			"myWork2": {
 				"title": "Eagle fitness",
-				"description": "",
+				"description": "Eagle fitness is a presentation website of the Prague fitness center, which also contains a simple reservation system for group lessons. Websites have been running for a long time, but due to complicated graphics they were created in poor quality, sometimes even solved with a simple image and the page could not be edited. The code combined back-end and front-end together. So I wrote HTML and CSS again using the same graphics just modified to the new requirements. A CMS system was added to the website, which enabled editing of all pages. No template was available for the CMS editor, so I tried to adapt the design to the designs of the original graphics.",
 				"skills": "HTML / CSS / JS",
 				"updateDate": "February 2020"
 			},
 			"myWork1": {
 				"title": "Auto od strejdy",
-				"description": "",
+				"description": "Autoodstrejdy is an advertising website where you can rent various vehicles from people or, conversely, offer yours for rent. The project has been running for many years and I took over the redesign of the all website. I had the graphics in PSD files, where I made minor adjustments and then used this graphics in the project. I built new pages on the website from the scratch up using HTML and CSS and I also created a mobile version of this website.The project was created in the nette framework, so I wrote the front-end code into latte templates.",
 				"skills": "HTML / CSS",
 				"updateDate": "September 2019"
 			}

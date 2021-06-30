@@ -202,49 +202,49 @@
 			},
 			"myWork8": {
 				"title": "Aj-tý spojka",
-				"description": "",
+				"description": "Aj-tý spojka je nadějný projekt, který slouží k propojení lidí se stejným zájmem v oblasti IT. Jedná se o první práci, na které spolupracuji s větším týmem. Projekt je psaný v jazyce TypeScript, používá knihovnu React a ke stylování se zvolila knihovna Styled components. Kód se skládá převážně z funkcionálních komponent a k definování stavu se využívá react hooks. Celá práce je pak postavená na platformě Firebase, díky které jsme aplikovali autentizaci uživatele na webu. Jelikož jsou stránky ještě ve vývoji přibývají stále další a další komponenty, technologie…",
 				"skills": "React / Styled Component / Firebase",
 				"updateDate": "Stále ve vývoji"
 			},
 			"myWork7": {
-				"title": "Osobní portfolio",
-				"description": "",
-				"skills": "React / Styled Component / Firebase",
-				"updateDate": "Červen 2021"
-			},
-			"myWork6": {
 				"title": "Pokemon",
 				"description": "",
 				"skills": "React",
+				"updateDate": "Červenec 2021"
+			},
+			"myWork6": {
+				"title": "Osobní portfolio",
+				"description": "Osobní portfolio je web, sloužící ke své vlastní prezentaci a prezentaci své práce. Projekt jsem si vytvořila v knihovně React a kód jsem psala v jazyce TypeScript. Na stylování jsem si zvolila knihovnu Styled components a pro pokročilejší vizuální efekty používám veřejné knihovny. Web je připojen k platformě Firebase, kterou využívám pro přeposílá emailů a hosting. Překlady na stránkách jsem realizovala pomocí knihovny i18next a vyhrála jsem si i s vlastní customizací webu. Design a texty jsem tvořila svépomocí.",
+				"skills": "React / Styled Component / Firebase",
 				"updateDate": "Červen 2021"
 			},
 			"myWork5": {
 				"title": "Kafíčkáři",
-				"description": "",
+				"description": "Kafíčkáři je cvičný web, který jsem tvořila v programu WordPress a snažila jsem se jím nabrat nové znalosti a zkušenosti za použití nové technologie pro rychlou tvorbu webových stránek. Z nasbíraných vědomostí z jednodenního kurzu jsem si vytvořila vlastní projekt, zvolila vhodnou šablonu a nainstalovala potřebné pluginy. Dále jsem zkoumala všechny možnosti obsahu stránek, které WordPress nabízí. Mnou vytvořený web obsahuje funkční registraci a přihlášení uživatele, rezervaci stolu v podniku Kafíčkáři, blog o kávě s komentáři a další podobné featury. Některé komponenty jsem si upravila vlastním CSS a web jsem následně publikovala na free hostingu.",
 				"skills": "WordPress",
 				"updateDate": "Listopad 2020"
 			},
 			"myWork4": {
 				"title": "Cestovka",
-				"description": "",
-				"skills": "Sass / BEM / CSS grid",
+				"description": "Když jsem se zúčastnila týdenního kurzu Tvořím web od A do Z 2 od Czechitas, tvořila jsem každý den mnoho malých projektů a závěrem byl web Cestovka. Celý projekt jsem postavila v generátoru statických webů Eleventy, kde jsem tvořila nejdříve šablony pomocí jazyka nunjucks. Na stránkách jsem pak využívala nové zkušenosti s responzivním rozvržením CSS grid. K zápisu tříd jsem se řídila metodikou BEM a stylování jsem pak dělala za pomoci preprocessoru Sass. Data jsem psala v Markdown souborech a k jejich vložení do kódu jsem používala zápis front matter.",
+				"skills": "Sass / BEM / CSS grid / Eleventy",
 				"updateDate": "Srpen 2020"
 			},
 			"myWork3": {
 				"title": "Kadeřnictví Scissors",
-				"description": "",
+				"description": "Kadeřnictví Scissors je jednostránkový projekt vytvořený v rámci výuky o Bootstrap na kurzu od Czechitas. Cvičení se zaměřovalo na instalaci Bootstrapu a používání různých tříd a kusů kódu ve vlastních projektech. Pomocí této technologie jsem se naučila responzivní layout a vytvoření rychlých stránek pomocí předpřipravených komponent knihovny Bootstrap.",
 				"skills": "Boostrap",
 				"updateDate": "Srpen 2020"
 			},
 			"myWork2": {
 				"title": "Eagle fitness",
-				"description": "",
+				"description": "Eagle fitness je prezentační web pražského fitness centra, který obsahuje i jednoduchý rezervační systém na skupinové lekce. Webové stránky fungují už dlouho, ale kvůli komplikované grafice byly vytvořeny nekvalitní formou, někdy dokonce vyřešeny jen prostým obrázkem a stránku pak nebylo možné editovat. Navíc kód kombinoval back-end a front-end dohromady. Napsala jsem tedy HTML a CSS znovu s použitím stejné grafiky jen upravené novým požadavkům. Na web se přidával ještě CMS systém, který umožňoval editaci všech stránek. K CMS editoru nebyla k dispozici žádná předloha, a tak jsem se snažila přizpůsobit design návrhům původní grafiky.",
 				"skills": "HTML / CSS / JS",
 				"updateDate": "Únor 2020"
 			},
 			"myWork1": {
 				"title": "Auto od strejdy",
-				"description": "",
+				"description": "Autoodstrejdy je inzertní web, na kterém si lze zapůjčit od lidí různá vozidla nebo naopak nabídnout ta svá k pronájmu. Projekt běží už řadu let a já se chopila redesignu celého webu. Grafické podklady jsem měla v PSD souborech, kde jsem prováděla menší úpravy a následně tuto grafiku využívala v projektu. Na webu jsem od základu postavila nové stránky pomocí HTML a CSS a vytvořila jsem i mobilní verzi tohoto webu. Projekt byl vytvořený v frameworku nette a tudíž jsem front-endový kód psala do latte šablon.",
 				"skills": "HTML / CSS",
 				"updateDate": "Září 2019"
 			}
