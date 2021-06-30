@@ -1,4 +1,12 @@
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
+
+const sameCSS = css`
+	margin: 0.2rem;
+	padding: 0.4rem 1rem;
+	border-radius: 1rem;
+	font-size: 0.9rem;
+	font-weight: 300;
+`
 
 export const BlockAnchors = styled.section`
 	display: flex;
@@ -12,11 +20,7 @@ export const BlockAnchors = styled.section`
 		-1.5px -1.5px 1.5px ${({ theme }) => theme.bg.shadowWhite};
 
 	a {
-		margin: 0.2rem;
-		padding: 0.4rem 1rem;
-		border-radius: 1rem;
-		font-size: 0.9rem;
-		font-weight: 300;
+		${sameCSS};
 
 		&:hover {
 			color: ${({ theme }) => theme.text.colorful.basicColor};
@@ -24,6 +28,10 @@ export const BlockAnchors = styled.section`
 					inset,
 				-1.5px -1.5px 1.5px ${({ theme }) => theme.bg.shadowWhite} inset;
 		}
+	}
+
+	span {
+		${sameCSS};
 	}
 
 	h6 {
