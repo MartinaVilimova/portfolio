@@ -203,7 +203,7 @@
 			"myWork8": {
 				"title": "Aj-tý spojka",
 				"description": "Aj-tý spojka is a promising project that serves to connect people with the same interest in IT. This is the first job I work on with a larger team. The project is written in TypeScript, uses the React library, and the Styled components library was chosen for styling. The code consists mainly of functional components and react hooks are used to define the state. The whole work is then built on the Firebase platform, thanks to which we applied user authentication on the web. The site is still in progress and more and more components, technology will be added…",
-				"skills": "React / Styled Component / Firebase",
+				"skills": "React / TypeScript / Styled Component / Firebase",
 				"updateDate": "Still under development"
 			},
 			"myWork7": {
@@ -215,7 +215,7 @@
 			"myWork6": {
 				"title": "Personal portfolio",
 				"description": "Personal portfolio is a website used for your own presentation and presentation of your work. I created the project in the React library and wrote the code in TypeScript. I chose the Styled components library for styling and I use public libraries for more advanced visual effects. The website is connected to the Firebase platform, which I use for email forwarding and hosting. I performed translations on the website using the i18next library and I also won with my own customization of the website. I created the design and texts myself.",
-				"skills": "React / Styled Component / Firebase",
+				"skills": "React / TypeScript / Styled Component / Firebase",
 				"updateDate": "June 2021"
 			},
 			"myWork5": {
