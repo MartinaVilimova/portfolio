@@ -105,27 +105,16 @@ export const getDataMyWork = (
 	},
 	{
 		myWorkItem: {
-			picture: portfolio,
+			picture: pokemon,
 			subtitle: t('myWork.myWork7.title'),
-			githubLink: 'https://github.com/MartinaVilimova/portfolio',
+			githubLink: 'https://github.com/MartinaVilimova/pokemon',
 		},
-		authors: [
-			dataAuthors[NameAuthors.MartinaVilimova],
-			dataAuthors[NameAuthors.TomasHampl],
-		],
-		filter: DataFilter.cooperation,
+		authors: [dataAuthors[NameAuthors.MartinaVilimova]],
+		filter: DataFilter.ownWork,
 		description: t('myWork.myWork7.description'),
 		carousel: [
 			{
-				src: portfolio1,
-				alt: t('myWork.myWork7.title'),
-			},
-			{
-				src: portfolio2,
-				alt: t('myWork.myWork7.title'),
-			},
-			{
-				src: portfolio3,
+				src: pokemon,
 				alt: t('myWork.myWork7.title'),
 			},
 		],
@@ -134,16 +123,27 @@ export const getDataMyWork = (
 	},
 	{
 		myWorkItem: {
-			picture: pokemon,
+			picture: portfolio,
 			subtitle: t('myWork.myWork6.title'),
-			githubLink: 'https://github.com/MartinaVilimova/pokemon',
+			githubLink: 'https://github.com/MartinaVilimova/portfolio',
 		},
-		authors: [dataAuthors[NameAuthors.MartinaVilimova]],
-		filter: DataFilter.ownWork,
+		authors: [
+			dataAuthors[NameAuthors.MartinaVilimova],
+			dataAuthors[NameAuthors.TomasHampl],
+		],
+		filter: DataFilter.cooperation,
 		description: t('myWork.myWork6.description'),
 		carousel: [
 			{
-				src: pokemon,
+				src: portfolio1,
+				alt: t('myWork.myWork6.title'),
+			},
+			{
+				src: portfolio2,
+				alt: t('myWork.myWork6.title'),
+			},
+			{
+				src: portfolio3,
 				alt: t('myWork.myWork6.title'),
 			},
 		],

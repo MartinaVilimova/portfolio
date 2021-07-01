@@ -203,7 +203,7 @@
 			"myWork8": {
 				"title": "Aj-tý spojka",
 				"description": "Aj-tý spojka je nadějný projekt, který slouží k propojení lidí se stejným zájmem v oblasti IT. Jedná se o první práci, na které spolupracuji s větším týmem. Projekt je psaný v jazyce TypeScript, používá knihovnu React a ke stylování se zvolila knihovna Styled components. Kód se skládá převážně z funkcionálních komponent a k definování stavu se využívá react hooks. Celá práce je pak postavená na platformě Firebase, díky které jsme aplikovali autentizaci uživatele na webu. Jelikož jsou stránky ještě ve vývoji přibývají stále další a další komponenty, technologie…",
-				"skills": "React / Styled Component / Firebase",
+				"skills": "React / TypeScript / Styled Component / Firebase",
 				"updateDate": "Stále ve vývoji"
 			},
 			"myWork7": {
@@ -215,7 +215,7 @@
 			"myWork6": {
 				"title": "Osobní portfolio",
 				"description": "Osobní portfolio je web, sloužící ke své vlastní prezentaci a prezentaci své práce. Projekt jsem si vytvořila v knihovně React a kód jsem psala v jazyce TypeScript. Na stylování jsem si zvolila knihovnu Styled components a pro pokročilejší vizuální efekty používám veřejné knihovny. Web je připojen k platformě Firebase, kterou využívám pro přeposílá emailů a hosting. Překlady na stránkách jsem realizovala pomocí knihovny i18next a vyhrála jsem si i s vlastní customizací webu. Design a texty jsem tvořila svépomocí.",
-				"skills": "React / Styled Component / Firebase",
+				"skills": "React / TypeScript / Styled Component / Firebase",
 				"updateDate": "Červen 2021"
 			},
 			"myWork5": {

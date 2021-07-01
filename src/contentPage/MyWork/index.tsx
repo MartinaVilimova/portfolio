@@ -21,7 +21,7 @@ const ContentMyWork: React.FC = () => {
 	const [filterData, setFilterData] = useState(getDataMyWork(t))
 
 	const aplicationFilter = (button: string) => {
-		setCurrentPage(1)		
+		setCurrentPage(1)
 		if (button === buttons[0]) {
 			setFilterData(getDataMyWork(t))
 		}
