@@ -34,7 +34,14 @@ import kafickari10 from 'assets/kafickari/kafickari10.png'
 import kafickari11 from 'assets/kafickari/kafickari11.png'
 import kafickari12 from 'assets/kafickari/kafickari12.png'
 import kafickari13 from 'assets/kafickari/kafickari13.png'
-import pokemon from 'assets/pokemon/pokemon.png'
+import witcher from 'assets/witcher/witcher.png'
+import witcher1 from 'assets/witcher/witcher1.png'
+import witcher2 from 'assets/witcher/witcher2.png'
+import witcher3 from 'assets/witcher/witcher3.png'
+import witcher4 from 'assets/witcher/witcher4.png'
+import witcher5 from 'assets/witcher/witcher5.png'
+import witcher6 from 'assets/witcher/witcher6.png'
+import witcher7 from 'assets/witcher/witcher7.png'
 import portfolio from 'assets/portfolio/portfolio.png'
 import portfolio1 from 'assets/portfolio/portfolio1.png'
 import portfolio2 from 'assets/portfolio/portfolio2.png'
@@ -105,16 +112,40 @@ export const getDataMyWork = (
 	},
 	{
 		myWorkItem: {
-			picture: pokemon,
+			picture: witcher,
 			subtitle: t('myWork.myWork7.title'),
-			githubLink: 'https://github.com/MartinaVilimova/pokemon',
+			githubLink: 'https://github.com/MartinaVilimova/witcher',
 		},
 		authors: [dataAuthors[NameAuthors.MartinaVilimova]],
 		filter: DataFilter.ownWork,
 		description: t('myWork.myWork7.description'),
 		carousel: [
 			{
-				src: pokemon,
+				src: witcher1,
+				alt: t('myWork.myWork7.title'),
+			},
+			{
+				src: witcher2,
+				alt: t('myWork.myWork7.title'),
+			},
+			{
+				src: witcher3,
+				alt: t('myWork.myWork7.title'),
+			},
+			{
+				src: witcher4,
+				alt: t('myWork.myWork7.title'),
+			},
+			{
+				src: witcher5,
+				alt: t('myWork.myWork7.title'),
+			},
+			{
+				src: witcher6,
+				alt: t('myWork.myWork7.title'),
+			},
+			{
+				src: witcher7,
 				alt: t('myWork.myWork7.title'),
 			},
 		],
