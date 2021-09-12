@@ -209,7 +209,7 @@
 			"myWork7": {
 				"title": "Witcher",
 				"description": "Witcher is a database of game characters and qests from Witcher 3 Wild Hunt. In this project, I practice communication with the public API http://witcher3api.com/. The project contains basic filters and sorting. Everything is realized through hooks in react. I used the CSS preprocessor SASS for styling on this project. The website is fully responsive and contains small dynamic elements, including an animated background.",
-				"skills": "React",
+				"skills": "React / TypeScript / Sass",
 				"updateDate": "September 2021"
 			},
 			"myWork6": {

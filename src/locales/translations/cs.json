@@ -209,7 +209,7 @@
 			"myWork7": {
 				"title": "Witcher",
 				"description": "Witcher je databáze herních postav a qestů ze hry Witcher 3 Wild Hunt. Na tomto projektu jsem si vyzkoušela komunikaci s veřejným API http://witcher3api.com/. Projekt obsahuje základní filtry a třídění. Vše je realizováno přes hooky v reactu. Na stylování jsem na tomto projektu použila CSS preprocesor SASS. Web je plně responzivní a obsahuje drobné dynamické prvky včetně animovaného pozadí.",
-				"skills": "React",
+				"skills": "React / TypeScript / Sass",
 				"updateDate": "Září 2021"
 			},
 			"myWork6": {
