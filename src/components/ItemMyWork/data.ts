@@ -185,7 +185,6 @@ export const getDataMyWork = (
 		myWorkItem: {
 			picture: kafickari,
 			subtitle: t('myWork.myWork5.title'),
-			webLink: 'http://kafickari.unas.cz',
 		},
 		authors: [dataAuthors[NameAuthors.MartinaVilimova]],
 		filter: DataFilter.ownWork,
@@ -343,7 +342,6 @@ export const getDataMyWork = (
 		myWorkItem: {
 			picture: autoodstrejdy,
 			subtitle: t('myWork.myWork1.title'),
-			webLink: 'https://www.autoodstrejdy.cz',
 		},
 		authors: [
 			dataAuthors[NameAuthors.MartinaVilimova],
